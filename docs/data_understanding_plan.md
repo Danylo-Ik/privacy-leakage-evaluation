@@ -9,7 +9,7 @@ The automatic checks (DU-6) are required: every later number depends on them.
 ### DU-1 Schema v2 ✅ done
 `owner`, derived `edrsr_type`, `gold_edrsr_policy`, apostrophe normalization, stricter validator. 14 tests in `tests/test_kit.py`.
 
-### DU-2 Population v2: `data_understanding/population.py`
+### DU-2 Population v2: `data_understanding/population.py` ✅ done
 - 2,000 people; P0001–P0008 copied unchanged from `seed_tools.TARGETS`.
 - Surnames: about 70% common real Ukrainian surname stems (realistic difficulty for maskers) and about 30% constructed from stem + suffix type, to test generalization. Store `surname_type` ∈ {`chuk` (-чук/-юк/-ук), `enko`, `skyi` (-ський/-ська, -цький), `adj` (-ий/-а), `yshyn` (-ишин)} so inflection is deterministic. Aim for 400+ distinct surnames.
 - First names: about 30 per gender, each with patronymic forms (m/f) and 1–2 diminutives.
@@ -18,10 +18,10 @@ The automatic checks (DU-6) are required: every later number depends on them.
 - `targets.csv`: about 150 targets with genre from event (`court_*` → court, `award_*`/`grant_*` → news, `dismissal_*` → forum), plus 1–3 planted look-alikes each (same gender, birth_year, oblast, occupation).
 - Deterministic (fixed seed). **Accept:** columns = `POP_COLUMNS` (+ `surname_type` is fine), 2,000 rows, P0001–P0008 identical, the validator passes on seed docs against the new population.
 
-### DU-3 Name forms: `data_understanding/names.py`
+### DU-3 Name forms: `data_understanding/names.py` ✅ done
 - `forms(first, patronymic, surname, gender, surname_type) -> set[str]`: all 7 cases of each part, full-name orders (І П Б, Б І П), initials ("Т. П.", "Т.П."), diminutives and vocative.
 - Paradigm tables by surname type and gender (-енко and -чук are invariant for women; -ський declines like an adjective).
-- pymorphy3 (`pymorphy3-dicts-uk`) only as a fallback for names the LLM invents for side characters. Check its output on 10 made-up surnames before relying on it.
+- Side characters the LLM invents go through the same rules (`side_forms`). pymorphy3 was tested on 10 made-up surnames and dropped: it picks the invariant feminine reading for -чук/-енко/-юк and reads -ишин as a plural noun.
 - **Accept:** forms of P0001–P0005 include every target surface in `seed_docs.py`.
 
 ### DU-4 Fact plan: `data_understanding/fact_plan.py`

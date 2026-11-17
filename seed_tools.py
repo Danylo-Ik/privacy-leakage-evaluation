@@ -351,8 +351,8 @@ def validate(data_dir=SEED_DIR):
     gold = read_jsonl(data_dir / "gold_docs.jsonl")
     masked = read_jsonl(data_dir / "masked_docs.jsonl")
     errors = []
-    if list(pop[0].keys()) != POP_COLUMNS:
-        errors.append(f"population.csv columns differ from {POP_COLUMNS}")
+    if list(pop[0].keys())[:len(POP_COLUMNS)] != POP_COLUMNS:
+        errors.append(f"population.csv must start with columns {POP_COLUMNS}")
     errors += validate_gold(gold, pop) + validate_masked(masked, gold)
     print(f"population: {len(pop)} rows | gold: {len(gold)} docs, "
           f"{sum(len(d['spans']) for d in gold)} spans | masked: {len(masked)} rows")

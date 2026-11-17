@@ -37,6 +37,10 @@ These fields are needed to generate documents and to compute k-anonymity:
 | children | int |
 | event | `<type>_<year>` or empty; types: `award_teacher_of_year`, `court_wage_claim`, `court_loan_claim`, `grant_farm`, `dismissal` |
 
+Extra columns may follow these. The generated population (`data_understanding/population.py`) adds `surname_type`: `chuk` (-чук/-юк/-ук), `enko` (-енко), `skyi` (-ський/-цький), `adj` (-ий/-а), `yshyn` (-ишин) or `other`. It sets how the surname inflects.
+
+Next to it, `targets.csv` lists the people documents are written about: `person_id`, `genre` (court/news/forum), `event`, and `lookalikes` (space-separated ids of people with the same gender, birth year, oblast and occupation).
+
 P0001–P0005 are the seed-document targets. P0006–P0008 are deliberate near-duplicates of P0001–P0003 (same gender, birth year, oblast, settlement type and occupation), so coarse QI tuples give k = 2 and you can check the uniqueness code on them.
 
 ## 2. `gold_docs.jsonl` (owner: data understanding)
