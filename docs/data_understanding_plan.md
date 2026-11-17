@@ -24,7 +24,9 @@ The automatic checks (DU-6) are required: every later number depends on them.
 - Side characters the LLM invents go through the same rules (`side_forms`). pymorphy3 was tested on 10 made-up surnames and dropped: it picks the invariant feminine reading for -чук/-енко/-юк and reads -ишин as a plural noun.
 - **Accept:** forms of P0001–P0005 include every target surface in `seed_docs.py`.
 
-### DU-4 Fact plan: `data_understanding/fact_plan.py`
+### DU-4 Fact plan: `data_understanding/fact_plan.py` ✅ done
+Output: `fact_plans.jsonl`, one plan per target (`D101`…). Each plan has `facts` (attr, category, DI/QI, suggested text, true value, and `exact` for the ones the checks compare: age, birth year, children, address), `names` (forms that must appear), `side_characters`, and `identifiers` (case number, РНОКПП, employer, email, phone). The event is always one of the facts; 1–5 more are drawn by genre weights, so `n_qi` runs from 2 to 6.
+
 Per target, sample:
 - 2–6 QIs to reveal, weighted by genre (court: birth year, address, family status, claim; news: age, village, occupation, award; forum: age, city, job, dismissal). The spread of QI counts gives a spread of k.
 - The exact surface wording from population values ("34-річна" = doc_year − birth_year; "трьох дітей").

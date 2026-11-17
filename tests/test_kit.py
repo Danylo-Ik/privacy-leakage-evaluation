@@ -205,3 +205,70 @@ def test_every_person_has_forms(population):
         f = names.forms(p["first_name"], p["patronymic"], p["surname"], p["gender"],
                         p["surname_type"])
         assert p["surname"] in f and p["first_name"] in f
+
+
+@pytest.fixture(scope="module")
+def plans(population):
+    import fact_plan
+    people, targets = population
+    return fact_plan.make_plans(people, targets)
+
+
+def test_plans_are_deterministic_and_json(population, plans):
+    import json
+    import fact_plan
+    assert fact_plan.make_plans(*population) == plans
+    json.dumps(plans, ensure_ascii=False)
+
+
+def test_plans_cover_genres_and_qi_spread(plans):
+    assert {p["genre"] for p in plans} == {"court", "news", "forum"}
+    assert {p["n_qi"] for p in plans} == {2, 3, 4, 5, 6}
+
+
+def test_plan_sample_per_genre(population):
+    import fact_plan
+    sample = fact_plan.make_plans(*population, per_genre=10)
+    assert len(sample) == 30
+    assert all(sum(p["genre"] == g for p in sample) == 10 for g in ("court", "news", "forum"))
+
+
+def test_plan_facts_match_population(population, plans):
+    by_id = {p["person_id"]: p for p in population[0]}
+    for plan in plans:
+        person = by_id[plan["person_id"]]
+        attrs = {f["attr"] for f in plan["facts"]}
+        assert "event" in attrs
+        for f in plan["facts"]:
+            if f["attr"] == "birth_year" and f["category"] == "DEM":
+                assert f["value"] == plan["doc_year"] - int(person["birth_year"])
+                assert f["text"].startswith(str(f["value"]))
+            if f["attr"] == "birth_year" and f["category"] == "DATETIME":
+                assert f["text"].startswith(str(person["birth_year"]))
+            if f["attr"] == "children":
+                assert f["value"] == int(person["children"])
+
+
+def test_plan_name_requirements(plans):
+    import names
+    for plan in plans:
+        t = plan["target"]
+        found = names.forms(t["first_name"], t["patronymic"], t["surname"], t["gender"],
+                            t["surname_type"])
+        assert any(n["case"] not in ("nom", "voc") for n in plan["names"])
+        for n in plan["names"]:
+            assert n["text"] in found, (plan["doc_id"], n["text"])
+        parts = [n["parts"] for n in plan["names"]]
+        if plan["genre"] == "court":
+            assert ["surname", "first", "patronymic"] in parts
+            assert ["surname", "initials"] in parts
+        if plan["genre"] == "news":
+            assert ["first", "patronymic"] in parts
+
+
+def test_side_characters_are_not_in_population(population, plans):
+    known = {(p["first_name"], p["patronymic"], p["surname"]) for p in population[0]}
+    for plan in plans:
+        assert plan["side_characters"]
+        for s in plan["side_characters"]:
+            assert (s["first_name"], s["patronymic"], s["surname"]) not in known
