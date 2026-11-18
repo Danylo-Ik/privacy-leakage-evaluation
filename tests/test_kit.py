@@ -272,3 +272,106 @@ def test_side_characters_are_not_in_population(population, plans):
         assert plan["side_characters"]
         for s in plan["side_characters"]:
             assert (s["first_name"], s["patronymic"], s["surname"]) not in known
+
+
+def _d002_plan():
+    def f(attr):
+        return {"attr": attr, "category": "DEM", "id_type": "QI", "text": "", "value": None,
+                "exact": False}
+    return {"doc_id": "D002", "person_id": "P0002", "genre": "court", "doc_year": 2023,
+            "target": {"first_name": "Тарас", "patronymic": "Петрович", "surname": "Ковальчинський",
+                       "gender": "M", "surname_type": "skyi"},
+            "n_qi": 6,
+            "facts": [f(a) for a in ("event", "birth_year", "family_status", "children",
+                                     "occupation", "settlement")],
+            "names": [{"text": "Ковальчинського Тараса Петровича", "case": "gen",
+                       "parts": ["surname", "first", "patronymic"]},
+                      {"text": "Ковальчинський Т. П.", "case": "nom", "parts": ["surname", "initials"]}],
+            "side_characters": [],
+            "identifiers": [{"kind": "rnokpp", "category": "CODE", "owner": "E1",
+                             "text": "3012345678"}]}
+
+
+@pytest.fixture
+def fake_llm(monkeypatch):
+    import generate
+    import llm
+    monkeypatch.setenv("LLM_MODEL", "fake-model")
+    monkeypatch.setenv("LLM_BASE_URL", "http://fake")
+    calls = []
+
+    def install(replies):
+        def chat(messages, **kwargs):
+            calls.append(messages)
+            return replies[len(calls) - 1], {"completion": 10}, False
+        monkeypatch.setattr(llm, "chat", chat)
+        return calls
+    return generate, install
+
+
+def test_prompt_contains_plan(plans):
+    import generate
+    for plan in plans[:20]:
+        user = generate.build_messages(plan)[1]["content"]
+        for f in plan["facts"]:
+            assert f["text"] in user
+        for n in plan["names"]:
+            assert n["text"] in user
+        for s in plan["side_characters"]:
+            assert s["mention"] in user
+        assert "{" not in user.replace("{{", "")
+
+
+def test_cache_key_changes_with_model_and_attempt():
+    import llm
+    msgs = [{"role": "user", "content": "привіт"}]
+    params = {"temperature": 0.8}
+    a = llm.cache_key("m1", msgs, params, {"attempt": 0})
+    assert a == llm.cache_key("m1", msgs, params, {"attempt": 0})
+    assert a != llm.cache_key("m2", msgs, params, {"attempt": 0})
+    assert a != llm.cache_key("m1", msgs, params, {"attempt": 1})
+
+
+def test_generate_accepts_good_reply(fake_llm):
+    import seed_docs
+    generate, install = fake_llm
+    d002 = next(d for d in seed_docs.SEED_DOCS if d["doc_id"] == "D002")["tagged"]
+    calls = install(["```\n" + d002 + "\n```"])
+    doc, log = generate.generate_one(_d002_plan(), st.make_population())
+    assert doc is not None and len(calls) == 1
+    assert log[0]["ok"] and log[0]["model"] == "fake-model"
+
+
+def test_generate_retries_with_errors_then_drops(fake_llm):
+    generate, install = fake_llm
+    broken = "Позов [[Тараса|PERSON|DI|E1|gen|first] задоволено."
+    calls = install([broken] * 3)
+    doc, log = generate.generate_one(_d002_plan(), st.make_population())
+    assert doc is None and len(log) == 3 and not any(e["ok"] for e in log)
+    repair = calls[1][-1]["content"]
+    assert "leftover tag" in repair and "attr=event" in repair
+
+
+def test_generate_fixes_on_second_try(fake_llm):
+    import seed_docs
+    generate, install = fake_llm
+    d002 = next(d for d in seed_docs.SEED_DOCS if d["doc_id"] == "D002")["tagged"]
+    install(["нічого", d002])
+    doc, log = generate.generate_one(_d002_plan(), st.make_population())
+    assert doc is not None and [e["ok"] for e in log] == [False, True]
+
+
+def test_pick_balances_genres(plans):
+    import generate
+    picked = generate.pick(plans, limit=10)
+    assert [p["genre"] for p in picked].count("court") == 4
+    assert len(picked) == 10
+
+
+def test_case_number_year_matches_event(plans):
+    for plan in plans:
+        year = next(f["value"] for f in plan["facts"]
+                    if f["attr"] == "event" and f["category"] == "DATETIME")
+        for i in plan["identifiers"]:
+            if i["kind"] == "case_number":
+                assert i["text"].endswith(f"/{year % 100:02d}")

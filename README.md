@@ -23,6 +23,35 @@ python data_understanding/fact_plan.py data/full
 
 This writes `fact_plans.jsonl`: for each target, the facts the document has to mention, the name forms it has to use, and a few invented side characters (a judge, a colleague, a boss). Documents are generated from these plans.
 
+## Generating documents
+
+Generation works with any OpenAI-compatible endpoint: a vLLM server on a rented GPU, OpenRouter, or a hosted API. Put the connection in `.env` (it is gitignored):
+
+```
+LLM_BASE_URL=http://localhost:8000/v1
+LLM_MODEL=google/gemma-3-27b-it
+LLM_API_KEY=...
+```
+
+For vLLM, start `vllm serve <model> --api-key <key>` on the GPU box and forward the port with `ssh -N -L 8000:localhost:8000 ...`. For OpenRouter, use `https://openrouter.ai/api/v1` and a model id ending in `:free`. Free models allow 20 requests a minute and 50 a day, or 1,000 a day once the account has $10 of credits. The client waits between calls on its own.
+
+```
+pip install openai
+python data_understanding/llm.py ping
+python data_understanding/generate.py data/sample --limit 3
+```
+
+Each document is checked after generation. If something is missing (a fact, a name form, a tag), the model gets the list of problems and another try, twice at most. Every call is cached in `data/cache/llm/`, so a rerun costs nothing. The prompt is in `docs/prompts/generate_v1.md`.
+
+To compare models, run the same 10 plans through each one and print a summary:
+
+```
+python data_understanding/generate.py data/full --limit 10 --model <model> --out data/bakeoff/<name>
+python data_understanding/bakeoff.py
+```
+
+## Metrics
+
 `data_understanding/uniqueness.py` counts how many people in the population still match what a masked document reveals (k-anonymity).
 
 All people in this repository are fictional.

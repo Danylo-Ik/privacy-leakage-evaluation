@@ -178,11 +178,11 @@ def side_characters(p, genre, gen, rng):
     return people
 
 
-def other_identifiers(p, genre, rng):
+def other_identifiers(p, genre, rng, case_year):
     ids = []
     if genre == "court":
         ids.append({"kind": "case_number", "category": "CODE", "owner": None,
-                    "text": f"№ {rng.randint(100, 760)}/{rng.randint(1000, 99999)}/{rng.randint(19, 24)}"})
+                    "text": f"№ {rng.randint(100, 760)}/{rng.randint(1000, 99999)}/{case_year % 100:02d}"})
         ids.append({"kind": "rnokpp", "category": "CODE", "owner": "E1",
                     "text": str(rng.randint(2000000000, 3999999999))})
         if p["event"].startswith("court_wage_claim"):
@@ -223,7 +223,7 @@ def make_plan(doc_id, p, target, gen, rng):
         "facts": facts,
         "names": required_names(p, genre, rng),
         "side_characters": side_characters(p, genre, gen, rng),
-        "identifiers": other_identifiers(p, genre, rng),
+        "identifiers": other_identifiers(p, genre, rng, event_year),
     }
 
 

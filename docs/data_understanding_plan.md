@@ -34,7 +34,8 @@ Per target, sample:
 - Side characters (judge, lawyer, relative, boss) with invented names.
 **Accept:** plans are JSON, deterministic, and cover all genres.
 
-### DU-5 Generation: `data_understanding/generate.py` and `docs/prompts/generate_v1.md`
+### DU-5 Generation: `data_understanding/generate.py` and `docs/prompts/generate_v1.md` ✅ code done, model not chosen
+`llm.py` is the client (env/.env settings, disk cache, throttle and backoff for OpenRouter's free tier). `generate.py` builds the prompt from the plan and two seed docs of the same genre, parses the reply, runs basic checks (validator, every planned attr tagged for E1, identifiers tagged, name forms present), and retries twice with the error list. `bakeoff.py` compares models on the same 10 plans (4 court, 3 news, 3 forum). Running it for real waits on an endpoint and on DU-6, since the bake-off should use the full checks.
 - OpenAI-compatible client (`LLM_BASE_URL`, `LLM_MODEL`, `LLM_API_KEY`), so the same code works with vLLM on vast.ai or any API.
 - Prompt: genre, the profile, the fact plan, the tag syntax, 2 seed docs as few-shot examples. "Include exactly these facts; tag every mention of every person."
 - Cache every response on disk keyed by (target, plan hash, prompt version, model).
