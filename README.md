@@ -33,7 +33,7 @@ LLM_MODEL=google/gemma-3-27b-it
 LLM_API_KEY=...
 ```
 
-For vLLM, start `vllm serve <model> --api-key <key>` on the GPU box and forward the port with `ssh -N -L 8000:localhost:8000 ...`. For OpenRouter, use `https://openrouter.ai/api/v1` and a model id ending in `:free`. Free models allow 20 requests a minute and 50 a day, or 1,000 a day once the account has $10 of credits. The client waits between calls on its own.
+For vLLM on a rented GPU, follow `docs/gpu_setup.md`: one shared server, each person connects through their own SSH tunnel. For OpenRouter, use `https://openrouter.ai/api/v1` and a model id ending in `:free`. Free models allow 20 requests a minute and 50 a day, or 1,000 a day once the account has $10 of credits. The client waits between calls on its own.
 
 ```
 pip install openai

@@ -124,6 +124,12 @@ def generate_one(plan, population, checker=check, prompt=None):
         reply, usage, cached = llm.chat(messages, extra={"doc_id": plan["doc_id"], "attempt": attempt,
                                                          "prompt": PROMPT_VERSION})
         tagged = extract_tagged(reply)
+        if not tagged:
+            log.append({"doc_id": plan["doc_id"], "genre": plan["genre"], "attempt": attempt,
+                        "ok": False, "errors": ["empty reply (ran out of tokens while thinking?)"],
+                        "model": llm.settings()["model"], "prompt": PROMPT_VERSION,
+                        "usage": usage, "cached": cached})
+            continue
         try:
             doc = to_gold(plan, tagged)
             errors = checker(doc, plan, population)

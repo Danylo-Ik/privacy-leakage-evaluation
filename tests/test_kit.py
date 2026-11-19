@@ -434,3 +434,19 @@ def test_check_dir_writes_report(tmp_path):
     report = checks.check_dir(tmp_path)
     assert len(report) == 5 and all(r["ok"] for r in report)
     assert (tmp_path / "check_report.jsonl").exists()
+
+
+def test_fold_system_moves_system_into_user():
+    import llm
+    msgs = [{"role": "system", "content": "rules"}, {"role": "user", "content": "task"},
+            {"role": "assistant", "content": "draft"}, {"role": "user", "content": "fix"}]
+    out = llm.fold_system(msgs)
+    assert [m["role"] for m in out] == ["user", "assistant", "user"]
+    assert out[0]["content"] == "rules\n\ntask" and msgs[1]["content"] == "task"
+
+
+def test_strip_thoughts():
+    import llm
+    assert llm.strip_thoughts("<thought>міркую\nдалі</thought>Зараз весна.") == "Зараз весна."
+    assert llm.strip_thoughts("<thought>не закінчив") == ""
+    assert llm.strip_thoughts("Просто текст") == "Просто текст"

@@ -5,12 +5,15 @@ Settings come from the environment or from .env in the repo root:
     LLM_MODEL      model id
     LLM_API_KEY
     LLM_MIN_INTERVAL  seconds between calls (default 3.5 for OpenRouter, else 0)
+    LLM_NO_SYSTEM  set to 1 if the endpoint rejects system messages
+    LLM_MAX_TOKENS default reply budget (default 2000; thinking models need more)
 
 Usage: python data_understanding/llm.py ping
 """
 import hashlib
 import json
 import os
+import re
 import sys
 import threading
 import time
@@ -41,7 +44,19 @@ def settings():
     default_gap = "3.5" if "openrouter.ai" in base_url else "0"
     return {"base_url": base_url, "model": os.environ.get("LLM_MODEL", ""),
             "api_key": os.environ.get("LLM_API_KEY", "none"),
-            "min_interval": float(os.environ.get("LLM_MIN_INTERVAL", default_gap))}
+            "min_interval": float(os.environ.get("LLM_MIN_INTERVAL", default_gap)),
+            "no_system": os.environ.get("LLM_NO_SYSTEM", "") not in ("", "0"),
+            "max_tokens": int(os.environ.get("LLM_MAX_TOKENS", "2000"))}
+
+
+def fold_system(messages):
+    """Move system text to the top of the first user message, for endpoints that
+    don't accept a system role (Gemma on the Gemini API)."""
+    system = "\n\n".join(m["content"] for m in messages if m["role"] == "system")
+    rest = [dict(m) for m in messages if m["role"] != "system"]
+    if system and rest and rest[0]["role"] == "user":
+        rest[0]["content"] = system + "\n\n" + rest[0]["content"]
+    return rest
 
 
 def cache_key(model, messages, params, extra=None):
@@ -76,24 +91,35 @@ def complete(messages, model, params, cfg):
             time.sleep(min(60, 5 * 2 ** attempt))
 
 
-def chat(messages, temperature=0.8, max_tokens=2000, extra=None, use_cache=True):
+def strip_thoughts(text):
+    """Drop the <thought>...</thought> block some models (Gemma 4) put before the answer.
+    A thought that never closes means the reply ran out of tokens: nothing is left."""
+    text = re.sub(r"<thought>.*?</thought>", "", text, flags=re.S)
+    if "<thought>" in text:
+        text = text.split("<thought>")[0]
+    return text.strip()
+
+
+def chat(messages, temperature=0.8, max_tokens=None, extra=None, use_cache=True):
     """Return (text, usage, cached). `extra` goes into the cache key (e.g. the attempt number)."""
     cfg = settings()
     if not cfg["base_url"] or not cfg["model"]:
         raise RuntimeError("Set LLM_BASE_URL and LLM_MODEL (in .env or the environment).")
-    params = {"temperature": temperature, "max_tokens": max_tokens}
+    params = {"temperature": temperature, "max_tokens": max_tokens or cfg["max_tokens"]}
+    if cfg["no_system"]:
+        messages = fold_system(messages)
     key = cache_key(cfg["model"], messages, params, extra)
     path = CACHE_DIR / f"{key}.json"
     if use_cache and path.exists():
         hit = json.loads(path.read_text(encoding="utf-8"))
-        return hit["text"], hit["usage"], True
+        return strip_thoughts(hit["text"]), hit["usage"], True
     text, usage = complete(messages, cfg["model"], params, cfg)
     if use_cache:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps({"model": cfg["model"], "params": params, "extra": extra,
                                     "messages": messages, "text": text, "usage": usage},
                                    ensure_ascii=False, indent=1), encoding="utf-8")
-    return text, usage, False
+    return strip_thoughts(text), usage, False
 
 
 if __name__ == "__main__":
@@ -101,5 +127,5 @@ if __name__ == "__main__":
         sys.exit(__doc__)
     cfg = settings()
     text, usage, _ = chat([{"role": "user", "content": "Одним реченням українською: яка зараз пора року?"}],
-                          max_tokens=60, use_cache=False)
+                          max_tokens=1500, use_cache=False)
     print(f"{cfg['model']} @ {cfg['base_url']}\n{text.strip()}\n{usage}")
