@@ -43,6 +43,22 @@ python data_understanding/generate.py data/sample --limit 3
 
 Each document is checked after generation. If something is missing (a fact, a name form, a tag), the model gets the list of problems and another try, twice at most. Every call is cached in `data/cache/llm/`, so a rerun costs nothing. The prompt is in `docs/prompts/generate_v1.md`.
 
+## Checking documents
+
+```
+python data_understanding/checks.py data/sample
+```
+
+This prints PASS or FAIL for every document and writes `check_report.jsonl`. A document fails if:
+
+- a tag is broken or the offsets are wrong
+- something from its plan is missing (a fact, an identifier, a required name form)
+- any form of the target's name, or a side character's name, appears without a tag
+- the age, birth year or number of children doesn't match the population
+- it is far too short or too long, or names the target fewer than three times
+
+An untagged name is the one mistake we can't afford: no metric sees it, but an attacker does. `generate.py` runs the same checks and sends the errors back to the model.
+
 To compare models, run the same 10 plans through each one and print a summary:
 
 ```

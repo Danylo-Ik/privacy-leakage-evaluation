@@ -41,13 +41,14 @@ Per target, sample:
 - Cache every response on disk keyed by (target, plan hash, prompt version, model).
 - Parse → checks (DU-6) → regenerate up to 2 times → drop and log.
 
-### DU-6 Automatic checks: `data_understanding/checks.py`
+### DU-6 Automatic checks: `data_understanding/checks.py` ✅ done
 1. `validate_gold` (offsets, fields, leftover tags, owners).
 2. Fact-plan coverage: every planned fact has a span with that `attr` owned by E1.
 3. **Untagged names:** every form from DU-3 (target plus side characters' tagged surfaces) that appears outside a span → fail.
 4. Fact consistency: stated age matches doc_year − birth_year (±1); the number of children matches.
 5. Sanity: length within genre range; the target is mentioned ≥3 times.
 Output a per-doc pass/fail report. **Accept:** all 5 seed docs pass; hand-broken copies fail.
+Done: `checks.py DIR` prints the report and writes `check_report.jsonl`; `generate.py` uses `check_doc` for its retries. Word limits are loose (court 80–800, news and forum 50–600) because the seed docs are short. Known limit: surnames that are also common words (Білий, Надія, Віра) can give a false "untagged name" at the start of a sentence; the retry usually fixes it, otherwise read the doc.
 
 ### DU-7 Sample and full corpus
 - Sample: 30 docs (10 per genre) → `data/sample/` (`population.csv`, `gold_docs.jsonl`, plus `gold_conditions` output as `masked_docs.jsonl`).

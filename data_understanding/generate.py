@@ -23,6 +23,7 @@ sys.path.insert(0, str(HERE.parent))
 sys.path.insert(0, str(HERE))
 import seed_tools as st  # noqa: E402
 from seed_docs import SEED_DOCS  # noqa: E402
+import checks  # noqa: E402
 import llm  # noqa: E402
 from fact_plan import read_csv  # noqa: E402
 
@@ -111,20 +112,7 @@ def to_gold(plan, tagged):
 
 
 def check(doc, plan, population):
-    """Basic checks until data_understanding/checks.py exists."""
-    errors = st.validate_gold([doc], population)
-    mine = [s for s in doc["spans"] if s.get("owner") == "E1"]
-    for attr in sorted({f["attr"] for f in plan["facts"]}):
-        if not any(s["attr"] == attr for s in mine):
-            errors.append(f"no tagged span with attr={attr} about E1")
-    tagged = {s["text"] for s in doc["spans"]}
-    for i in plan["identifiers"]:
-        if st.normalize(i["text"]) not in tagged:
-            errors.append(f"identifier «{i['text']}» is missing or not tagged as one span")
-    for n in plan["names"]:
-        if st.normalize(n["text"]) not in doc["text"]:
-            errors.append(f"required name form «{n['text']}» does not appear")
-    return errors
+    return checks.check_doc(doc, population, plan)
 
 
 def generate_one(plan, population, checker=check, prompt=None):

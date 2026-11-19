@@ -375,3 +375,62 @@ def test_case_number_year_matches_event(plans):
         for i in plan["identifiers"]:
             if i["kind"] == "case_number":
                 assert i["text"].endswith(f"/{year % 100:02d}")
+
+
+def _seed_doc(doc_id, edit=None):
+    import seed_docs
+    meta = next(d for d in seed_docs.SEED_DOCS if d["doc_id"] == doc_id)
+    tagged = meta["tagged"]
+    if edit:
+        old, new = edit
+        assert old in tagged
+        tagged = tagged.replace(old, new, 1)
+    text, spans = st.parse_tagged(tagged)
+    return {"doc_id": doc_id, "person_id": meta["person_id"], "target_entity_id": "E1",
+            "genre": meta["genre"], "doc_year": meta["doc_year"], "text": text, "spans": spans}
+
+
+def test_checks_pass_on_seed_docs():
+    import checks
+    pop = st.make_population()
+    for doc_id in ("D001", "D002", "D003", "D004", "D005"):
+        assert checks.check_doc(_seed_doc(doc_id), pop) == [], doc_id
+
+
+@pytest.mark.parametrize("doc_id,edit,expected", [
+    ("D001", ("називає [[Оксану|PERSON|DI|E1|acc|first]]", "називає Оксану"), "untagged name of E1"),
+    ("D002", ("[[Т. П.|PERSON|DI|E1|-|initials]]", "Т. П."), "untagged name of E1"),
+    ("D002", ("позов не визнала.", "позов не визнала. Сидорчук пішла."), "untagged name of side"),
+    ("D001", ("[[34-річна|", "[[40-річна|"), "age «40-річна»"),
+    ("D002", ("[[1978 року", "[[1980 року"), "birth year"),
+    ("D001", ("[[виховує трьох дітей|", "[[виховує двох дітей|"), "says 2 children"),
+    ("D003", ("Заслухавши пояснення [[Задорожненко|PERSON|DI|E1|gen|surname]] "
+              "[[І. О.|PERSON|DI|E1|-|initials]], суд", "Суд"), "mentioned 2 times"),
+])
+def test_checks_catch_broken_docs(doc_id, edit, expected):
+    import checks
+    errors = checks.check_doc(_seed_doc(doc_id, edit), st.make_population())
+    assert any(expected in e for e in errors), errors
+
+
+def test_checks_use_the_plan():
+    import checks
+    plan = _d002_plan()
+    pop = st.make_population()
+    assert checks.check_doc(_seed_doc("D002"), pop, plan) == []
+    plan["facts"].append(dict(plan["facts"][0], attr="oblast"))
+    plan["names"].append({"text": "Тарасом", "case": "ins", "parts": ["first"]})
+    plan["side_characters"].append({"role": "колега", "gender": "F", "first_name": "Олена",
+                                    "patronymic": "Іванівна", "surname": "Мельник",
+                                    "mention": "Олена Мельник"})
+    errors = checks.check_doc(_seed_doc("D002"), pop, plan)
+    assert any("attr=oblast" in e for e in errors)
+    assert any("«Тарасом»" in e for e in errors)
+
+
+def test_check_dir_writes_report(tmp_path):
+    import checks
+    st.build(tmp_path)
+    report = checks.check_dir(tmp_path)
+    assert len(report) == 5 and all(r["ok"] for r in report)
+    assert (tmp_path / "check_report.jsonl").exists()
