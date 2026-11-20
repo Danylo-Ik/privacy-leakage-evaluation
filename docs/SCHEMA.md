@@ -79,7 +79,9 @@ A name is split into parts (`Ковальчинського` + `Тараса` + 
 ```
 
 - Placeholders follow the ЄДРСР style: `ОСОБА_n`, `КОД_n`, `МІСЦЕ_n`, `ОРГАНІЗАЦІЯ_n`, `ДАТА_n`, `ЧИСЛО_n`, `ІНФОРМАЦІЯ_n` (DEM and MISC). The same entity gets the same placeholder throughout a document.
-- `system_or_condition` names: `gold_full`, `gold_di_only`, `gold_edrsr_policy`, `gold_miss_one_oblique` (in the seed); then `gold_drop_p05`… `gold_drop_p40`, `gold_keep_patronymic`, `rule`, `spacy`, `llm`.
+- `system_or_condition` names: `gold_full`, `gold_di_only`, `gold_edrsr_policy`, `gold_miss_one_oblique` `gold_drop_p05`… `gold_drop_p40`, `gold_keep_patronymic` (all in the seed, from `model_training/conditions.py`); then `rule`, `spacy`, `llm`.
+- Drop-out leaves whole mentions unmasked, and the dropped sets are nested (p05 ⊂ p10 ⊂ p20 ⊂ p40). Extra random runs are named `gold_drop_p05_s1`…
+- Condition rows also carry `n_unmasked_gold`: how many gold spans were deliberately left open. `0` on anything other than `gold_full` means the condition changed nothing for that doc (e.g. no mention was drawn at 5%), so exclude it from per-condition comparisons if needed.
 - Systems don't know entity ids, so they only need start/end/placeholder. Entity-level recall is computed by data understanding against gold.
 
 `apply_masking()` and `gold_conditions()` in `seed_tools.py` show the reference behaviour. Model training can extend them for the drop-out conditions.
