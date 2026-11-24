@@ -7,7 +7,7 @@ PASS/FAIL per document and writes check_report.jsonl. Exits with 1 if any docume
 1. validator: offsets, fields, leftover tags, owners
 2. plan coverage: every planned fact, identifier and name form is in the document
 3. untagged names: a form of the target's name, or a side character's name, outside a span
-4. consistency: stated age or birth year and the number of children match the population
+4. consistency: age or birth year, number of children, and settlement/oblast spans match the population
 5. sanity: length for the genre, at least 3 mentions of the target
 """
 import json
@@ -99,6 +99,11 @@ def consistency(doc, person):
             elif got[0] == "age" and abs(doc["doc_year"] - born - got[1]) > 1:
                 errors.append(f"age «{s['text']}» but the person is {doc['doc_year'] - born} "
                               f"in {doc['doc_year']}")
+        if s["attr"] in ("settlement", "oblast"):
+            stem = st.normalize(person[s["attr"]]).lower()[:4]
+            if stem not in s["text"].lower():
+                errors.append(f"«{s['text']}» is tagged attr={s['attr']} but does not name "
+                              f"{person[s['attr']]}")
         if s["attr"] == "children":
             n = children_count(s["text"])
             if n is None:
@@ -131,6 +136,10 @@ def plan_coverage(doc, plan):
 
 def sanity(doc):
     errors = []
+    for s in doc["spans"]:
+        if s["category"] == "PERSON" and s["name_part"] != "initials" and " " in s["text"].strip():
+            errors.append(f"«{s['text']}» holds several name parts in one tag; tag the first name, "
+                          f"patronymic and surname separately")
     lo, hi = WORDS.get(doc["genre"], (50, 800))
     n = len(doc["text"].split())
     if not lo <= n <= hi:

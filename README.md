@@ -41,7 +41,7 @@ python data_understanding/llm.py ping
 python data_understanding/generate.py data/sample --limit 3
 ```
 
-Each document is checked after generation. If something is missing (a fact, a name form, a tag), the model gets the list of problems and another try, twice at most. Every call is cached in `data/cache/llm/`, so a rerun costs nothing. The prompt is in `docs/prompts/generate_v1.md`.
+The corpus in `data/full/` (147 documents) and the sample in `data/sample/` (30) were generated with Gemma 4 31B on one A100. Each document is checked after generation. If something is missing (a fact, a name form, a tag), the model gets the list of problems and another try, twice at most. Every call is cached in `data/cache/llm/`, so a rerun costs nothing. The prompt is in `docs/prompts/generate_v2.md`.
 
 ## Checking documents
 
