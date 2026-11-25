@@ -27,3 +27,21 @@ Random lists give the answer away: every target has an event and look-alikes, mo
 Balanced lists are not at chance either, since a list of 10 holds only 3–5 groups. Attack results are therefore compared with the no-document baseline on the same lists, and N = 100 is the main setting.
 
 Profiles are one line each: full name in the nominative, gender, birth year, oblast and settlement, occupation, family status, children and event. The attacker sees labels (`C001`…), never `person_id`.
+
+## Prompts and parsing
+
+```
+python evaluation/prompts.py data/sample D102 --condition rule          # re-identification
+python evaluation/prompts.py data/sample D102 --task nodoc --n 100      # no-document baseline
+python evaluation/prompts.py data/sample D102 --task attr               # attribute inference
+```
+
+Prints the exact messages without calling a model. Prompt texts: `docs/prompts/attack_reid_v1.md` and `attack_attr_v1.md`.
+
+- **Re-identification:** candidate profiles, then the masked document. The reply is JSON with the five most likely labels and a short note on the clues.
+- **No-document baseline:** the same message with the document left out. It does not depend on the masker.
+- **Attribute inference:** gender, decade of birth, oblast and occupation, without candidates. Oblasts and occupations are closed lists. "unknown" is allowed and scored as wrong.
+
+All three prompts say who the main person is: the claimant, the subject of the article, or the author of the post. This holds for every document in `data/full`. They do not give the genre, the document year or the masker. `uniqueness.py` does use the document year, so its k is slightly more favourable to the attacker when only an age is left.
+
+The parser accepts text around the JSON, Cyrillic letters in labels and feminine job titles. An invented label keeps its place in the ranking as a miss, so it never promotes the labels behind it. Any irregularity is returned in `errors`, so that the call can be repeated.
