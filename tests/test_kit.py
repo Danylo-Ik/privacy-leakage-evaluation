@@ -450,3 +450,31 @@ def test_strip_thoughts():
     assert llm.strip_thoughts("<thought>міркую\nдалі</thought>Зараз весна.") == "Зараз весна."
     assert llm.strip_thoughts("<thought>не закінчив") == ""
     assert llm.strip_thoughts("Просто текст") == "Просто текст"
+
+
+def test_required_oblique_form_is_unambiguous(plans):
+    import names
+    for plan in plans:
+        t = plan["target"]
+        table = names.name_forms(t["first_name"], t["patronymic"], t["surname"], t["gender"],
+                                 t["surname_type"])
+        for n in plan["names"]:
+            if n["parts"] in (["first"], ["surname"]) and n["case"] not in ("nom", "voc"):
+                part = n["parts"][0]
+                others = [w for c in names.CASES if c != n["case"] for w in table[(part, c)]]
+                assert n["text"] not in others, (plan["doc_id"], n["text"])
+
+
+def test_place_attr_must_name_the_place():
+    import checks
+    doc = _seed_doc("D002", ("[[Київський районний суд м. Харкова|", "[[Шепкиївський районний суд|"))
+    errors = checks.check_doc(doc, st.make_population())
+    assert any("does not name Харків" in e for e in errors)
+
+
+def test_merged_name_parts_fail():
+    import checks
+    doc = _seed_doc("D001", ("[[Оксана|PERSON|DI|E1|nom|first]] [[Миколаївна|PERSON|DI|E1|nom|patronymic]]",
+                             "[[Оксана Миколаївна|PERSON|DI|E1|nom|first]]"))
+    errors = checks.check_doc(doc, st.make_population())
+    assert any("several name parts" in e for e in errors)

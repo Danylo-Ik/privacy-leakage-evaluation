@@ -123,6 +123,22 @@ def event_facts(p, event_year):
             fact("event", "DATETIME", f"у {event_year} році", event_year)]
 
 
+def unambiguous_oblique(table):
+    """(part, case) pairs whose form belongs to that case only.
+
+    Марії is genitive, dative and locative at once, so asking for "Марії (loc)" gives
+    wrong case labels in the gold. Марією can only be instrumental.
+    """
+    out = []
+    for part in ("first", "surname"):
+        for case in OBLIQUE:
+            form = table[(part, case)][0]
+            others = [w for c in names.CASES if c != case for w in table[(part, c)]]
+            if form not in others:
+                out.append((part, case))
+    return out
+
+
 def required_names(p, genre, rng):
     """Name forms the document must contain. At least one is in an oblique case."""
     table = names.name_forms(p["first_name"], p["patronymic"], p["surname"], p["gender"],
@@ -136,8 +152,7 @@ def required_names(p, genre, rng):
     elif genre == "news":
         need.append({"text": f"{p['first_name']} {p['patronymic']}", "case": "nom",
                      "parts": ["first", "patronymic"]})
-    case = rng.choice(OBLIQUE)
-    part = rng.choice(["first", "surname"])
+    part, case = rng.choice(unambiguous_oblique(table))
     need.append({"text": table[(part, case)][0], "case": case, "parts": [part]})
     dims = names.DIMINUTIVES.get(p["first_name"], [])
     if genre != "court" and dims and rng.random() < 0.3:

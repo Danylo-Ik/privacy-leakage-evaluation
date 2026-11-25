@@ -27,7 +27,7 @@ import checks  # noqa: E402
 import llm  # noqa: E402
 from fact_plan import read_csv  # noqa: E402
 
-PROMPT_VERSION = "generate_v1"
+PROMPT_VERSION = "generate_v2"
 PROMPT_FILE = HERE.parent / "docs" / "prompts" / f"{PROMPT_VERSION}.md"
 MAX_ATTEMPTS = 3
 
@@ -38,7 +38,17 @@ GENRES = {
     "news": ("Ukrainian local news article", "A short piece from a regional news site about the main person, with one "
              "or two quotes. 180–350 words."),
     "forum": ("Ukrainian forum post", "A first-person post on a forum, written by the main person and asking for "
-              "advice. Informal, with a few typos allowed. Other people can be quoted. 150–300 words."),
+              "advice. Informal, with a few typos allowed. Other people can be quoted. The author's name comes up "
+              "when they introduce themselves, when a quoted person addresses them, and in a signature. "
+              "150–300 words."),
+}
+CASE_HINTS = {
+    "gen": " — genitive, e.g. after «у», «від», «для», «без», «позов кого»",
+    "dat": " — dative, e.g. «надали кому», «завдяки кому», «суд надав слово кому»",
+    "acc": " — accusative, e.g. «привітали кого», «звільнили кого», «бачу кого»",
+    "ins": " — instrumental, e.g. after «з», «разом із», «перед», «між», «пишається ким»",
+    "loc": " — locative, after «на» or «при»",
+    "voc": " — vocative, someone addresses the person directly",
 }
 EXAMPLES = {"court": ["D002", "D003"], "news": ["D001", "D004"], "forum": ["D005", "D001"]}
 
@@ -70,7 +80,8 @@ def describe_plan(plan):
         how = "exact" if f["exact"] else "suggested wording, adapt to the sentence"
         facts.append(f"- «{f['text']}» — {f['category']}, {f['id_type']}, attr={f['attr']} ({how})")
 
-    names = [f"- «{n['text']}» ({n['case']}; {' + '.join(n['parts'])})" for n in plan["names"]]
+    names = [f"- «{n['text']}» ({n['case']}; {' + '.join(n['parts'])}){CASE_HINTS.get(n['case'], '')}"
+             for n in plan["names"]]
 
     side = []
     for s in plan["side_characters"]:
