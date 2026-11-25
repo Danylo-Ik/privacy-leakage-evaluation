@@ -86,6 +86,23 @@ python data_understanding/bakeoff.py
 
 ## Metrics
 
-`data_understanding/uniqueness.py` counts how many people in the population still match what a masked document reveals (k-anonymity).
+```
+python data_understanding/recall.py data/full --with-k
+python data_understanding/uniqueness.py data/full
+```
+
+`recall.py` scores every masker and condition in `masked_docs.jsonl` against the gold. A mention counts as open if any of its words is less than half masked, and a full name is one mention, so a visible patronymic opens the whole name. It reports:
+
+- **mention recall:** the share of mentions that are hidden
+- **entity recall:** the share of people with every mention hidden
+- **target protected:** every mention of the target's name is hidden
+- **fully protected:** the target's name and everything about them (age, village, job and so on) is hidden
+- **over-masking:** the share of masked text that wasn't personal
+
+Each comes with splits by DI/QI, category, case, name part and genre, and 95% intervals from resampling documents. It writes `recall_report.csv` and `recall_by_doc.jsonl`, which lists the mentions each system left open.
+
+`uniqueness.py` counts how many people in the population still match what a masked document reveals (k-anonymity). `--with-k` adds those numbers to the recall table.
+
+On the full corpus, all three maskers hide over 90% of people's names, but about half of the quasi-identifiers stay visible, and no system fully protects more than 1% of targets. With the rule-based masker, 66% of documents still point to exactly one person.
 
 All people in this repository are fictional.

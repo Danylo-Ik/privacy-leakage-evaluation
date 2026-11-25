@@ -10,3 +10,4 @@ check_report.jsonl
 .cache/
 docs/data_understanding_plan.md
 docs/remaining_work.md
+recall_by_doc.jsonl
