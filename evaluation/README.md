@@ -64,6 +64,6 @@ python evaluation/run_attacks.py data/full --task nodoc --design random
 Results go to `data/full/attacks/` (format in `docs/SCHEMA.md`). `--dry-run` counts the calls without making them, `--limit 80` takes a subset spread over the genres. Calls per task on `data/full` with the balanced design: 3,528 for `reid` (12 conditions, two list sizes), 294 for `nodoc`, 1,764 for `attr`. The longest prompt has about 18,000 characters.
 
 - A run can be stopped and continued: finished rows are saved at once and reused as long as their prompt and model are the same. After a change in `masked_docs.jsonl` only the affected documents are attacked again.
-- The first attempt uses temperature 0. A reply with errors is repeated up to twice at 0.7, and the best reply is kept. Without a usable reply the row counts as a miss.
+- The first attempt uses temperature 0. A reply that is unreadable, too short or holds an invented label is repeated up to twice at 0.7, and the best reply is kept. A repeated label in an otherwise complete ranking is dropped without a retry. Without a usable reply the row counts as a miss.
 - Failed calls leave no row. After ten of them the run stops; the same command continues it.
 - `unmasked` attacks the original text. It should be close to 100% for N = 10; if not, the attack itself does not work.

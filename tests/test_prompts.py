@@ -120,7 +120,16 @@ def test_labels_that_match_nothing(bad):
 def test_repeated_and_missing_labels_are_errors():
     out = pr.parse_ranking(reply(ranking=["C001", "C001", "C002"]), 10)
     assert out["ranking"] == ["C001", "C002"]
-    assert len(out["errors"]) == 2
+    assert len(out["errors"]) == 2 and out["retry"]  # too short even with the repeat
+
+
+def test_what_is_worth_a_retry():
+    def retry(labels):
+        return pr.parse_ranking(reply(ranking=labels), 10)["retry"]
+    assert not retry(RANKING)
+    assert not retry(RANKING[:4] + RANKING[:1])
+    assert retry(RANKING[:4]) and retry(["C011"] + RANKING[:4])
+    assert pr.parse_ranking("???", 10)["retry"]
 
 
 def test_every_label_of_a_list_of_100_round_trips():

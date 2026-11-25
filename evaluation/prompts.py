@@ -102,16 +102,17 @@ def parse_label(value, n):
 
 
 def parse_ranking(reply, n):
-    """{"ranking": labels, "clues": text, "errors": [...]}.
+    """{"ranking": labels, "clues": text, "errors": [...], "retry": bool}.
 
     A label that is not in the list becomes None and keeps its place, so an invented
     label never promotes the ones behind it. Repeats are dropped. An unreadable reply has
-    an empty ranking. A reply with errors is worth another try.
+    an empty ranking. Repeats alone are not worth another try: the ranking is usable, and
+    a retry would replace an answer given at temperature 0.
     """
     obj = find_json(reply or "", "ranking")
     if obj is None or not isinstance(obj["ranking"], list):
-        return {"ranking": [], "clues": "", "errors": ["no ranking in the reply"]}
-    errors, out, all_labels = [], [], cd.labels(n)
+        return {"ranking": [], "clues": "", "errors": ["no ranking in the reply"], "retry": True}
+    errors, out, all_labels, repeats = [], [], cd.labels(n), 0
     for value in obj["ranking"][:TOP]:
         i = parse_label(value, n)
         if i is None:
@@ -119,11 +120,13 @@ def parse_ranking(reply, n):
             out.append(None)
         elif all_labels[i - 1] in out:
             errors.append(f"label {value!r} is repeated")
+            repeats += 1
         else:
             out.append(all_labels[i - 1])
     if len(out) < TOP:
         errors.append(f"{len(out)} labels instead of {TOP}")
-    return {"ranking": out, "clues": str(obj.get("clues", "")), "errors": errors}
+    return {"ranking": out, "clues": str(obj.get("clues", "")), "errors": errors,
+            "retry": None in out or len(out) + repeats < TOP}
 
 
 def _fold(text):
@@ -159,7 +162,7 @@ def parse_attributes(reply, lists):
     obj = find_json(reply or "", "gender")
     if obj is None:
         return {"values": dict.fromkeys(ATTRIBUTES), "clues": "",
-                "errors": ["no attributes in the reply"]}
+                "errors": ["no attributes in the reply"], "retry": True}
     values, errors = {}, []
     for attr in ATTRIBUTES:
         if attr not in obj:
@@ -169,7 +172,8 @@ def parse_attributes(reply, lists):
         values[attr] = parse_value(attr, obj[attr], lists)
         if values[attr] is None:
             errors.append(f"{attr}: {obj[attr]!r} is not an allowed value")
-    return {"values": values, "clues": str(obj.get("clues", "")), "errors": errors}
+    return {"values": values, "clues": str(obj.get("clues", "")), "errors": errors,
+            "retry": bool(errors)}
 
 
 # ---------- preview ----------

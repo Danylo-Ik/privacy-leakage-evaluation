@@ -107,7 +107,7 @@ def parse(job, reply):
 
 
 def run_job(job):
-    """Call the model until a reply has no errors, and keep the best reply seen."""
+    """Call the model until a reply needs no retry, and keep the best reply seen."""
     best, usage = None, Counter()
     for attempt, temperature in enumerate(TEMPERATURES):
         reply, used, _ = llm.chat(job["messages"], temperature=temperature,
@@ -117,7 +117,7 @@ def run_job(job):
         score = (usable, -len(out["errors"]))
         if best is None or score > best[0]:
             best = (score, out)
-        if not out["errors"]:
+        if not out["retry"]:
             break
     (usable, _), out = best
     row = {k: job[k] for k in KEY}

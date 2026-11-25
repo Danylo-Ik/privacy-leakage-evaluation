@@ -121,6 +121,13 @@ def test_bad_reply_is_repeated_at_a_higher_temperature(data, model):
     assert row["usage"] == {"prompt": 200, "completion": 20}
 
 
+def test_repeated_label_is_accepted_without_a_retry(data, model):
+    fake = model(ranking(["C001", "C002", "C003", "C001", "C002"]))
+    row = ra.run_job(jobs(data)[0])
+    assert len(fake.calls) == 1 and len(row["ranking"]) == 3
+    assert row["parse_ok"] and row["errors"]
+
+
 def test_unreadable_replies_count_as_a_miss(data, model):
     fake = model("Sorry, I cannot identify people.")
     row = ra.run_job(jobs(data)[0])
