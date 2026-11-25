@@ -11,12 +11,12 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from population import DIMINUTIVES, FEMALE, MALE, surname_type  # noqa: E402
+from population import DIMINUTIVES, FEMALE, MALE, surname_type
 
 CASES = ["nom", "gen", "dat", "acc", "ins", "loc", "voc"]
 SOFTEN = {"к": "ц", "г": "з", "х": "с"}
 
-# Old records and forum posts often use the Russian spelling.
+# old records and forum posts sometimes use the russian spelling.
 RUSSIAN_FIRST = {
     "Андрій": "Андрей", "Олександр": "Александр", "Тарас": "Тарас", "Іван": "Иван",
     "Петро": "Петр", "Микола": "Николай", "Василь": "Василий", "Олег": "Олег",

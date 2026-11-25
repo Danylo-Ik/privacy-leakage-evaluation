@@ -20,7 +20,7 @@ from population import Generator  # noqa: E402
 SEED = 7
 OBLIQUE = ["gen", "dat", "acc", "ins", "loc"]
 
-# How often each fact is picked, per genre. The event is always included.
+
 POOL = {
     "court": {"birth_year": 3, "address": 3, "family_status": 3, "occupation": 2,
               "children": 2, "oblast": 1},
@@ -125,9 +125,6 @@ def event_facts(p, event_year):
 
 def unambiguous_oblique(table):
     """(part, case) pairs whose form belongs to that case only.
-
-    Марії is genitive, dative and locative at once, so asking for "Марії (loc)" gives
-    wrong case labels in the gold. Марією can only be instrumental.
     """
     out = []
     for part in ("first", "surname"):
