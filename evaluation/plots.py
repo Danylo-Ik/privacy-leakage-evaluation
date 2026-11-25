@@ -212,7 +212,9 @@ def dropout(data):
               (ORANGE, "k = 1: only one person matches", [pct(summary[c]["pct_k1"]) for c in conds]))
     for c, text, ys in series:
         ax.plot(xs, ys, color=c, lw=2, marker="o", ms=7, mec=SURFACE, mew=1.5, label=text, zorder=3)
-        ax.text(xs[-1] + 0.8, ys[-1], f"{ys[-1]:.0f}%", va="center", fontsize=8)
+    ends = sorted(ys[-1] for _, _, ys in series)
+    for y, place in zip(ends, spread(ends, 6, 0, 104)):
+        ax.text(xs[-1] + 0.8, place, f"{y:.0f}%", va="center", fontsize=8)
     ax.set_xticks(xs, [f"{x}%" for x in xs])
     ax.set_xlim(-1, xs[-1] + 4)
     ax.set_xlabel("Mentions left open at random")

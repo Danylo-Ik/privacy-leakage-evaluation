@@ -1,0 +1,1899 @@
+doc_id,system_or_condition,genre,gender,changed,k,mentions,mentions_closed,persons,persons_closed,target_closed,di_spans,di_closed,qi_spans,qi_closed,rank_balanced_10,rank_balanced_100,rank_random_10,rank_random_100,said_gender,right_gender,exposed_gender,said_birth_decade,right_birth_decade,exposed_birth_decade,said_oblast,right_oblast,exposed_oblast,said_occupation,right_occupation,exposed_occupation
+D101,gold_full,news,M,0,946,6,6,3,3,1,10,10,4,4,1,0,1,2,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D101,gold_di_only,news,M,1,1,6,6,3,3,1,10,10,4,0,1,1,,,M,1,1,1970,1,1,Одеська,1,1,фермер,1,0
+D101,gold_edrsr_policy,news,M,1,1,6,6,3,3,1,10,10,4,0,1,1,1,1,M,1,1,1970,1,1,Одеська,1,1,фермер,1,0
+D101,gold_miss_one_oblique,news,M,1,24,6,5,3,2,0,10,9,4,4,1,1,1,2,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D101,gold_drop_p05,news,M,1,64,6,5,3,2,1,10,8,4,3,1,1,,,M,1,1,1970,1,1,unknown,0,0,фермер,1,0
+D101,gold_drop_p10,news,M,1,64,6,5,3,2,1,10,8,4,3,1,1,,,M,1,1,1970,1,1,unknown,0,0,фермер,1,0
+D101,gold_drop_p20,news,M,1,64,6,5,3,2,1,10,8,4,3,1,1,,,M,1,1,1970,1,1,unknown,0,0,фермер,1,0
+D101,gold_drop_p40,news,M,1,1,6,4,3,1,0,10,7,4,1,1,1,,,M,1,1,1970,1,1,Одеська,1,1,фермер,1,0
+D101,gold_keep_patronymic,news,M,1,44,6,4,3,2,0,10,8,4,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D102,gold_full,court,F,0,1054,9,9,4,4,1,22,22,7,7,1,1,1,3,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D102,gold_di_only,court,F,1,1,9,9,4,4,1,22,22,7,0,1,0,,,F,1,1,1970,1,1,Львівська,0,1,бухгалтер,1,1
+D102,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,22,21,7,1,1,0,1,1,F,1,1,unknown,0,0,Львівська,0,1,бухгалтер,1,1
+D102,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,22,19,7,7,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D102,gold_drop_p05,court,F,0,1054,9,9,4,4,1,22,22,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D102,gold_drop_p10,court,F,1,1054,9,8,4,3,1,22,20,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D102,gold_drop_p20,court,F,1,5,9,7,4,3,1,22,18,7,6,1,1,,,F,1,1,unknown,0,0,Львівська,0,1,unknown,0,0
+D102,gold_drop_p40,court,F,1,1,9,7,4,3,1,22,18,7,5,1,1,,,F,1,1,1970,1,1,Львівська,0,1,unknown,0,0
+D102,gold_keep_patronymic,court,F,1,34,9,7,4,3,0,22,20,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D103,gold_full,news,M,0,946,6,6,3,3,1,12,12,5,5,1,2,1,2,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D103,gold_di_only,news,M,1,1,6,6,3,3,1,12,12,5,0,1,1,,,M,1,1,unknown,0,0,Житомирська,1,1,вчитель хімії,1,1
+D103,gold_edrsr_policy,news,M,1,1,6,6,3,3,1,12,12,5,0,1,1,1,1,M,1,1,unknown,0,0,Житомирська,1,1,вчитель хімії,1,1
+D103,gold_miss_one_oblique,news,M,1,38,6,5,3,2,0,12,11,5,5,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D103,gold_drop_p05,news,M,0,946,6,6,3,3,1,12,12,5,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D103,gold_drop_p10,news,M,0,946,6,6,3,3,1,12,12,5,5,1,3,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D103,gold_drop_p20,news,M,1,946,6,4,3,1,1,12,8,5,5,1,2,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D103,gold_drop_p40,news,M,1,3,6,4,3,1,1,12,8,5,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D103,gold_keep_patronymic,news,M,1,30,6,4,3,2,0,12,10,5,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D104,gold_full,forum,F,0,1054,7,7,3,3,1,14,14,3,3,2,2,1,0,F,1,1,unknown,0,0,unknown,0,0,кухар,1,0
+D104,gold_di_only,forum,F,1,1,7,7,3,3,1,14,14,3,0,1,0,,,F,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D104,gold_edrsr_policy,forum,F,1,1,7,7,3,3,1,14,14,3,0,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D104,gold_miss_one_oblique,forum,F,1,45,7,6,3,2,0,14,13,3,3,1,1,3,1,F,1,1,unknown,0,0,unknown,0,0,кухар,1,0
+D104,gold_drop_p05,forum,F,0,1054,7,7,3,3,1,14,14,3,3,1,0,,,F,1,1,unknown,0,0,unknown,0,0,кухар,1,0
+D104,gold_drop_p10,forum,F,0,1054,7,7,3,3,1,14,14,3,3,2,3,,,F,1,1,unknown,0,0,unknown,0,0,кухар,1,0
+D104,gold_drop_p20,forum,F,0,1054,7,7,3,3,1,14,14,3,3,4,1,,,F,1,1,unknown,0,0,unknown,0,0,кухар,1,0
+D104,gold_drop_p40,forum,F,1,1,7,5,3,2,0,14,9,3,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D104,gold_keep_patronymic,forum,F,1,35,7,5,3,2,0,14,12,3,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,кухар,1,0
+D105,gold_full,court,F,0,1054,6,6,3,3,1,16,16,8,8,1,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D105,gold_di_only,court,F,1,1,6,6,3,3,1,16,16,8,0,1,1,,,F,1,1,1960,1,1,unknown,0,0,фермер,0,0
+D105,gold_edrsr_policy,court,F,1,2,6,6,3,3,1,16,15,8,1,1,3,1,0,F,1,1,unknown,0,0,unknown,0,0,агроном,0,0
+D105,gold_miss_one_oblique,court,F,1,1,6,5,3,2,0,16,13,8,8,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D105,gold_drop_p05,court,F,0,1054,6,6,3,3,1,16,16,8,8,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D105,gold_drop_p10,court,F,1,3,6,6,3,3,1,16,16,8,7,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D105,gold_drop_p20,court,F,1,1,6,6,3,3,1,16,16,8,5,1,1,,,F,1,1,1960,1,1,unknown,0,0,unknown,0,0
+D105,gold_drop_p40,court,F,1,1,6,3,3,0,0,16,10,8,3,1,1,,,F,1,1,1960,1,1,unknown,0,0,агроном,0,0
+D105,gold_keep_patronymic,court,F,1,54,6,4,3,2,0,16,14,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D106,gold_full,news,F,0,1054,6,6,3,3,1,12,12,7,7,1,5,1,4,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D106,gold_di_only,news,F,1,1,6,6,3,3,1,12,12,7,0,1,1,,,F,1,1,1970,1,1,Одеська,1,1,фермер,1,1
+D106,gold_edrsr_policy,news,F,1,1,6,6,3,3,1,12,12,7,0,1,1,1,1,F,1,1,1970,1,1,Одеська,1,1,фермер,1,1
+D106,gold_miss_one_oblique,news,F,1,29,6,5,3,2,0,12,11,7,7,1,5,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D106,gold_drop_p05,news,F,0,1054,6,6,3,3,1,12,12,7,7,1,3,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D106,gold_drop_p10,news,F,1,7,6,5,3,2,0,12,11,7,6,1,1,,,F,1,1,unknown,0,0,Одеська,1,1,фермер,1,0
+D106,gold_drop_p20,news,F,1,1,6,5,3,2,0,12,11,7,5,1,1,,,F,1,1,unknown,0,0,Одеська,1,1,фермер,1,0
+D106,gold_drop_p40,news,F,1,1,6,3,3,1,0,12,6,7,4,1,1,,,F,1,1,1970,1,1,Одеська,1,1,фермер,1,0
+D106,gold_keep_patronymic,news,F,1,45,6,4,3,2,0,12,10,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D107,gold_full,forum,M,0,946,7,7,4,4,1,12,12,6,6,1,1,1,1,M,1,1,1980,0,0,unknown,0,0,вчитель початкових класів,1,0
+D107,gold_di_only,forum,M,1,1,7,7,4,4,1,12,12,6,0,1,1,,,M,1,1,1990,1,1,Вінницька,1,1,вчитель початкових класів,1,1
+D107,gold_edrsr_policy,forum,M,1,1,7,7,4,4,1,12,12,6,0,1,1,1,1,M,1,1,1990,1,1,Вінницька,1,1,вчитель початкових класів,1,1
+D107,gold_miss_one_oblique,forum,M,1,24,7,6,4,3,0,12,11,6,6,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,0,0
+D107,gold_drop_p05,forum,M,0,946,7,7,4,4,1,12,12,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D107,gold_drop_p10,forum,M,1,6,7,7,4,4,1,12,12,6,4,1,1,,,M,1,1,1990,1,1,Вінницька,1,1,вчитель початкових класів,1,0
+D107,gold_drop_p20,forum,M,1,6,7,7,4,4,1,12,12,6,4,1,1,,,M,1,1,1990,1,1,Вінницька,1,1,вчитель початкових класів,1,0
+D107,gold_drop_p40,forum,M,1,1,7,4,4,1,0,12,8,6,3,1,1,,,M,1,1,1990,1,1,Вінницька,1,1,вчитель початкових класів,1,0
+D107,gold_keep_patronymic,forum,M,1,40,7,6,4,3,0,12,11,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D108,gold_full,court,F,0,1054,10,10,4,4,1,25,25,6,6,2,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D108,gold_di_only,court,F,1,1,10,10,4,4,1,25,25,6,0,1,1,,,F,1,1,unknown,0,0,Вінницька,0,0,листоноша,1,1
+D108,gold_edrsr_policy,court,F,1,1,10,10,4,4,1,25,24,6,0,1,1,1,1,F,1,1,unknown,0,0,Львівська,0,0,листоноша,1,1
+D108,gold_miss_one_oblique,court,F,1,1,10,9,4,3,0,25,22,6,6,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D108,gold_drop_p05,court,F,0,1054,10,10,4,4,1,25,25,6,6,2,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D108,gold_drop_p10,court,F,1,3,10,10,4,4,1,25,25,6,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D108,gold_drop_p20,court,F,1,1,10,8,4,2,0,25,20,6,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D108,gold_drop_p40,court,F,1,1,10,6,4,0,0,25,16,6,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D108,gold_keep_patronymic,court,F,1,41,10,7,4,3,0,25,22,6,6,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D109,gold_full,forum,M,0,946,6,6,3,3,1,11,11,5,5,1,0,1,2,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D109,gold_di_only,forum,M,1,1,6,6,3,3,1,11,11,5,0,1,1,,,M,1,1,unknown,0,0,Вінницька,0,1,програміст,0,0
+D109,gold_edrsr_policy,forum,M,1,1,6,6,3,3,1,11,11,5,0,1,1,1,1,M,1,1,unknown,0,0,Вінницька,0,1,програміст,0,0
+D109,gold_miss_one_oblique,forum,M,1,1,6,5,3,2,0,11,9,5,5,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D109,gold_drop_p05,forum,M,0,946,6,6,3,3,1,11,11,5,5,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D109,gold_drop_p10,forum,M,0,946,6,6,3,3,1,11,11,5,5,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D109,gold_drop_p20,forum,M,1,1,6,5,3,2,0,11,9,5,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D109,gold_drop_p40,forum,M,1,1,6,2,3,0,0,11,2,5,3,1,1,,,M,1,1,unknown,0,0,Вінницька,0,1,програміст,0,0
+D109,gold_keep_patronymic,forum,M,1,26,6,4,3,2,0,11,9,5,5,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D110,gold_full,court,F,0,1054,9,9,4,4,1,22,22,7,7,1,0,1,4,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D110,gold_di_only,court,F,1,1,9,9,4,4,1,22,22,7,0,1,1,,,F,1,1,1990,1,1,Львівська,1,1,unknown,0,0
+D110,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,22,21,7,1,1,1,1,1,F,1,1,unknown,0,0,Львівська,1,1,unknown,0,0
+D110,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,22,19,7,7,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D110,gold_drop_p05,court,F,1,1,9,8,4,3,0,22,19,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D110,gold_drop_p10,court,F,1,1,9,8,4,3,0,22,19,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D110,gold_drop_p20,court,F,1,1,9,8,4,3,0,22,17,7,7,1,1,,,F,1,1,unknown,0,0,Вінницька,0,1,unknown,0,0
+D110,gold_drop_p40,court,F,1,1,9,6,4,1,0,22,13,7,3,1,1,,,F,1,1,unknown,0,0,Львівська,1,1,unknown,0,0
+D110,gold_keep_patronymic,court,F,1,41,9,7,4,3,0,22,20,7,7,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D111,gold_full,news,M,0,946,7,7,4,4,1,11,11,8,8,1,3,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D111,gold_di_only,news,M,1,1,7,7,4,4,1,11,11,8,0,1,1,,,M,1,1,unknown,0,0,Харківська,1,1,вчитель хімії,1,1
+D111,gold_edrsr_policy,news,M,1,1,7,7,4,4,1,11,11,8,0,1,1,1,1,M,1,1,unknown,0,0,Харківська,1,1,вчитель хімії,1,1
+D111,gold_miss_one_oblique,news,M,1,37,7,6,4,3,0,11,10,8,8,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D111,gold_drop_p05,news,M,0,946,7,7,4,4,1,11,11,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D111,gold_drop_p10,news,M,0,946,7,7,4,4,1,11,11,8,8,2,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D111,gold_drop_p20,news,M,0,946,7,7,4,4,1,11,11,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D111,gold_drop_p40,news,M,1,1,7,3,4,1,0,11,5,8,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D111,gold_keep_patronymic,news,M,1,40,7,5,4,3,0,11,9,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D112,gold_full,forum,M,0,946,6,6,3,3,1,12,12,6,6,3,1,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D112,gold_di_only,forum,M,1,1,6,6,3,3,1,12,12,6,0,1,1,,,M,1,1,1970,1,1,Харківська,1,1,тракторист,1,1
+D112,gold_edrsr_policy,forum,M,1,1,6,6,3,3,1,12,12,6,0,1,1,1,1,M,1,1,1970,1,1,Харківська,1,1,тракторист,1,1
+D112,gold_miss_one_oblique,forum,M,1,31,6,5,3,2,0,12,11,6,6,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D112,gold_drop_p05,forum,M,1,9,6,5,3,2,1,12,10,6,5,1,2,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D112,gold_drop_p10,forum,M,1,9,6,4,3,1,1,12,8,6,5,1,2,,,M,1,1,1970,1,0,unknown,0,0,електрик,0,0
+D112,gold_drop_p20,forum,M,1,1,6,4,3,1,1,12,8,6,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,тракторист,1,1
+D112,gold_drop_p40,forum,M,1,1,6,2,3,0,0,12,3,6,3,1,1,,,M,1,1,1970,1,1,unknown,0,0,тракторист,1,1
+D112,gold_keep_patronymic,forum,M,1,23,6,5,3,2,0,12,11,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D113,gold_full,news,M,0,946,6,6,3,3,1,10,10,3,3,2,0,1,2,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D113,gold_di_only,news,M,1,1,6,6,3,3,1,10,10,3,0,1,1,,,M,1,1,unknown,0,0,Чернігівська,1,1,unknown,0,0
+D113,gold_edrsr_policy,news,M,1,1,6,6,3,3,1,10,10,3,0,1,1,1,1,M,1,1,unknown,0,0,Чернігівська,1,1,вчитель початкових класів,0,0
+D113,gold_miss_one_oblique,news,M,1,29,6,5,3,2,0,10,9,3,3,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D113,gold_drop_p05,news,M,0,946,6,6,3,3,1,10,10,3,3,1,0,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D113,gold_drop_p10,news,M,1,1,6,6,3,3,1,10,10,3,1,1,1,,,M,1,1,unknown,0,0,Чернігівська,1,1,unknown,0,0
+D113,gold_drop_p20,news,M,1,1,6,6,3,3,1,10,10,3,1,1,1,,,M,1,1,unknown,0,0,Чернігівська,1,1,вчитель початкових класів,0,0
+D113,gold_drop_p40,news,M,1,1,6,5,3,2,0,10,9,3,1,1,1,,,M,1,1,unknown,0,0,Чернігівська,1,1,вчитель початкових класів,0,0
+D113,gold_keep_patronymic,news,M,1,28,6,5,3,2,0,10,9,3,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D114,gold_full,forum,M,0,946,6,6,3,3,1,13,13,7,7,1,1,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D114,gold_di_only,forum,M,1,1,6,6,3,3,1,13,13,7,0,1,1,,,M,1,1,1990,0,1,Вінницька,1,1,водій вантажівки,0,0
+D114,gold_edrsr_policy,forum,M,1,1,6,6,3,3,1,13,13,7,0,1,1,1,1,M,1,1,1990,0,1,Вінницька,1,1,водій вантажівки,0,0
+D114,gold_miss_one_oblique,forum,M,1,27,6,5,3,2,0,13,12,7,7,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D114,gold_drop_p05,forum,M,0,946,6,6,3,3,1,13,13,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D114,gold_drop_p10,forum,M,1,1,6,5,3,2,0,13,9,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D114,gold_drop_p20,forum,M,1,1,6,4,3,2,0,13,7,7,5,1,1,,,M,1,1,unknown,0,0,Вінницька,1,1,unknown,0,0
+D114,gold_drop_p40,forum,M,1,1,6,2,3,1,0,13,4,7,2,1,1,,,M,1,1,1990,0,1,Вінницька,1,1,водій вантажівки,0,0
+D114,gold_keep_patronymic,forum,M,1,28,6,5,3,2,0,13,12,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D115,gold_full,news,F,0,1054,8,8,4,4,1,14,14,6,6,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,0,0
+D115,gold_di_only,news,F,1,2,8,8,4,4,1,14,14,6,0,1,2,,,F,1,1,1970,0,0,Вінницька,0,0,вчитель початкових класів,1,0
+D115,gold_edrsr_policy,news,F,1,2,8,8,4,4,1,14,14,6,0,1,2,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D115,gold_miss_one_oblique,news,F,1,42,8,7,4,3,0,14,13,6,6,1,3,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,0,0
+D115,gold_drop_p05,news,F,1,1,8,6,4,2,0,14,10,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D115,gold_drop_p10,news,F,1,1,8,6,4,2,0,14,10,6,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D115,gold_drop_p20,news,F,1,1,8,4,4,0,0,14,7,6,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D115,gold_drop_p40,news,F,1,1,8,3,4,0,0,14,5,6,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D115,gold_keep_patronymic,news,F,1,32,8,5,4,3,0,14,11,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,0,0
+D116,gold_full,forum,M,0,946,5,5,3,3,1,10,10,8,8,1,0,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D116,gold_di_only,forum,M,1,1,5,5,3,3,1,10,10,8,0,1,1,,,M,1,1,2000,0,1,Львівська,1,1,бухгалтер,1,1
+D116,gold_edrsr_policy,forum,M,1,1,5,5,3,3,1,10,10,8,0,1,1,1,1,M,1,1,2000,0,1,Львівська,1,1,бухгалтер,1,1
+D116,gold_miss_one_oblique,forum,M,1,38,5,4,3,2,0,10,9,8,8,1,1,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D116,gold_drop_p05,forum,M,1,946,5,4,3,2,1,10,8,8,8,3,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D116,gold_drop_p10,forum,M,1,946,5,4,3,2,1,10,8,8,8,3,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D116,gold_drop_p20,forum,M,1,946,5,4,3,2,1,10,8,8,8,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D116,gold_drop_p40,forum,M,1,1,5,3,3,1,0,10,5,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D116,gold_keep_patronymic,forum,M,1,35,5,4,3,2,0,10,9,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D117,gold_full,news,M,0,946,6,6,3,3,1,13,13,6,6,2,0,1,2,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D117,gold_di_only,news,M,1,1,6,6,3,3,1,13,13,6,0,1,1,,,M,1,1,unknown,0,0,Вінницька,0,1,фермер,1,1
+D117,gold_edrsr_policy,news,M,1,1,6,6,3,3,1,13,13,6,0,1,1,1,1,M,1,1,unknown,0,0,Вінницька,0,1,фермер,1,1
+D117,gold_miss_one_oblique,news,M,1,3,6,5,3,2,0,13,12,6,6,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D117,gold_drop_p05,news,M,1,1,6,5,3,2,0,13,10,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D117,gold_drop_p10,news,M,1,1,6,5,3,2,0,13,10,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D117,gold_drop_p20,news,M,1,1,6,5,3,2,0,13,10,6,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D117,gold_drop_p40,news,M,1,1,6,4,3,1,0,13,8,6,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D117,gold_keep_patronymic,news,M,1,34,6,4,3,2,0,13,11,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D118,gold_full,court,F,0,1054,9,9,4,4,1,24,24,7,7,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D118,gold_di_only,court,F,1,1,9,9,4,4,1,24,24,7,0,1,0,,,F,1,1,1980,1,1,Харківська,1,1,слюсар,1,1
+D118,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,24,23,7,1,1,1,1,1,F,1,1,unknown,0,0,Харківська,1,1,слюсар,1,1
+D118,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,24,21,7,7,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D118,gold_drop_p05,court,F,1,34,9,8,4,3,0,24,23,7,7,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D118,gold_drop_p10,court,F,1,1,9,7,4,3,0,24,21,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D118,gold_drop_p20,court,F,1,1,9,6,4,2,0,24,18,7,7,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D118,gold_drop_p40,court,F,1,1,9,3,4,1,0,24,9,7,5,1,1,,,F,1,1,unknown,0,0,Харківська,1,1,unknown,0,0
+D118,gold_keep_patronymic,court,F,1,26,9,7,4,3,0,24,22,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D119,gold_full,court,F,0,1054,9,9,4,4,1,22,22,7,7,1,3,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D119,gold_di_only,court,F,1,1,9,9,4,4,1,22,22,7,0,1,1,,,F,1,1,1980,1,1,Вінницька,1,1,unknown,0,0
+D119,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,22,21,7,1,1,1,1,1,F,1,1,unknown,0,0,Полтавська,0,1,unknown,0,0
+D119,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,22,19,7,7,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D119,gold_drop_p05,court,F,0,1054,9,9,4,4,1,22,22,7,7,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D119,gold_drop_p10,court,F,0,1054,9,9,4,4,1,22,22,7,7,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D119,gold_drop_p20,court,F,1,1,9,7,4,2,0,22,16,7,6,1,1,,,F,1,1,unknown,0,0,unknown,0,1,unknown,0,0
+D119,gold_drop_p40,court,F,1,1,9,4,4,2,0,22,9,7,5,1,1,,,F,1,1,unknown,0,0,unknown,0,1,unknown,0,0
+D119,gold_keep_patronymic,court,F,1,47,9,7,4,3,0,22,20,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D120,gold_full,court,F,0,1054,6,6,3,3,1,15,15,8,8,1,2,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D120,gold_di_only,court,F,1,1,6,6,3,3,1,15,15,8,0,1,1,,,F,1,1,unknown,0,0,Полтавська,1,0,агроном,1,1
+D120,gold_edrsr_policy,court,F,1,1,6,6,3,3,1,15,14,8,0,1,1,1,1,F,1,1,unknown,0,0,Полтавська,1,0,агроном,1,1
+D120,gold_miss_one_oblique,court,F,1,1,6,5,3,2,0,15,12,8,8,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D120,gold_drop_p05,court,F,1,1054,6,5,3,2,1,15,13,8,8,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D120,gold_drop_p10,court,F,1,1054,6,5,3,2,1,15,13,8,8,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D120,gold_drop_p20,court,F,1,1,6,4,3,1,0,15,9,8,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D120,gold_drop_p40,court,F,1,1,6,3,3,1,0,15,5,8,6,1,1,,,F,1,1,unknown,0,0,Полтавська,1,0,unknown,0,0
+D120,gold_keep_patronymic,court,F,1,47,6,4,3,2,0,15,13,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D121,gold_full,forum,F,0,1054,6,6,4,4,1,11,11,5,5,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D121,gold_di_only,forum,F,1,8,6,6,4,4,1,11,11,5,0,1,3,,,F,1,1,unknown,0,0,unknown,0,0,програміст,0,0
+D121,gold_edrsr_policy,forum,F,1,8,6,6,4,4,1,11,11,5,0,1,3,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D121,gold_miss_one_oblique,forum,F,1,30,6,5,4,3,0,11,10,5,5,1,2,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D121,gold_drop_p05,forum,F,0,1054,6,6,4,4,1,11,11,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D121,gold_drop_p10,forum,F,0,1054,6,6,4,4,1,11,11,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D121,gold_drop_p20,forum,F,1,490,6,6,4,4,1,11,11,5,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D121,gold_drop_p40,forum,F,1,8,6,4,4,2,1,11,7,5,3,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D121,gold_keep_patronymic,forum,F,1,33,6,5,4,3,0,11,10,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D122,gold_full,news,F,0,1054,7,7,3,3,1,13,13,5,5,2,0,2,3,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D122,gold_di_only,news,F,1,1,7,7,3,3,1,13,13,5,0,1,1,,,F,1,1,1990,1,1,Чернігівська,1,1,фермер,1,1
+D122,gold_edrsr_policy,news,F,1,1,7,7,3,3,1,13,13,5,0,1,1,1,1,F,1,1,1990,1,1,Чернігівська,1,1,фермер,1,1
+D122,gold_miss_one_oblique,news,F,1,41,7,6,3,2,0,13,12,5,5,1,2,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D122,gold_drop_p05,news,F,0,1054,7,7,3,3,1,13,13,5,5,2,0,,,F,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D122,gold_drop_p10,news,F,0,1054,7,7,3,3,1,13,13,5,5,2,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D122,gold_drop_p20,news,F,0,1054,7,7,3,3,1,13,13,5,5,2,4,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D122,gold_drop_p40,news,F,1,3,7,6,3,2,1,13,11,5,3,1,1,,,F,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D122,gold_keep_patronymic,news,F,1,41,7,5,3,2,0,13,11,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D123,gold_full,news,M,0,946,8,8,3,3,1,13,13,8,8,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D123,gold_di_only,news,M,1,1,8,8,3,3,1,13,13,8,0,1,1,,,M,1,1,unknown,0,0,Львівська,1,1,вчитель початкових класів,1,1
+D123,gold_edrsr_policy,news,M,1,1,8,8,3,3,1,13,13,8,0,1,1,1,1,M,1,1,unknown,0,0,Львівська,1,1,вчитель початкових класів,1,1
+D123,gold_miss_one_oblique,news,M,1,32,8,7,3,2,0,13,12,8,8,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D123,gold_drop_p05,news,M,1,7,8,8,3,3,1,13,13,8,7,1,1,,,M,1,1,unknown,0,0,Вінницька,0,1,вчитель початкових класів,1,0
+D123,gold_drop_p10,news,M,1,1,8,7,3,2,1,13,11,8,6,1,1,,,M,1,1,unknown,0,0,Вінницька,0,1,вчитель початкових класів,1,0
+D123,gold_drop_p20,news,M,1,1,8,5,3,1,0,13,8,8,6,1,1,,,M,1,1,unknown,0,0,Вінницька,0,1,вчитель початкових класів,1,0
+D123,gold_drop_p40,news,M,1,1,8,4,3,1,0,13,7,8,5,1,1,,,M,1,1,unknown,0,0,Вінницька,0,1,вчитель початкових класів,1,1
+D123,gold_keep_patronymic,news,M,1,31,8,6,3,2,0,13,11,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D124,gold_full,court,M,0,946,10,10,4,4,1,24,24,8,8,1,4,1,2,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D124,gold_di_only,court,M,1,1,10,10,4,4,1,24,24,8,0,1,1,,,unknown,0,1,1990,1,1,Вінницька,1,1,unknown,0,0
+D124,gold_edrsr_policy,court,M,1,1,10,10,4,4,1,24,23,8,1,1,1,1,1,unknown,0,1,unknown,0,0,Вінницька,1,1,unknown,0,0
+D124,gold_miss_one_oblique,court,M,1,1,10,9,4,3,0,24,21,8,8,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D124,gold_drop_p05,court,M,0,946,10,10,4,4,1,24,24,8,8,1,3,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D124,gold_drop_p10,court,M,1,1,10,10,4,4,1,24,24,8,6,1,1,,,unknown,0,1,1990,1,1,unknown,0,0,unknown,0,0
+D124,gold_drop_p20,court,M,1,1,10,8,4,3,1,24,20,8,5,1,1,,,unknown,0,1,1990,1,1,Вінницька,1,1,unknown,0,0
+D124,gold_drop_p40,court,M,1,1,10,7,4,3,1,24,18,8,5,1,0,,,unknown,0,1,1990,1,1,Вінницька,1,1,unknown,0,0
+D124,gold_keep_patronymic,court,M,1,40,10,8,4,3,0,24,22,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D125,gold_full,forum,M,0,946,6,6,4,4,1,12,12,9,9,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D125,gold_di_only,forum,M,1,1,6,6,4,4,1,12,12,9,0,1,1,,,M,1,1,1970,1,1,Вінницька,0,1,листоноша,1,1
+D125,gold_edrsr_policy,forum,M,1,1,6,6,4,4,1,12,12,9,0,1,1,1,1,M,1,1,1970,1,1,Вінницька,0,1,листоноша,1,1
+D125,gold_miss_one_oblique,forum,M,1,37,6,5,4,3,0,12,11,9,9,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,водій вантажівки,0,0
+D125,gold_drop_p05,forum,M,0,946,6,6,4,4,1,12,12,9,9,1,1,,,M,1,1,unknown,0,0,unknown,0,0,водій вантажівки,0,0
+D125,gold_drop_p10,forum,M,0,946,6,6,4,4,1,12,12,9,9,1,4,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D125,gold_drop_p20,forum,M,1,23,6,5,4,3,0,12,11,9,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,водій вантажівки,0,0
+D125,gold_drop_p40,forum,M,1,1,6,4,4,3,0,12,9,9,6,1,1,,,M,1,1,1970,1,1,unknown,0,0,водій вантажівки,0,0
+D125,gold_keep_patronymic,forum,M,1,36,6,5,4,3,0,12,11,9,9,1,4,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D126,gold_full,news,M,0,946,5,5,3,3,1,11,11,3,3,1,3,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D126,gold_di_only,news,M,1,1,5,5,3,3,1,11,11,3,0,1,1,,,M,1,1,1970,0,1,unknown,0,0,фермер,1,0
+D126,gold_edrsr_policy,news,M,1,1,5,5,3,3,1,11,11,3,0,1,1,1,3,M,1,1,1970,0,1,unknown,0,0,фермер,1,0
+D126,gold_miss_one_oblique,news,M,1,7,5,4,3,2,0,11,10,3,3,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D126,gold_drop_p05,news,M,0,946,5,5,3,3,1,11,11,3,3,1,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D126,gold_drop_p10,news,M,0,946,5,5,3,3,1,11,11,3,3,1,4,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D126,gold_drop_p20,news,M,1,946,5,4,3,2,1,11,9,3,3,1,5,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D126,gold_drop_p40,news,M,1,71,5,4,3,2,1,11,9,3,2,1,1,,,M,1,1,1970,0,1,unknown,0,0,фермер,1,0
+D126,gold_keep_patronymic,news,M,1,28,5,3,3,2,0,11,9,3,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D127,gold_full,news,F,0,1054,6,6,3,3,1,11,11,5,5,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D127,gold_di_only,news,F,1,1,6,6,3,3,1,11,11,5,0,1,1,,,F,1,1,1990,1,1,Львівська,1,1,фермер,1,0
+D127,gold_edrsr_policy,news,F,1,1,6,6,3,3,1,11,11,5,0,1,1,1,1,F,1,1,1990,1,1,Львівська,1,1,фермер,1,0
+D127,gold_miss_one_oblique,news,F,1,41,6,5,3,2,0,11,10,5,5,1,0,1,1,F,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D127,gold_drop_p05,news,F,1,1054,6,5,3,2,1,11,9,5,5,1,0,,,F,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D127,gold_drop_p10,news,F,1,1054,6,5,3,2,1,11,9,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D127,gold_drop_p20,news,F,1,4,6,3,3,0,0,11,6,5,4,1,1,,,F,1,1,1990,1,0,Львівська,1,1,фермер,1,0
+D127,gold_drop_p40,news,F,1,1,6,1,3,0,0,11,1,5,4,1,1,,,F,1,1,unknown,0,0,Львівська,1,1,фермер,1,0
+D127,gold_keep_patronymic,news,F,1,38,6,4,3,2,0,11,9,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D128,gold_full,news,M,0,946,6,6,4,4,1,10,10,9,9,1,0,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D128,gold_di_only,news,M,1,1,6,6,4,4,1,10,10,9,0,1,1,,,M,1,1,1990,1,1,Львівська,1,1,фермер,1,1
+D128,gold_edrsr_policy,news,M,1,1,6,6,4,4,1,10,10,9,0,1,1,1,1,M,1,1,1990,1,1,Львівська,1,1,фермер,1,1
+D128,gold_miss_one_oblique,news,M,1,20,6,5,4,3,0,10,9,9,9,1,5,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D128,gold_drop_p05,news,M,0,946,6,6,4,4,1,10,10,9,9,1,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D128,gold_drop_p10,news,M,1,416,6,5,4,3,1,10,8,9,8,1,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D128,gold_drop_p20,news,M,1,26,6,5,4,3,1,10,8,9,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D128,gold_drop_p40,news,M,1,2,6,5,4,3,1,10,8,9,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D128,gold_keep_patronymic,news,M,1,35,6,4,4,3,0,10,8,9,9,1,3,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D129,gold_full,forum,F,0,1054,5,5,3,3,1,11,11,6,6,1,2,1,2,F,1,1,unknown,0,0,unknown,0,0,водій вантажівки,1,0
+D129,gold_di_only,forum,F,1,1,5,5,3,3,1,11,11,6,0,1,1,,,F,1,1,1970,1,1,unknown,0,0,водій вантажівки,1,1
+D129,gold_edrsr_policy,forum,F,1,1,5,5,3,3,1,11,11,6,0,1,1,1,1,F,1,1,1970,1,1,unknown,0,0,водій вантажівки,1,1
+D129,gold_miss_one_oblique,forum,F,1,29,5,4,3,2,0,11,10,6,6,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,водій вантажівки,1,0
+D129,gold_drop_p05,forum,F,1,414,5,5,3,3,1,11,11,6,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,водій вантажівки,1,0
+D129,gold_drop_p10,forum,F,1,414,5,4,3,2,1,11,9,6,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D129,gold_drop_p20,forum,F,1,1,5,2,3,1,0,11,6,6,4,1,1,,,F,1,1,1970,1,1,unknown,0,0,unknown,0,0
+D129,gold_drop_p40,forum,F,1,1,5,1,3,0,0,11,3,6,4,1,1,,,F,1,1,1970,1,1,unknown,0,0,unknown,0,0
+D129,gold_keep_patronymic,forum,F,1,28,5,4,3,2,0,11,10,6,6,1,3,,,F,1,1,unknown,0,0,unknown,0,0,водій вантажівки,1,0
+D130,gold_full,forum,M,0,946,6,6,3,3,1,13,13,7,7,2,0,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D130,gold_di_only,forum,M,1,1,6,6,3,3,1,13,13,7,0,1,1,,,M,1,1,1990,0,1,unknown,0,0,психолог,1,1
+D130,gold_edrsr_policy,forum,M,1,1,6,6,3,3,1,13,13,7,0,1,1,1,1,M,1,1,1980,0,1,unknown,0,0,психолог,1,1
+D130,gold_miss_one_oblique,forum,M,1,38,6,5,3,2,0,13,12,7,7,4,0,1,2,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D130,gold_drop_p05,forum,M,1,2,6,5,3,2,0,13,11,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D130,gold_drop_p10,forum,M,1,2,6,5,3,2,0,13,11,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D130,gold_drop_p20,forum,M,1,1,6,5,3,2,0,13,11,7,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D130,gold_drop_p40,forum,M,1,1,6,4,3,2,0,13,8,7,4,1,1,,,M,1,1,unknown,0,1,unknown,0,0,unknown,0,0
+D130,gold_keep_patronymic,forum,M,1,40,6,5,3,2,0,13,12,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D131,gold_full,news,M,0,946,7,7,4,4,1,11,11,6,6,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D131,gold_di_only,news,M,1,1,7,7,4,4,1,11,11,6,0,1,1,,,M,1,1,unknown,0,0,Одеська,1,1,фермер,1,1
+D131,gold_edrsr_policy,news,M,1,1,7,7,4,4,1,11,11,6,0,1,1,1,1,M,1,1,unknown,0,0,Одеська,1,1,фермер,1,1
+D131,gold_miss_one_oblique,news,M,1,2,7,6,4,3,0,11,10,6,6,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D131,gold_drop_p05,news,M,1,1,7,7,4,4,1,11,11,6,4,1,1,,,M,1,1,unknown,0,0,Одеська,1,1,фермер,1,0
+D131,gold_drop_p10,news,M,1,1,7,7,4,4,1,11,11,6,3,1,1,,,M,1,1,unknown,0,0,Одеська,1,1,фермер,1,0
+D131,gold_drop_p20,news,M,1,1,7,7,4,4,1,11,11,6,1,1,1,,,M,1,1,unknown,0,0,Одеська,1,1,фермер,1,1
+D131,gold_drop_p40,news,M,1,1,7,5,4,2,0,11,7,6,0,1,1,,,M,1,1,unknown,0,0,Одеська,1,1,фермер,1,1
+D131,gold_keep_patronymic,news,M,1,36,7,5,4,3,0,11,9,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D132,gold_full,news,M,0,946,9,9,4,4,1,12,12,6,6,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D132,gold_di_only,news,M,1,2,9,9,4,4,1,12,12,6,0,1,1,,,M,1,1,unknown,0,0,Вінницька,1,0,вчитель початкових класів,1,0
+D132,gold_edrsr_policy,news,M,1,2,9,9,4,4,1,12,12,6,0,1,2,1,1,M,1,1,unknown,0,0,Вінницька,1,0,вчитель початкових класів,1,0
+D132,gold_miss_one_oblique,news,M,1,2,9,8,4,3,0,12,11,6,6,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D132,gold_drop_p05,news,M,1,2,9,8,4,3,0,12,11,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D132,gold_drop_p10,news,M,1,2,9,8,4,3,0,12,11,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D132,gold_drop_p20,news,M,1,2,9,8,4,3,0,12,11,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,0,0
+D132,gold_drop_p40,news,M,1,1,9,6,4,3,0,12,8,6,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D132,gold_keep_patronymic,news,M,1,31,9,8,4,3,0,12,11,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D133,gold_full,news,M,0,946,8,8,3,3,1,12,12,6,6,1,4,1,4,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D133,gold_di_only,news,M,1,1,8,8,3,3,1,12,12,6,0,1,1,,,M,1,1,1970,1,1,unknown,0,0,вчитель хімії,1,1
+D133,gold_edrsr_policy,news,M,1,1,8,8,3,3,1,12,12,6,0,1,1,1,1,M,1,1,1970,1,1,unknown,0,0,вчитель хімії,1,1
+D133,gold_miss_one_oblique,news,M,1,4,8,7,3,2,0,12,11,6,6,2,0,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D133,gold_drop_p05,news,M,1,946,8,8,3,3,1,12,12,6,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D133,gold_drop_p10,news,M,1,4,8,8,3,3,1,12,12,6,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D133,gold_drop_p20,news,M,1,1,8,7,3,2,0,12,11,6,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D133,gold_drop_p40,news,M,1,1,8,3,3,0,0,12,4,6,3,1,1,,,M,1,1,1970,1,0,unknown,0,0,вчитель хімії,1,1
+D133,gold_keep_patronymic,news,M,1,27,8,7,3,2,0,12,11,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D134,gold_full,forum,M,0,946,8,8,4,4,1,14,14,8,8,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D134,gold_di_only,forum,M,1,1,8,8,4,4,1,14,14,8,0,1,1,,,M,1,1,1990,0,1,Вінницька,0,1,кухар,1,1
+D134,gold_edrsr_policy,forum,M,1,1,8,8,4,4,1,14,14,8,0,1,1,1,1,M,1,1,1990,0,1,Чернігівська,0,1,кухар,1,1
+D134,gold_miss_one_oblique,forum,M,1,31,8,7,4,3,0,14,13,8,8,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D134,gold_drop_p05,forum,M,0,946,8,8,4,4,1,14,14,8,8,1,3,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D134,gold_drop_p10,forum,M,1,416,8,8,4,4,1,14,14,8,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D134,gold_drop_p20,forum,M,1,1,8,7,4,3,0,14,11,8,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D134,gold_drop_p40,forum,M,1,1,8,5,4,1,0,14,7,8,4,1,1,,,M,1,1,unknown,0,1,unknown,0,1,unknown,0,0
+D134,gold_keep_patronymic,forum,M,1,36,8,7,4,3,0,14,13,8,8,1,2,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D135,gold_full,forum,F,0,1054,6,6,3,3,1,12,12,5,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D135,gold_di_only,forum,F,1,1,6,6,3,3,1,12,12,5,0,1,1,,,F,1,1,unknown,0,0,Харківська,0,1,лікар,1,1
+D135,gold_edrsr_policy,forum,F,1,1,6,6,3,3,1,12,12,5,0,1,1,1,1,F,1,1,unknown,0,0,unknown,0,1,лікар,1,1
+D135,gold_miss_one_oblique,forum,F,1,34,6,5,3,2,0,12,11,5,5,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D135,gold_drop_p05,forum,F,1,1,6,5,3,2,0,12,9,5,4,1,1,,,F,1,1,unknown,0,0,unknown,0,1,unknown,0,0
+D135,gold_drop_p10,forum,F,1,1,6,4,3,2,0,12,8,5,4,1,1,,,F,1,1,unknown,0,0,unknown,0,1,unknown,0,0
+D135,gold_drop_p20,forum,F,1,1,6,4,3,2,0,12,8,5,3,1,1,,,F,1,1,unknown,0,0,Полтавська,0,1,лікар,1,1
+D135,gold_drop_p40,forum,F,1,1,6,3,3,2,0,12,5,5,3,1,1,,,F,1,1,unknown,0,0,Харківська,0,1,лікар,1,1
+D135,gold_keep_patronymic,forum,F,1,30,6,5,3,2,0,12,11,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D136,gold_full,forum,M,0,946,6,6,3,3,1,13,13,8,8,2,0,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D136,gold_di_only,forum,M,1,1,6,6,3,3,1,13,13,8,0,1,0,,,M,1,1,1980,0,1,Львівська,1,1,кухар,1,1
+D136,gold_edrsr_policy,forum,M,1,1,6,6,3,3,1,13,13,8,0,1,1,1,5,M,1,1,1980,0,1,Львівська,1,1,кухар,1,1
+D136,gold_miss_one_oblique,forum,M,1,34,6,5,3,2,0,13,12,8,8,1,1,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D136,gold_drop_p05,forum,M,0,946,6,6,3,3,1,13,13,8,8,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D136,gold_drop_p10,forum,M,0,946,6,6,3,3,1,13,13,8,8,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D136,gold_drop_p20,forum,M,1,72,6,6,3,3,1,13,13,8,6,3,0,,,M,1,1,1980,0,1,unknown,0,0,unknown,0,0
+D136,gold_drop_p40,forum,M,1,1,6,5,3,2,0,13,10,8,5,1,1,,,M,1,1,1980,0,1,unknown,0,0,unknown,0,0
+D136,gold_keep_patronymic,forum,M,1,40,6,5,3,2,0,13,12,8,8,4,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D137,gold_full,forum,M,0,946,7,7,4,4,1,14,14,8,8,3,4,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D137,gold_di_only,forum,M,1,1,7,7,4,4,1,14,14,8,0,1,1,,,M,1,1,1990,1,1,Вінницька,1,1,електрик,1,1
+D137,gold_edrsr_policy,forum,M,1,1,7,7,4,4,1,14,14,8,0,1,1,1,1,M,1,1,1990,1,1,Харківська,0,1,електрик,1,1
+D137,gold_miss_one_oblique,forum,M,1,35,7,6,4,3,0,14,13,8,8,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D137,gold_drop_p05,forum,M,1,946,7,7,4,4,1,14,13,8,8,2,4,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D137,gold_drop_p10,forum,M,1,946,7,7,4,4,1,14,13,8,8,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D137,gold_drop_p20,forum,M,1,9,7,7,4,4,1,14,12,8,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D137,gold_drop_p40,forum,M,1,2,7,6,4,3,1,14,11,8,6,1,1,,,M,1,1,1990,1,1,unknown,0,0,unknown,0,0
+D137,gold_keep_patronymic,forum,M,1,36,7,6,4,3,0,14,13,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D138,gold_full,court,F,0,1054,6,6,3,3,1,16,16,9,9,1,2,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D138,gold_di_only,court,F,1,1,6,6,3,3,1,16,16,9,0,1,1,,,F,1,1,1990,1,1,Житомирська,1,0,електрик,1,1
+D138,gold_edrsr_policy,court,F,1,1,6,6,3,3,1,16,15,9,1,1,1,1,1,F,1,1,unknown,0,0,Житомирська,1,0,електрик,1,1
+D138,gold_miss_one_oblique,court,F,1,1,6,5,3,2,0,16,13,9,9,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D138,gold_drop_p05,court,F,0,1054,6,6,3,3,1,16,16,9,9,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D138,gold_drop_p10,court,F,1,1054,6,6,3,3,1,16,15,9,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D138,gold_drop_p20,court,F,1,1054,6,6,3,3,1,16,15,9,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D138,gold_drop_p40,court,F,1,1,6,1,3,0,0,16,4,9,4,1,1,,,F,1,1,1990,1,1,Житомирська,1,0,unknown,0,0
+D138,gold_keep_patronymic,court,F,1,29,6,4,3,2,0,16,14,9,9,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D139,gold_full,court,F,0,1054,9,9,4,4,1,21,21,5,5,2,0,2,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D139,gold_di_only,court,F,1,3,9,9,4,4,1,21,21,5,0,2,1,,,F,1,1,1970,1,1,unknown,0,0,unknown,0,0
+D139,gold_edrsr_policy,court,F,1,6,9,9,4,4,1,21,20,5,1,2,3,2,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D139,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,21,18,5,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D139,gold_drop_p05,court,F,0,1054,9,9,4,4,1,21,21,5,5,2,5,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D139,gold_drop_p10,court,F,1,53,9,8,4,3,0,21,20,5,5,2,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D139,gold_drop_p20,court,F,1,1,9,7,4,3,0,21,17,5,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D139,gold_drop_p40,court,F,1,1,9,6,4,2,0,21,14,5,2,1,1,,,F,1,1,1970,1,1,unknown,0,0,unknown,0,0
+D139,gold_keep_patronymic,court,F,1,45,9,7,4,3,0,21,19,5,5,1,5,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D140,gold_full,court,F,0,1054,6,6,3,3,1,16,16,10,10,1,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D140,gold_di_only,court,F,1,1,6,6,3,3,1,16,16,10,0,1,1,,,F,1,1,1980,1,1,unknown,0,0,інженер,1,1
+D140,gold_edrsr_policy,court,F,1,1,6,6,3,3,1,16,15,10,1,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,інженер,1,1
+D140,gold_miss_one_oblique,court,F,1,1,6,5,3,2,0,16,13,10,10,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D140,gold_drop_p05,court,F,0,1054,6,6,3,3,1,16,16,10,10,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D140,gold_drop_p10,court,F,1,1054,6,6,3,3,1,16,16,10,9,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D140,gold_drop_p20,court,F,1,7,6,6,3,3,1,16,16,10,8,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D140,gold_drop_p40,court,F,1,1,6,3,3,0,0,16,10,10,5,1,4,,,F,1,1,unknown,0,0,unknown,0,0,інженер,1,1
+D140,gold_keep_patronymic,court,F,1,54,6,4,3,2,0,16,14,10,10,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D141,gold_full,court,M,0,946,9,9,4,4,1,24,24,5,5,1,0,1,4,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D141,gold_di_only,court,M,1,1,9,9,4,4,1,24,24,5,0,1,1,,,unknown,0,1,unknown,0,0,Вінницька,0,1,інженер,1,1
+D141,gold_edrsr_policy,court,M,1,1,9,9,4,4,1,24,23,5,0,1,1,1,1,unknown,0,1,unknown,0,0,Вінницька,0,1,інженер,1,1
+D141,gold_miss_one_oblique,court,M,1,1,9,8,4,3,0,24,21,5,5,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D141,gold_drop_p05,court,M,1,946,9,8,4,3,1,24,22,5,5,1,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D141,gold_drop_p10,court,M,1,946,9,8,4,3,1,24,21,5,5,1,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D141,gold_drop_p20,court,M,1,3,9,8,4,3,1,24,19,5,5,1,1,,,M,1,1,unknown,0,0,Вінницька,0,1,unknown,0,0
+D141,gold_drop_p40,court,M,1,1,9,5,4,0,0,24,12,5,4,1,1,,,unknown,0,1,unknown,0,0,Вінницька,0,1,unknown,0,0
+D141,gold_keep_patronymic,court,M,1,34,9,7,4,3,0,24,22,5,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D142,gold_full,news,M,0,946,6,6,3,3,1,10,10,4,4,1,1,1,0,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D142,gold_di_only,news,M,1,2,6,6,3,3,1,10,10,4,0,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D142,gold_edrsr_policy,news,M,1,2,6,6,3,3,1,10,10,4,0,2,2,1,0,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D142,gold_miss_one_oblique,news,M,1,3,6,5,3,2,0,10,9,4,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D142,gold_drop_p05,news,M,1,946,6,5,3,2,1,10,8,4,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D142,gold_drop_p10,news,M,1,946,6,5,3,2,1,10,8,4,4,1,2,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D142,gold_drop_p20,news,M,1,946,6,5,3,2,1,10,8,4,4,1,4,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D142,gold_drop_p40,news,M,1,946,6,4,3,1,1,10,6,4,4,1,4,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D142,gold_keep_patronymic,news,M,1,27,6,5,3,2,0,10,9,4,4,1,2,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D143,gold_full,news,M,0,946,8,8,4,4,1,13,13,7,7,2,0,3,3,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D143,gold_di_only,news,M,1,1,8,8,4,4,1,13,13,7,0,1,1,,,M,1,1,1990,0,1,Харківська,1,1,фермер,1,0
+D143,gold_edrsr_policy,news,M,1,1,8,8,4,4,1,13,13,7,0,1,1,1,1,M,1,1,1990,0,1,Харківська,1,1,фермер,1,0
+D143,gold_miss_one_oblique,news,M,1,1,8,7,4,3,0,13,11,7,7,4,0,2,5,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D143,gold_drop_p05,news,M,1,946,8,7,4,3,1,13,11,7,7,2,0,,,M,1,1,1990,0,0,unknown,0,0,фермер,1,0
+D143,gold_drop_p10,news,M,1,1,8,5,4,1,0,13,7,7,6,4,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D143,gold_drop_p20,news,M,1,1,8,4,4,1,0,13,5,7,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D143,gold_drop_p40,news,M,1,1,8,2,4,0,0,13,3,7,5,1,1,,,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,0
+D143,gold_keep_patronymic,news,M,1,40,8,5,4,3,0,13,10,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D144,gold_full,court,F,0,1054,9,9,4,4,1,21,21,5,5,4,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D144,gold_di_only,court,F,1,1,9,9,4,4,1,21,21,5,0,3,2,,,F,1,1,unknown,0,0,Житомирська,1,1,unknown,0,0
+D144,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,21,20,5,0,1,2,1,0,F,1,1,unknown,0,0,Житомирська,1,1,unknown,0,0
+D144,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,21,18,5,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D144,gold_drop_p05,court,F,1,1,9,8,4,3,0,21,19,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D144,gold_drop_p10,court,F,1,1,9,8,4,3,0,21,19,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D144,gold_drop_p20,court,F,1,1,9,6,4,2,0,21,14,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D144,gold_drop_p40,court,F,1,1,9,3,4,0,0,21,8,5,3,1,1,,,F,1,1,unknown,0,0,Житомирська,1,0,unknown,0,0
+D144,gold_keep_patronymic,court,F,1,30,9,7,4,3,0,21,19,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D145,gold_full,court,M,0,946,6,6,3,3,1,15,15,7,7,1,0,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D145,gold_di_only,court,M,1,3,6,6,3,3,1,15,15,7,0,1,3,,,M,1,1,unknown,0,0,Полтавська,0,0,агроном,0,0
+D145,gold_edrsr_policy,court,M,1,3,6,6,3,3,1,15,14,7,0,1,3,1,0,M,1,1,unknown,0,0,Полтавська,0,0,агроном,0,0
+D145,gold_miss_one_oblique,court,M,1,1,6,5,3,2,0,15,12,7,7,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D145,gold_drop_p05,court,M,1,946,6,6,3,3,1,15,15,7,6,1,0,,,unknown,0,1,unknown,0,0,Полтавська,0,0,unknown,0,0
+D145,gold_drop_p10,court,M,1,1,6,5,3,2,0,15,12,7,6,1,1,,,unknown,0,1,unknown,0,0,Полтавська,0,0,unknown,0,0
+D145,gold_drop_p20,court,M,1,1,6,5,3,2,0,15,12,7,5,1,1,,,unknown,0,1,unknown,0,0,Полтавська,0,0,unknown,0,0
+D145,gold_drop_p40,court,M,1,1,6,4,3,1,0,15,9,7,4,1,3,,,M,1,1,unknown,0,0,Полтавська,0,0,unknown,0,0
+D145,gold_keep_patronymic,court,M,1,35,6,4,3,2,0,15,13,7,7,1,2,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D146,gold_full,forum,F,0,1054,6,6,4,4,1,11,11,6,6,1,0,2,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D146,gold_di_only,forum,F,1,1,6,6,4,4,1,11,11,6,0,1,1,,,F,1,1,2000,1,1,unknown,0,0,медична сестра,1,1
+D146,gold_edrsr_policy,forum,F,1,1,6,6,4,4,1,11,11,6,0,1,1,1,3,F,1,1,2000,1,1,unknown,0,0,медична сестра,1,1
+D146,gold_miss_one_oblique,forum,F,1,36,6,5,4,3,0,11,10,6,6,3,1,0,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D146,gold_drop_p05,forum,F,0,1054,6,6,4,4,1,11,11,6,6,3,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D146,gold_drop_p10,forum,F,0,1054,6,6,4,4,1,11,11,6,6,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D146,gold_drop_p20,forum,F,1,9,6,5,4,3,1,11,9,6,5,5,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D146,gold_drop_p40,forum,F,1,3,6,4,4,2,1,11,7,6,4,1,1,,,F,1,1,2000,1,1,unknown,0,0,unknown,0,0
+D146,gold_keep_patronymic,forum,F,1,41,6,5,4,3,0,11,10,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D147,gold_full,forum,F,0,1054,6,6,3,3,1,12,12,6,6,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D147,gold_di_only,forum,F,1,1,6,6,3,3,1,12,12,6,0,1,1,,,F,1,1,1980,1,1,Вінницька,0,1,водій вантажівки,1,1
+D147,gold_edrsr_policy,forum,F,1,1,6,6,3,3,1,12,12,6,0,1,1,1,1,F,1,1,1980,1,1,Вінницька,0,1,водій вантажівки,1,1
+D147,gold_miss_one_oblique,forum,F,1,39,6,5,3,2,0,12,11,6,6,1,1,4,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D147,gold_drop_p05,forum,F,1,1,6,5,3,2,0,12,9,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D147,gold_drop_p10,forum,F,1,1,6,5,3,2,0,12,9,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D147,gold_drop_p20,forum,F,1,1,6,4,3,2,0,12,8,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D147,gold_drop_p40,forum,F,1,1,6,4,3,2,0,12,8,6,4,1,1,,,F,1,1,1980,1,1,unknown,0,0,водій вантажівки,1,1
+D147,gold_keep_patronymic,forum,F,1,30,6,5,3,2,0,12,11,6,6,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D148,gold_full,forum,M,0,946,7,7,4,4,1,14,14,7,7,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,програміст,1,0
+D148,gold_di_only,forum,M,1,1,7,7,4,4,1,14,14,7,0,1,1,,,M,1,1,1970,1,1,Чернігівська,1,1,програміст,1,1
+D148,gold_edrsr_policy,forum,M,1,1,7,7,4,4,1,14,14,7,0,1,1,1,1,M,1,1,1970,1,1,Чернігівська,1,1,програміст,1,1
+D148,gold_miss_one_oblique,forum,M,1,37,7,6,4,3,0,14,13,7,7,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,програміст,1,0
+D148,gold_drop_p05,forum,M,0,946,7,7,4,4,1,14,14,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,програміст,1,0
+D148,gold_drop_p10,forum,M,0,946,7,7,4,4,1,14,14,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,програміст,1,0
+D148,gold_drop_p20,forum,M,1,1,7,5,4,3,0,14,10,7,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D148,gold_drop_p40,forum,M,1,1,7,2,4,1,0,14,5,7,5,1,1,,,M,1,1,1970,1,1,unknown,0,0,програміст,1,0
+D148,gold_keep_patronymic,forum,M,1,38,7,6,4,3,0,14,13,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,програміст,1,0
+D149,gold_full,court,F,0,1054,6,6,3,3,1,16,16,8,8,2,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D149,gold_di_only,court,F,1,1,6,6,3,3,1,16,16,8,0,1,1,,,F,1,1,unknown,0,0,Чернігівська,1,1,unknown,0,0
+D149,gold_edrsr_policy,court,F,1,1,6,6,3,3,1,16,15,8,0,1,1,1,1,F,1,1,unknown,0,0,Чернігівська,1,1,програміст,0,0
+D149,gold_miss_one_oblique,court,F,1,1,6,5,3,2,0,16,13,8,8,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D149,gold_drop_p05,court,F,0,1054,6,6,3,3,1,16,16,8,8,2,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D149,gold_drop_p10,court,F,1,1054,6,6,3,3,1,16,16,8,7,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D149,gold_drop_p20,court,F,1,1054,6,6,3,3,1,16,16,8,7,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D149,gold_drop_p40,court,F,1,1,6,4,3,1,0,16,11,8,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D149,gold_keep_patronymic,court,F,1,26,6,4,3,2,0,16,14,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D150,gold_full,court,M,0,946,6,6,3,3,1,16,16,10,10,3,0,2,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D150,gold_di_only,court,M,1,1,6,6,3,3,1,16,16,10,0,1,1,,,M,1,1,1970,1,1,Вінницька,1,1,фермер,1,1
+D150,gold_edrsr_policy,court,M,1,1,6,6,3,3,1,16,15,10,1,1,1,1,1,M,1,1,unknown,0,0,Вінницька,1,1,фермер,1,1
+D150,gold_miss_one_oblique,court,M,1,1,6,5,3,2,0,16,13,10,10,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D150,gold_drop_p05,court,M,1,1,6,4,3,2,0,16,11,10,10,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D150,gold_drop_p10,court,M,1,1,6,4,3,2,0,16,11,10,10,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D150,gold_drop_p20,court,M,1,1,6,3,3,1,0,16,9,10,9,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D150,gold_drop_p40,court,M,1,1,6,2,3,1,0,16,5,10,6,1,1,,,M,1,1,1970,1,1,unknown,0,0,фермер,1,1
+D150,gold_keep_patronymic,court,M,1,40,6,4,3,2,0,16,14,10,10,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D151,gold_full,court,F,0,1054,9,9,4,4,1,22,22,5,5,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D151,gold_di_only,court,F,1,1,9,9,4,4,1,22,22,5,0,1,1,,,F,1,1,unknown,0,0,Чернігівська,1,1,юрист,1,1
+D151,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,22,21,5,0,1,1,1,1,F,1,1,unknown,0,0,Чернігівська,1,1,юрист,1,1
+D151,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,22,19,5,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D151,gold_drop_p05,court,F,1,6,9,9,4,4,1,22,22,5,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D151,gold_drop_p10,court,F,1,6,9,8,4,3,1,22,20,5,4,1,5,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D151,gold_drop_p20,court,F,1,1,9,7,4,2,1,22,18,5,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,юрист,1,1
+D151,gold_drop_p40,court,F,1,1,9,6,4,1,0,22,14,5,2,1,1,,,F,1,1,unknown,0,0,Чернігівська,1,1,юрист,1,1
+D151,gold_keep_patronymic,court,F,1,33,9,7,4,3,0,22,20,5,5,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D152,gold_full,forum,M,0,946,6,6,3,3,1,11,11,6,6,1,0,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D152,gold_di_only,forum,M,1,1,6,6,3,3,1,11,11,6,0,1,1,,,M,1,1,1960,1,1,Житомирська,1,1,водій вантажівки,0,0
+D152,gold_edrsr_policy,forum,M,1,1,6,6,3,3,1,11,11,6,0,1,1,1,1,M,1,1,1960,1,1,Житомирська,1,1,водій вантажівки,0,0
+D152,gold_miss_one_oblique,forum,M,1,27,6,5,3,2,0,11,10,6,6,4,0,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D152,gold_drop_p05,forum,M,1,12,6,6,3,3,1,11,11,6,4,1,2,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D152,gold_drop_p10,forum,M,1,12,6,6,3,3,1,11,11,6,4,1,2,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D152,gold_drop_p20,forum,M,1,1,6,5,3,2,0,11,8,6,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D152,gold_drop_p40,forum,M,1,1,6,3,3,0,0,11,3,6,2,1,4,,,M,1,1,1960,1,1,unknown,0,0,unknown,0,0
+D152,gold_keep_patronymic,forum,M,1,26,6,5,3,2,0,11,10,6,6,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D153,gold_full,news,F,0,1054,6,6,3,3,1,11,11,6,6,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D153,gold_di_only,news,F,1,1,6,6,3,3,1,11,11,6,0,1,1,,,F,1,1,1980,0,1,unknown,0,1,фермер,1,1
+D153,gold_edrsr_policy,news,F,1,1,6,6,3,3,1,11,11,6,0,1,1,1,1,F,1,1,1980,0,1,Житомирська,0,1,фермер,1,1
+D153,gold_miss_one_oblique,news,F,1,42,6,5,3,2,0,11,10,6,6,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D153,gold_drop_p05,news,F,0,1054,6,6,3,3,1,11,11,6,6,1,4,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D153,gold_drop_p10,news,F,1,42,6,5,3,2,0,11,10,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D153,gold_drop_p20,news,F,1,1,6,3,3,2,0,11,6,6,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D153,gold_drop_p40,news,F,1,1,6,2,3,2,0,11,4,6,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D153,gold_keep_patronymic,news,F,1,41,6,4,3,2,0,11,9,6,6,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D155,gold_full,news,F,0,1054,8,8,3,3,1,15,15,6,6,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D155,gold_di_only,news,F,1,1,8,8,3,3,1,15,15,6,0,1,1,,,F,1,1,1990,1,1,Вінницька,1,1,вчитель хімії,1,1
+D155,gold_edrsr_policy,news,F,1,1,8,8,3,3,1,15,15,6,0,1,1,1,1,F,1,1,1990,1,1,Вінницька,1,1,вчитель хімії,1,1
+D155,gold_miss_one_oblique,news,F,1,26,8,7,3,2,0,15,14,6,6,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D155,gold_drop_p05,news,F,0,1054,8,8,3,3,1,15,15,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D155,gold_drop_p10,news,F,0,1054,8,8,3,3,1,15,15,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D155,gold_drop_p20,news,F,1,4,8,5,3,1,0,15,9,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D155,gold_drop_p40,news,F,1,1,8,5,3,1,0,15,9,6,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D155,gold_keep_patronymic,news,F,1,48,8,6,3,2,0,15,13,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D156,gold_full,court,F,0,1054,6,6,3,3,1,17,17,8,8,1,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D156,gold_di_only,court,F,1,1,6,6,3,3,1,17,17,8,0,1,1,,,F,1,1,1970,1,1,Львівська,1,1,будівельник,0,0
+D156,gold_edrsr_policy,court,F,1,2,6,6,3,3,1,17,16,8,1,1,0,1,0,F,1,1,unknown,0,0,Львівська,1,1,будівельник,0,0
+D156,gold_miss_one_oblique,court,F,1,1,6,5,3,2,0,17,14,8,8,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D156,gold_drop_p05,court,F,1,26,6,6,3,3,1,17,16,8,6,1,4,,,F,1,1,1970,1,1,unknown,0,0,будівельник,0,0
+D156,gold_drop_p10,court,F,1,26,6,5,3,2,1,17,14,8,6,1,4,,,F,1,1,1970,1,1,unknown,0,0,будівельник,0,0
+D156,gold_drop_p20,court,F,1,1,6,4,3,1,0,17,12,8,5,1,1,,,F,1,1,1970,1,1,unknown,0,0,будівельник,0,0
+D156,gold_drop_p40,court,F,1,1,6,1,3,0,0,17,4,8,3,1,0,,,F,1,1,1970,1,1,Львівська,1,0,будівельник,0,0
+D156,gold_keep_patronymic,court,F,1,32,6,3,3,2,0,17,14,8,8,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D157,gold_full,court,M,0,946,9,9,4,4,1,22,22,8,8,1,0,1,0,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D157,gold_di_only,court,M,1,1,9,9,4,4,1,22,22,8,0,1,1,,,M,1,1,1990,1,1,Вінницька,0,1,охоронець,1,1
+D157,gold_edrsr_policy,court,M,1,1,9,9,4,4,1,22,21,8,1,1,1,1,1,M,1,1,unknown,0,0,Вінницька,0,1,охоронець,1,1
+D157,gold_miss_one_oblique,court,M,1,1,9,8,4,3,0,22,19,8,8,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D157,gold_drop_p05,court,M,1,946,9,8,4,3,1,22,20,8,8,1,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D157,gold_drop_p10,court,M,1,946,9,8,4,3,1,22,19,8,8,1,3,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D157,gold_drop_p20,court,M,1,1,9,7,4,2,0,22,16,8,7,1,1,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D157,gold_drop_p40,court,M,1,1,9,5,4,1,0,22,11,8,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,охоронець,1,1
+D157,gold_keep_patronymic,court,M,1,33,9,7,4,3,0,22,20,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D158,gold_full,news,F,0,1054,9,9,3,3,1,15,15,5,5,3,5,1,2,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D158,gold_di_only,news,F,1,1,9,9,3,3,1,15,15,5,0,1,1,,,F,1,1,1980,1,1,Вінницька,1,1,фермер,1,0
+D158,gold_edrsr_policy,news,F,1,1,9,9,3,3,1,15,15,5,0,1,1,1,1,F,1,1,1980,1,1,Вінницька,1,1,фермер,1,0
+D158,gold_miss_one_oblique,news,F,1,1,9,8,3,2,0,15,12,5,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D158,gold_drop_p05,news,F,0,1054,9,9,3,3,1,15,15,5,5,3,2,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D158,gold_drop_p10,news,F,0,1054,9,9,3,3,1,15,15,5,5,3,4,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D158,gold_drop_p20,news,F,1,4,9,8,3,2,0,15,14,5,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D158,gold_drop_p40,news,F,1,1,9,7,3,1,0,15,12,5,2,1,1,,,F,1,1,1980,1,1,Вінницька,1,1,фермер,1,0
+D158,gold_keep_patronymic,news,F,1,31,9,7,3,2,0,15,13,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D159,gold_full,court,F,0,1054,9,9,4,4,1,24,24,8,8,2,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D159,gold_di_only,court,F,1,1,9,9,4,4,1,24,24,8,0,1,1,,,F,1,1,1970,1,1,Полтавська,1,1,водій вантажівки,1,1
+D159,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,24,23,8,1,1,1,1,1,F,1,1,unknown,0,0,Полтавська,1,1,водій вантажівки,1,1
+D159,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,24,21,8,8,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D159,gold_drop_p05,court,F,0,1054,9,9,4,4,1,24,24,8,8,2,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D159,gold_drop_p10,court,F,0,1054,9,9,4,4,1,24,24,8,8,2,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D159,gold_drop_p20,court,F,1,1,9,8,4,3,0,24,21,8,8,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D159,gold_drop_p40,court,F,1,1,9,6,4,2,0,24,15,8,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D159,gold_keep_patronymic,court,F,1,30,9,7,4,3,0,24,22,8,8,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D160,gold_full,forum,F,0,1054,5,5,3,3,1,10,10,4,4,1,0,1,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D160,gold_di_only,forum,F,1,2,5,5,3,3,1,10,10,4,0,1,1,,,F,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D160,gold_edrsr_policy,forum,F,1,2,5,5,3,3,1,10,10,4,0,1,1,1,0,F,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D160,gold_miss_one_oblique,forum,F,1,39,5,4,3,2,0,10,9,4,4,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D160,gold_drop_p05,forum,F,0,1054,5,5,3,3,1,10,10,4,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D160,gold_drop_p10,forum,F,1,56,5,5,3,3,1,10,10,4,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D160,gold_drop_p20,forum,F,1,1,5,4,3,2,0,10,7,4,2,1,1,,,F,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D160,gold_drop_p40,forum,F,1,1,5,3,3,1,0,10,5,4,2,1,1,,,F,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D160,gold_keep_patronymic,forum,F,1,45,5,4,3,2,0,10,9,4,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D161,gold_full,court,F,0,1054,9,9,4,4,1,22,22,5,5,1,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D161,gold_di_only,court,F,1,1,9,9,4,4,1,22,22,5,0,1,2,,,F,1,1,1960,1,1,Полтавська,1,1,unknown,0,0
+D161,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,22,21,5,1,1,1,1,1,F,1,1,unknown,0,0,Полтавська,1,1,unknown,0,0
+D161,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,22,19,5,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D161,gold_drop_p05,court,F,1,27,9,9,4,4,1,22,22,5,4,1,1,,,F,1,1,1960,1,1,unknown,0,0,unknown,0,0
+D161,gold_drop_p10,court,F,1,27,9,8,4,3,1,22,20,5,4,1,1,,,F,1,1,1960,1,1,unknown,0,0,unknown,0,0
+D161,gold_drop_p20,court,F,1,1,9,5,4,1,0,22,12,5,3,1,1,,,F,1,1,1960,1,1,unknown,0,0,unknown,0,0
+D161,gold_drop_p40,court,F,1,1,9,2,4,1,0,22,6,5,1,1,1,,,F,1,1,1960,1,1,Полтавська,1,1,unknown,0,0
+D161,gold_keep_patronymic,court,F,1,37,9,7,4,3,0,22,20,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D162,gold_full,forum,F,0,1054,7,7,3,3,1,15,15,3,3,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D162,gold_di_only,forum,F,1,1,7,7,3,3,1,15,15,3,0,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D162,gold_edrsr_policy,forum,F,1,1,7,7,3,3,1,15,15,3,0,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D162,gold_miss_one_oblique,forum,F,1,41,7,6,3,2,0,15,14,3,3,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D162,gold_drop_p05,forum,F,1,41,7,6,3,2,0,15,14,3,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D162,gold_drop_p10,forum,F,1,7,7,6,3,2,0,15,13,3,2,1,1,,,F,1,1,1990,0,0,unknown,0,0,unknown,0,0
+D162,gold_drop_p20,forum,F,1,7,7,6,3,2,0,15,13,3,2,1,1,,,F,1,1,1990,0,0,unknown,0,0,unknown,0,0
+D162,gold_drop_p40,forum,F,1,1,7,5,3,1,0,15,11,3,0,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D162,gold_keep_patronymic,forum,F,1,35,7,6,3,2,0,15,14,3,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D163,gold_full,court,F,0,1054,9,9,4,4,1,21,21,7,7,2,0,1,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D163,gold_di_only,court,F,1,1,9,9,4,4,1,21,21,7,0,1,1,,,F,1,1,1970,1,1,Львівська,0,0,водій вантажівки,1,1
+D163,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,21,20,7,1,1,0,1,3,F,1,1,unknown,0,0,Львівська,0,0,водій вантажівки,1,1
+D163,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,21,18,7,7,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D163,gold_drop_p05,court,F,0,1054,9,9,4,4,1,21,21,7,7,2,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D163,gold_drop_p10,court,F,1,1054,9,9,4,4,1,21,19,7,7,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D163,gold_drop_p20,court,F,1,1,9,8,4,3,0,21,16,7,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D163,gold_drop_p40,court,F,1,1,9,6,4,2,0,21,11,7,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D163,gold_keep_patronymic,court,F,1,41,9,7,4,3,0,21,19,7,7,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D164,gold_full,court,M,0,946,6,6,3,3,1,15,15,8,8,2,0,1,0,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D164,gold_di_only,court,M,1,1,6,6,3,3,1,15,15,8,0,1,0,,,unknown,0,1,1970,1,1,Львівська,0,0,інженер,0,0
+D164,gold_edrsr_policy,court,M,1,5,6,6,3,3,1,15,14,8,1,2,0,2,0,M,1,1,unknown,0,0,Львівська,0,0,інженер,0,0
+D164,gold_miss_one_oblique,court,M,1,1,6,5,3,2,0,15,12,8,8,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D164,gold_drop_p05,court,M,0,946,6,6,3,3,1,15,15,8,8,2,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D164,gold_drop_p10,court,M,0,946,6,6,3,3,1,15,15,8,8,2,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D164,gold_drop_p20,court,M,1,946,6,6,3,3,1,15,14,8,8,2,3,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D164,gold_drop_p40,court,M,1,5,6,6,3,3,1,15,13,8,5,2,3,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D164,gold_keep_patronymic,court,M,1,42,6,4,3,2,0,15,13,8,8,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D165,gold_full,forum,F,0,1054,6,6,4,4,1,11,11,7,7,1,0,1,3,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D165,gold_di_only,forum,F,1,1,6,6,4,4,1,11,11,7,0,1,0,,,F,1,1,2000,0,1,Одеська,1,1,програміст,0,0
+D165,gold_edrsr_policy,forum,F,1,1,6,6,4,4,1,11,11,7,0,1,1,1,1,F,1,1,2000,0,1,Одеська,1,1,програміст,0,0
+D165,gold_miss_one_oblique,forum,F,1,3,6,5,4,3,0,11,10,7,7,1,0,2,3,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D165,gold_drop_p05,forum,F,1,490,6,6,4,4,1,11,11,7,6,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D165,gold_drop_p10,forum,F,1,490,6,6,4,4,1,11,11,7,6,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D165,gold_drop_p20,forum,F,1,1,6,5,4,3,0,11,10,7,6,5,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D165,gold_drop_p40,forum,F,1,1,6,4,4,2,0,11,8,7,4,1,2,,,F,1,1,unknown,0,0,unknown,0,0,програміст,0,0
+D165,gold_keep_patronymic,forum,F,1,29,6,5,4,3,0,11,10,7,7,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D166,gold_full,news,F,0,1054,9,9,4,4,1,14,14,7,7,2,0,1,2,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D166,gold_di_only,news,F,1,1,9,9,4,4,1,14,14,7,0,1,1,,,F,1,1,1970,1,1,Харківська,1,1,вчитель хімії,1,1
+D166,gold_edrsr_policy,news,F,1,1,9,9,4,4,1,14,14,7,0,1,1,1,1,F,1,1,1970,1,1,Харківська,1,1,вчитель хімії,1,1
+D166,gold_miss_one_oblique,news,F,1,46,9,8,4,3,0,14,13,7,7,1,1,1,0,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D166,gold_drop_p05,news,F,1,490,9,9,4,4,1,14,14,7,6,2,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D166,gold_drop_p10,news,F,1,490,9,9,4,4,1,14,14,7,6,2,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D166,gold_drop_p20,news,F,1,8,9,9,4,4,1,14,14,7,5,1,1,,,F,1,1,unknown,0,0,Харківська,1,1,вчитель хімії,1,0
+D166,gold_drop_p40,news,F,1,1,9,7,4,2,1,14,11,7,3,1,1,,,F,1,1,unknown,0,0,Харківська,1,1,вчитель хімії,1,0
+D166,gold_keep_patronymic,news,F,1,38,9,7,4,3,0,14,12,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D167,gold_full,court,F,0,1054,9,9,4,4,1,21,21,7,7,2,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D167,gold_di_only,court,F,1,1,9,9,4,4,1,21,21,7,0,1,1,,,F,1,1,1960,1,1,Полтавська,1,1,unknown,0,0
+D167,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,21,20,7,1,1,1,1,0,F,1,1,unknown,0,0,Полтавська,1,1,unknown,0,0
+D167,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,21,18,7,7,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D167,gold_drop_p05,court,F,0,1054,9,9,4,4,1,21,21,7,7,2,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D167,gold_drop_p10,court,F,1,1,9,8,4,3,0,21,19,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D167,gold_drop_p20,court,F,1,1,9,7,4,2,0,21,17,7,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D167,gold_drop_p40,court,F,1,1,9,5,4,1,0,21,12,7,4,1,1,,,F,1,1,unknown,0,0,Полтавська,1,0,unknown,0,0
+D167,gold_keep_patronymic,court,F,1,41,9,7,4,3,0,21,19,7,7,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D168,gold_full,forum,M,0,946,6,6,3,3,1,12,12,6,6,1,0,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D168,gold_di_only,forum,M,1,1,6,6,3,3,1,12,12,6,0,1,1,,,M,1,1,unknown,0,0,Львівська,1,1,слюсар,1,1
+D168,gold_edrsr_policy,forum,M,1,1,6,6,3,3,1,12,12,6,0,1,1,1,1,M,1,1,unknown,0,0,Львівська,1,1,слюсар,1,1
+D168,gold_miss_one_oblique,forum,M,1,32,6,5,3,2,0,12,11,6,6,1,1,1,2,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D168,gold_drop_p05,forum,M,0,946,6,6,3,3,1,12,12,6,6,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D168,gold_drop_p10,forum,M,0,946,6,6,3,3,1,12,12,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D168,gold_drop_p20,forum,M,1,9,6,5,3,2,1,12,10,6,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D168,gold_drop_p40,forum,M,1,9,6,5,3,2,1,12,9,6,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D168,gold_keep_patronymic,forum,M,1,25,6,5,3,2,0,12,11,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D169,gold_full,forum,M,0,946,7,7,4,4,1,14,14,5,5,1,0,1,2,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D169,gold_di_only,forum,M,1,1,7,7,4,4,1,14,14,5,0,1,1,,,M,1,1,1960,1,1,unknown,0,0,агроном,1,1
+D169,gold_edrsr_policy,forum,M,1,1,7,7,4,4,1,14,14,5,0,1,1,1,1,M,1,1,1960,1,1,unknown,0,0,агроном,1,1
+D169,gold_miss_one_oblique,forum,M,1,34,7,6,4,3,0,14,13,5,5,1,1,1,3,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D169,gold_drop_p05,forum,M,0,946,7,7,4,4,1,14,14,5,5,3,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D169,gold_drop_p10,forum,M,1,946,7,7,4,4,1,14,13,5,5,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D169,gold_drop_p20,forum,M,1,2,7,4,4,1,0,14,8,5,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D169,gold_drop_p40,forum,M,1,1,7,3,4,1,0,14,7,5,3,1,1,,,M,1,1,1960,1,1,unknown,0,0,unknown,0,0
+D169,gold_keep_patronymic,forum,M,1,28,7,6,4,3,0,14,13,5,5,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D170,gold_full,court,F,0,1054,9,9,4,4,1,21,21,6,6,1,3,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D170,gold_di_only,court,F,1,1,9,9,4,4,1,21,21,6,0,1,3,,,F,1,1,unknown,0,0,Житомирська,1,1,unknown,0,0
+D170,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,21,20,6,0,1,1,1,4,F,1,1,unknown,0,0,Житомирська,1,1,unknown,0,0
+D170,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,21,18,6,6,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D170,gold_drop_p05,court,F,0,1054,9,9,4,4,1,21,21,6,6,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D170,gold_drop_p10,court,F,1,414,9,9,4,4,1,21,21,6,5,1,4,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D170,gold_drop_p20,court,F,1,414,9,9,4,4,1,21,20,6,4,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D170,gold_drop_p40,court,F,1,1,9,7,4,3,0,21,17,6,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D170,gold_keep_patronymic,court,F,1,30,9,7,4,3,0,21,19,6,6,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D171,gold_full,news,F,0,1054,8,8,4,4,1,15,15,5,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D171,gold_di_only,news,F,1,1,8,8,4,4,1,15,15,5,0,1,1,,,F,1,1,unknown,0,0,Вінницька,0,1,вчитель хімії,1,1
+D171,gold_edrsr_policy,news,F,1,1,8,8,4,4,1,15,15,5,0,1,1,1,1,F,1,1,1980,1,0,Вінницька,0,1,вчитель хімії,1,1
+D171,gold_miss_one_oblique,news,F,1,32,8,7,4,3,0,15,14,5,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D171,gold_drop_p05,news,F,0,1054,8,8,4,4,1,15,15,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D171,gold_drop_p10,news,F,0,1054,8,8,4,4,1,15,15,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D171,gold_drop_p20,news,F,1,5,8,7,4,3,1,15,14,5,3,1,1,,,F,1,1,unknown,0,0,Вінницька,0,1,вчитель хімії,1,0
+D171,gold_drop_p40,news,F,1,1,8,7,4,3,1,15,14,5,1,1,1,,,F,1,1,unknown,0,0,Вінницька,0,1,вчитель хімії,1,1
+D171,gold_keep_patronymic,news,F,1,38,8,5,4,3,0,15,12,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D172,gold_full,news,F,0,1054,7,7,3,3,1,11,11,5,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D172,gold_di_only,news,F,1,1,7,7,3,3,1,11,11,5,0,1,1,,,F,1,1,unknown,0,0,Харківська,1,1,фермер,1,1
+D172,gold_edrsr_policy,news,F,1,1,7,7,3,3,1,11,11,5,0,1,1,1,1,F,1,1,unknown,0,0,Харківська,1,1,фермер,1,1
+D172,gold_miss_one_oblique,news,F,1,36,7,6,3,2,0,11,10,5,5,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D172,gold_drop_p05,news,F,1,36,7,6,3,2,0,11,10,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D172,gold_drop_p10,news,F,1,36,7,6,3,2,0,11,10,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D172,gold_drop_p20,news,F,1,36,7,4,3,1,0,11,7,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D172,gold_drop_p40,news,F,1,36,7,4,3,1,0,11,7,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D172,gold_keep_patronymic,news,F,1,47,7,5,3,2,0,11,9,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D173,gold_full,news,M,0,946,7,7,4,4,1,11,11,10,10,2,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D173,gold_di_only,news,M,1,1,7,7,4,4,1,11,11,10,0,1,1,,,M,1,1,1980,1,1,Вінницька,1,1,вчитель початкових класів,1,1
+D173,gold_edrsr_policy,news,M,1,1,7,7,4,4,1,11,11,10,0,1,1,1,1,M,1,1,1980,1,1,Вінницька,1,1,вчитель початкових класів,1,1
+D173,gold_miss_one_oblique,news,M,1,42,7,6,4,3,0,11,10,10,10,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D173,gold_drop_p05,news,M,1,946,7,5,4,3,1,11,9,10,10,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D173,gold_drop_p10,news,M,1,946,7,5,4,3,1,11,9,10,10,2,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D173,gold_drop_p20,news,M,1,946,7,5,4,3,1,11,9,10,10,2,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D173,gold_drop_p40,news,M,1,1,7,4,4,2,0,11,7,10,7,1,1,,,M,1,1,1980,1,1,Вінницька,1,1,вчитель початкових класів,1,0
+D173,gold_keep_patronymic,news,M,1,26,7,5,4,3,0,11,9,10,10,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D175,gold_full,forum,F,0,1054,7,7,4,4,1,13,13,5,5,2,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D175,gold_di_only,forum,F,1,1,7,7,4,4,1,13,13,5,0,1,1,,,F,1,1,unknown,0,0,unknown,0,0,лікар,1,1
+D175,gold_edrsr_policy,forum,F,1,1,7,7,4,4,1,13,13,5,0,1,4,1,1,F,1,1,unknown,0,0,unknown,0,0,лікар,1,1
+D175,gold_miss_one_oblique,forum,F,1,36,7,6,4,3,0,13,12,5,5,1,2,0,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D175,gold_drop_p05,forum,F,0,1054,7,7,4,4,1,13,13,5,5,3,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D175,gold_drop_p10,forum,F,0,1054,7,7,4,4,1,13,13,5,5,3,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D175,gold_drop_p20,forum,F,1,57,7,7,4,4,1,13,13,5,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,лікар,1,1
+D175,gold_drop_p40,forum,F,1,57,7,4,4,1,1,13,8,5,4,1,3,,,F,1,1,unknown,0,0,unknown,0,0,лікар,1,1
+D175,gold_keep_patronymic,forum,F,1,29,7,6,4,3,0,13,12,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D176,gold_full,forum,F,0,1054,7,7,4,4,1,13,13,5,5,2,0,1,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D176,gold_di_only,forum,F,1,3,7,7,4,4,1,13,13,5,0,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D176,gold_edrsr_policy,forum,F,1,3,7,7,4,4,1,13,13,5,0,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,агроном,0,0
+D176,gold_miss_one_oblique,forum,F,1,24,7,6,4,3,0,13,12,5,5,2,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D176,gold_drop_p05,forum,F,0,1054,7,7,4,4,1,13,13,5,5,2,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D176,gold_drop_p10,forum,F,0,1054,7,7,4,4,1,13,13,5,5,2,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D176,gold_drop_p20,forum,F,1,9,7,7,4,4,1,13,13,5,4,4,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D176,gold_drop_p40,forum,F,1,1,7,3,4,1,0,13,7,5,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D176,gold_keep_patronymic,forum,F,1,32,7,6,4,3,0,13,12,5,5,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D177,gold_full,forum,M,0,946,6,6,3,3,1,12,12,6,6,1,0,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D177,gold_di_only,forum,M,1,1,6,6,3,3,1,12,12,6,0,1,1,,,M,1,1,1980,0,1,Вінницька,1,1,перукар,1,1
+D177,gold_edrsr_policy,forum,M,1,1,6,6,3,3,1,12,12,6,0,1,1,1,1,M,1,1,1970,1,1,Вінницька,1,1,перукар,1,1
+D177,gold_miss_one_oblique,forum,M,1,31,6,5,3,2,0,12,11,6,6,1,0,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D177,gold_drop_p05,forum,M,0,946,6,6,3,3,1,12,12,6,6,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D177,gold_drop_p10,forum,M,0,946,6,6,3,3,1,12,12,6,6,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D177,gold_drop_p20,forum,M,1,946,6,6,3,3,1,12,11,6,6,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D177,gold_drop_p40,forum,M,1,946,6,5,3,2,1,12,9,6,6,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D177,gold_keep_patronymic,forum,M,1,38,6,5,3,2,0,12,11,6,6,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D178,gold_full,court,M,0,946,9,9,4,4,1,22,22,6,6,1,0,1,2,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D178,gold_di_only,court,M,1,1,9,9,4,4,1,22,22,6,0,1,1,,,M,1,1,1980,1,1,Львівська,1,1,unknown,0,0
+D178,gold_edrsr_policy,court,M,1,1,9,9,4,4,1,22,21,6,1,1,3,1,1,M,1,1,unknown,0,0,Львівська,1,1,unknown,0,0
+D178,gold_miss_one_oblique,court,M,1,1,9,8,4,3,0,22,19,6,6,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D178,gold_drop_p05,court,M,1,946,9,8,4,3,1,22,20,6,6,3,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D178,gold_drop_p10,court,M,1,8,9,8,4,3,1,22,19,6,5,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D178,gold_drop_p20,court,M,1,1,9,6,4,1,0,22,15,6,5,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D178,gold_drop_p40,court,M,1,1,9,3,4,1,0,22,8,6,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D178,gold_keep_patronymic,court,M,1,30,9,7,4,3,0,22,20,6,6,1,1,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D179,gold_full,court,F,0,1054,6,6,3,3,1,16,16,9,9,2,2,1,0,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,0,0
+D179,gold_di_only,court,F,1,1,6,6,3,3,1,16,16,9,0,1,1,,,F,1,1,1980,1,1,unknown,0,0,бухгалтер,0,0
+D179,gold_edrsr_policy,court,F,1,1,6,6,3,3,1,16,15,9,1,1,1,1,0,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,0,0
+D179,gold_miss_one_oblique,court,F,1,1,6,5,3,2,0,16,13,9,9,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,0,0
+D179,gold_drop_p05,court,F,1,1054,6,5,3,2,1,16,14,9,9,1,0,,,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,0,0
+D179,gold_drop_p10,court,F,1,1054,6,5,3,2,1,16,14,9,9,1,0,,,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,0,0
+D179,gold_drop_p20,court,F,1,1054,6,5,3,2,1,16,13,9,9,1,0,,,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,0,0
+D179,gold_drop_p40,court,F,1,1,6,4,3,1,0,16,12,9,7,1,1,,,F,1,1,1980,1,1,unknown,0,0,бухгалтер,0,0
+D179,gold_keep_patronymic,court,F,1,29,6,4,3,2,0,16,14,9,9,1,0,,,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,0,0
+D180,gold_full,news,M,0,946,7,7,4,4,1,12,12,5,5,1,1,1,1,M,1,1,1990,0,0,unknown,0,0,вчитель початкових класів,1,0
+D180,gold_di_only,news,M,1,1,7,7,4,4,1,12,12,5,0,1,1,,,M,1,1,2000,1,1,Полтавська,1,1,вчитель початкових класів,1,0
+D180,gold_edrsr_policy,news,M,1,1,7,7,4,4,1,12,12,5,0,1,1,1,1,M,1,1,2000,1,1,Полтавська,1,1,вчитель початкових класів,1,0
+D180,gold_miss_one_oblique,news,M,1,46,7,6,4,3,0,12,11,5,5,1,1,1,1,M,1,1,1990,0,0,unknown,0,0,вчитель хімії,0,0
+D180,gold_drop_p05,news,M,0,946,7,7,4,4,1,12,12,5,5,1,3,,,M,1,1,1990,0,0,unknown,0,0,вчитель хімії,0,0
+D180,gold_drop_p10,news,M,0,946,7,7,4,4,1,12,12,5,5,1,1,,,M,1,1,1990,0,0,unknown,0,0,вчитель початкових класів,1,0
+D180,gold_drop_p20,news,M,1,946,7,6,4,3,1,12,11,5,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D180,gold_drop_p40,news,M,1,1,7,2,4,0,0,12,3,5,4,1,1,,,M,1,1,unknown,0,1,unknown,0,0,вчитель початкових класів,1,0
+D180,gold_keep_patronymic,news,M,1,30,7,5,4,3,0,12,10,5,5,1,1,,,M,1,1,1990,0,0,unknown,0,0,вчитель хімії,0,0
+D181,gold_full,forum,M,0,946,5,5,3,3,1,10,10,5,5,1,3,1,1,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D181,gold_di_only,forum,M,1,1,5,5,3,3,1,10,10,5,0,1,1,,,M,1,1,1970,1,1,unknown,0,0,unknown,0,0
+D181,gold_edrsr_policy,forum,M,1,1,5,5,3,3,1,10,10,5,0,1,0,1,1,M,1,1,1970,1,1,unknown,0,0,unknown,0,0
+D181,gold_miss_one_oblique,forum,M,1,32,5,4,3,2,0,10,9,5,5,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D181,gold_drop_p05,forum,M,1,7,5,5,3,3,1,10,10,5,4,1,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D181,gold_drop_p10,forum,M,1,3,5,5,3,3,1,10,10,5,3,1,3,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D181,gold_drop_p20,forum,M,1,3,5,5,3,3,1,10,10,5,3,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D181,gold_drop_p40,forum,M,1,1,5,3,3,1,0,10,7,5,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D181,gold_keep_patronymic,forum,M,1,34,5,4,3,2,0,10,9,5,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D182,gold_full,news,F,0,1054,6,6,3,3,1,12,12,5,5,1,5,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D182,gold_di_only,news,F,1,1,6,6,3,3,1,12,12,5,0,1,1,,,F,1,1,unknown,0,0,Житомирська,1,0,вчитель початкових класів,1,1
+D182,gold_edrsr_policy,news,F,1,1,6,6,3,3,1,12,12,5,0,1,1,1,1,F,1,1,unknown,0,0,Житомирська,1,0,вчитель початкових класів,1,1
+D182,gold_miss_one_oblique,news,F,1,31,6,5,3,2,0,12,11,5,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D182,gold_drop_p05,news,F,1,1054,6,6,3,3,1,12,12,5,4,1,0,,,F,1,1,unknown,0,0,Житомирська,1,0,вчитель початкових класів,1,0
+D182,gold_drop_p10,news,F,1,1054,6,6,3,3,1,12,12,5,4,1,3,,,F,1,1,unknown,0,0,Житомирська,1,0,вчитель початкових класів,1,0
+D182,gold_drop_p20,news,F,1,1054,6,5,3,2,1,12,10,5,4,1,5,,,F,1,1,unknown,0,0,Житомирська,1,0,вчитель початкових класів,1,0
+D182,gold_drop_p40,news,F,1,1,6,3,3,0,0,12,7,5,2,1,1,,,F,1,1,unknown,0,0,Житомирська,1,0,вчитель початкових класів,1,1
+D182,gold_keep_patronymic,news,F,1,45,6,4,3,2,0,12,10,5,5,1,2,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D183,gold_full,news,M,0,946,6,6,3,3,1,10,10,7,7,1,4,1,2,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D183,gold_di_only,news,M,1,1,6,6,3,3,1,10,10,7,0,1,1,,,M,1,1,1980,1,1,Харківська,1,1,фермер,1,1
+D183,gold_edrsr_policy,news,M,1,1,6,6,3,3,1,10,10,7,0,1,0,1,1,M,1,1,1980,1,1,Харківська,1,1,фермер,1,1
+D183,gold_miss_one_oblique,news,M,1,32,6,5,3,2,0,10,9,7,7,1,5,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D183,gold_drop_p05,news,M,0,946,6,6,3,3,1,10,10,7,7,1,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D183,gold_drop_p10,news,M,1,82,6,6,3,3,1,10,10,7,6,1,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D183,gold_drop_p20,news,M,1,1,6,6,3,3,1,10,10,7,3,1,1,,,M,1,1,1980,1,1,Харківська,1,1,фермер,1,1
+D183,gold_drop_p40,news,M,1,1,6,3,3,0,0,10,4,7,1,1,1,,,M,1,1,1980,1,1,Харківська,1,1,фермер,1,1
+D183,gold_keep_patronymic,news,M,1,40,6,4,3,2,0,10,8,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D184,gold_full,forum,F,0,1054,6,6,3,3,1,13,13,3,3,1,0,2,3,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D184,gold_di_only,forum,F,1,2,6,6,3,3,1,13,13,3,0,1,1,,,F,1,1,unknown,0,0,Житомирська,1,1,unknown,0,0
+D184,gold_edrsr_policy,forum,F,1,2,6,6,3,3,1,13,13,3,0,1,0,1,1,F,1,1,unknown,0,0,Житомирська,1,1,unknown,0,0
+D184,gold_miss_one_oblique,forum,F,1,29,6,5,3,2,0,13,12,3,3,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D184,gold_drop_p05,forum,F,0,1054,6,6,3,3,1,13,13,3,3,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D184,gold_drop_p10,forum,F,1,9,6,6,3,3,1,13,13,3,2,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D184,gold_drop_p20,forum,F,1,1,6,5,3,2,0,13,10,3,1,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D184,gold_drop_p40,forum,F,1,1,6,4,3,2,0,13,6,3,1,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D184,gold_keep_patronymic,forum,F,1,32,6,4,3,2,0,13,11,3,3,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D185,gold_full,court,F,0,1054,9,9,4,4,1,22,22,8,8,2,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D185,gold_di_only,court,F,1,1,9,9,4,4,1,22,22,8,0,1,1,,,F,1,1,2000,1,1,Харківська,1,1,медична сестра,1,1
+D185,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,22,21,8,1,1,0,1,2,F,1,1,unknown,0,0,Харківська,1,1,медична сестра,1,1
+D185,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,22,19,8,8,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D185,gold_drop_p05,court,F,0,1054,9,9,4,4,1,22,22,8,8,2,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D185,gold_drop_p10,court,F,1,1054,9,9,4,4,1,22,21,8,8,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D185,gold_drop_p20,court,F,1,1,9,9,4,4,1,22,21,8,6,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D185,gold_drop_p40,court,F,1,1,9,6,4,2,0,22,13,8,3,1,1,,,F,1,1,2000,1,1,Харківська,1,1,unknown,0,0
+D185,gold_keep_patronymic,court,F,1,37,9,7,4,3,0,22,20,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D186,gold_full,forum,F,0,1054,7,7,4,4,1,13,13,4,4,1,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D186,gold_di_only,forum,F,1,8,7,7,4,4,1,13,13,4,0,1,4,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D186,gold_edrsr_policy,forum,F,1,8,7,7,4,4,1,13,13,4,0,1,1,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D186,gold_miss_one_oblique,forum,F,1,46,7,6,4,3,0,13,12,4,4,1,3,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D186,gold_drop_p05,forum,F,1,1,7,5,4,2,0,13,9,4,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D186,gold_drop_p10,forum,F,1,1,7,4,4,1,0,13,7,4,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D186,gold_drop_p20,forum,F,1,1,7,4,4,1,0,13,7,4,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D186,gold_drop_p40,forum,F,1,1,7,3,4,0,0,13,5,4,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D186,gold_keep_patronymic,forum,F,1,41,7,5,4,3,0,13,11,4,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D187,gold_full,court,M,0,946,6,6,3,3,1,15,15,7,7,2,0,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D187,gold_di_only,court,M,1,2,6,6,3,3,1,15,15,7,0,1,1,,,M,1,1,unknown,0,0,Полтавська,0,0,лікар,1,1
+D187,gold_edrsr_policy,court,M,1,2,6,6,3,3,1,15,14,7,0,1,1,1,1,M,1,1,unknown,0,0,Полтавська,0,0,лікар,1,1
+D187,gold_miss_one_oblique,court,M,1,1,6,5,3,2,0,15,12,7,7,1,1,1,1,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D187,gold_drop_p05,court,M,0,946,6,6,3,3,1,15,15,7,7,2,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D187,gold_drop_p10,court,M,1,1,6,5,3,2,0,15,12,7,7,1,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D187,gold_drop_p20,court,M,1,1,6,4,3,2,0,15,10,7,7,1,1,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D187,gold_drop_p40,court,M,1,1,6,3,3,2,0,15,8,7,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D187,gold_keep_patronymic,court,M,1,40,6,4,3,2,0,15,13,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D188,gold_full,forum,F,0,1054,5,5,3,3,1,11,11,5,5,3,5,2,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D188,gold_di_only,forum,F,1,1,5,5,3,3,1,11,11,5,0,1,1,,,F,1,1,1980,1,1,unknown,0,0,unknown,0,0
+D188,gold_edrsr_policy,forum,F,1,1,5,5,3,3,1,11,11,5,0,1,1,1,4,F,1,1,1980,1,1,unknown,0,0,електрик,1,0
+D188,gold_miss_one_oblique,forum,F,1,35,5,4,3,2,0,11,10,5,5,0,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D188,gold_drop_p05,forum,F,0,1054,5,5,3,3,1,11,11,5,5,3,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D188,gold_drop_p10,forum,F,1,1054,5,3,3,1,1,11,7,5,5,3,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D188,gold_drop_p20,forum,F,1,1,5,2,3,0,0,11,5,5,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D188,gold_drop_p40,forum,F,1,1,5,2,3,0,0,11,5,5,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D188,gold_keep_patronymic,forum,F,1,45,5,4,3,2,0,11,10,5,5,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D189,gold_full,court,M,0,946,6,6,3,3,1,16,16,9,9,1,0,1,0,M,1,1,unknown,0,0,unknown,0,0,програміст,0,0
+D189,gold_di_only,court,M,1,1,6,6,3,3,1,16,16,9,0,1,1,,,M,1,1,1970,1,1,Харківська,1,1,програміст,0,0
+D189,gold_edrsr_policy,court,M,1,1,6,6,3,3,1,16,15,9,1,1,0,1,0,M,1,1,unknown,0,0,Харківська,1,1,програміст,0,0
+D189,gold_miss_one_oblique,court,M,1,1,6,5,3,2,0,16,13,9,9,1,0,1,1,M,1,1,unknown,0,0,unknown,0,0,програміст,0,0
+D189,gold_drop_p05,court,M,1,1,6,5,3,2,0,16,13,9,8,1,2,,,M,1,1,1970,1,1,unknown,0,0,програміст,0,0
+D189,gold_drop_p10,court,M,1,1,6,5,3,2,0,16,12,9,8,1,1,,,unknown,0,1,1970,1,1,Вінницька,0,1,програміст,0,0
+D189,gold_drop_p20,court,M,1,1,6,5,3,2,0,16,12,9,8,1,1,,,M,1,1,1970,1,1,Чернігівська,0,1,програміст,0,0
+D189,gold_drop_p40,court,M,1,1,6,5,3,2,0,16,11,9,7,1,1,,,M,1,1,1970,1,1,Чернігівська,0,1,програміст,0,0
+D189,gold_keep_patronymic,court,M,1,33,6,4,3,2,0,16,14,9,9,1,2,,,M,1,1,unknown,0,0,unknown,0,0,програміст,0,0
+D191,gold_full,court,F,0,1054,6,6,3,3,1,16,16,10,10,1,2,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D191,gold_di_only,court,F,1,1,6,6,3,3,1,16,16,10,0,1,1,,,F,1,1,1980,1,1,Чернігівська,1,1,unknown,0,0
+D191,gold_edrsr_policy,court,F,1,1,6,6,3,3,1,16,15,10,1,1,0,1,1,F,1,1,unknown,0,0,Чернігівська,1,1,unknown,0,0
+D191,gold_miss_one_oblique,court,F,1,1,6,5,3,2,0,16,13,10,10,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D191,gold_drop_p05,court,F,1,95,6,6,3,3,1,16,15,10,9,1,1,,,F,1,1,unknown,0,0,Чернігівська,1,1,unknown,0,0
+D191,gold_drop_p10,court,F,1,95,6,6,3,3,1,16,15,10,8,1,1,,,F,1,1,unknown,0,0,Чернігівська,1,1,водій вантажівки,0,0
+D191,gold_drop_p20,court,F,1,1,6,4,3,2,0,16,10,10,8,1,1,,,F,1,1,unknown,0,0,Чернігівська,1,1,unknown,0,0
+D191,gold_drop_p40,court,F,1,1,6,4,3,2,0,16,10,10,7,1,1,,,F,1,1,1980,1,1,Чернігівська,1,1,водій вантажівки,0,0
+D191,gold_keep_patronymic,court,F,1,37,6,4,3,2,0,16,14,10,10,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D192,gold_full,forum,M,0,946,7,7,4,4,1,13,13,6,6,2,0,2,2,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D192,gold_di_only,forum,M,1,1,7,7,4,4,1,13,13,6,0,1,1,,,M,1,1,1990,1,1,unknown,0,0,тракторист,1,1
+D192,gold_edrsr_policy,forum,M,1,1,7,7,4,4,1,13,13,6,0,1,1,1,1,M,1,1,1990,1,1,unknown,0,0,тракторист,1,1
+D192,gold_miss_one_oblique,forum,M,1,32,7,6,4,3,0,13,12,6,6,1,1,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D192,gold_drop_p05,forum,M,0,946,7,7,4,4,1,13,13,6,6,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D192,gold_drop_p10,forum,M,1,4,7,7,4,4,1,13,13,6,4,1,3,,,M,1,1,1990,1,1,unknown,0,0,тракторист,1,1
+D192,gold_drop_p20,forum,M,1,1,7,4,4,2,0,13,7,6,4,1,1,,,M,1,1,unknown,0,1,unknown,0,0,тракторист,1,1
+D192,gold_drop_p40,forum,M,1,1,7,4,4,2,0,13,7,6,3,1,1,,,M,1,1,1990,1,1,unknown,0,0,тракторист,1,1
+D192,gold_keep_patronymic,forum,M,1,33,7,6,4,3,0,13,12,6,6,1,2,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D193,gold_full,news,M,0,946,7,7,3,3,1,11,11,5,5,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D193,gold_di_only,news,M,1,1,7,7,3,3,1,11,11,5,0,1,1,,,M,1,1,unknown,0,0,Львівська,0,0,фермер,1,1
+D193,gold_edrsr_policy,news,M,1,1,7,7,3,3,1,11,11,5,0,1,1,1,1,M,1,1,unknown,0,0,Львівська,0,0,фермер,1,1
+D193,gold_miss_one_oblique,news,M,1,38,7,6,3,2,0,11,10,5,5,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D193,gold_drop_p05,news,M,1,38,7,6,3,2,0,11,10,5,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D193,gold_drop_p10,news,M,1,38,7,6,3,2,0,11,10,5,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D193,gold_drop_p20,news,M,1,2,7,4,3,2,0,11,6,5,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D193,gold_drop_p40,news,M,1,2,7,4,3,2,0,11,6,5,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D193,gold_keep_patronymic,news,M,1,27,7,5,3,2,0,11,9,5,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D194,gold_full,news,F,0,1054,7,7,4,4,1,11,11,8,8,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D194,gold_di_only,news,F,1,1,7,7,4,4,1,11,11,8,0,1,1,,,F,1,1,1970,0,1,Львівська,1,1,вчитель початкових класів,1,1
+D194,gold_edrsr_policy,news,F,1,1,7,7,4,4,1,11,11,8,0,1,1,1,1,F,1,1,1970,0,1,Львівська,1,1,вчитель початкових класів,1,1
+D194,gold_miss_one_oblique,news,F,1,41,7,6,4,3,0,11,10,8,8,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D194,gold_drop_p05,news,F,0,1054,7,7,4,4,1,11,11,8,8,2,0,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D194,gold_drop_p10,news,F,0,1054,7,7,4,4,1,11,11,8,8,1,0,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D194,gold_drop_p20,news,F,1,1,7,5,4,3,0,11,7,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D194,gold_drop_p40,news,F,1,1,7,1,4,1,0,11,2,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D194,gold_keep_patronymic,news,F,1,37,7,6,4,3,0,11,10,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D195,gold_full,news,M,0,946,5,5,3,3,1,9,9,6,6,1,3,1,4,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D195,gold_di_only,news,M,1,1,5,5,3,3,1,9,9,6,0,1,1,,,M,1,1,1990,1,1,Вінницька,1,1,вчитель хімії,1,1
+D195,gold_edrsr_policy,news,M,1,1,5,5,3,3,1,9,9,6,0,1,1,1,1,M,1,1,1990,1,1,Вінницька,1,1,вчитель хімії,1,1
+D195,gold_miss_one_oblique,news,M,1,4,5,4,3,2,0,9,8,6,6,1,1,1,1,M,1,1,unknown,0,0,Львівська,0,0,вчитель початкових класів,0,0
+D195,gold_drop_p05,news,M,1,1,5,3,3,1,0,9,5,6,6,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D195,gold_drop_p10,news,M,1,1,5,3,3,1,0,9,5,6,6,1,0,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D195,gold_drop_p20,news,M,1,1,5,3,3,1,0,9,5,6,6,1,0,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D195,gold_drop_p40,news,M,1,1,5,2,3,1,0,9,3,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D195,gold_keep_patronymic,news,M,1,35,5,3,3,2,0,9,7,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D196,gold_full,court,M,0,946,6,6,3,3,1,16,16,11,11,2,0,2,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D196,gold_di_only,court,M,1,1,6,6,3,3,1,16,16,11,0,1,1,,,M,1,1,1980,1,1,Львівська,1,1,продавець,1,1
+D196,gold_edrsr_policy,court,M,1,1,6,6,3,3,1,16,15,11,1,1,1,1,1,M,1,1,unknown,0,0,Львівська,1,1,продавець,1,1
+D196,gold_miss_one_oblique,court,M,1,1,6,5,3,2,0,16,13,11,11,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D196,gold_drop_p05,court,M,0,946,6,6,3,3,1,16,16,11,11,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D196,gold_drop_p10,court,M,1,71,6,6,3,3,1,16,16,11,9,2,2,,,M,1,1,unknown,0,0,Львівська,1,1,unknown,0,0
+D196,gold_drop_p20,court,M,1,71,6,5,3,2,1,16,13,11,9,2,1,,,M,1,1,unknown,0,0,Львівська,1,1,unknown,0,0
+D196,gold_drop_p40,court,M,1,1,6,3,3,1,0,16,9,11,6,1,1,,,M,1,1,unknown,0,0,Львівська,1,1,продавець,1,1
+D196,gold_keep_patronymic,court,M,1,35,6,4,3,2,0,16,14,11,11,1,2,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D197,gold_full,news,F,0,1054,9,9,4,4,1,16,16,7,7,1,2,1,3,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D197,gold_di_only,news,F,1,1,9,9,4,4,1,16,16,7,0,1,1,,,F,1,1,1970,0,1,Вінницька,1,1,вчитель хімії,1,1
+D197,gold_edrsr_policy,news,F,1,1,9,9,4,4,1,16,16,7,0,1,1,1,1,F,1,1,1970,0,1,Вінницька,1,1,вчитель хімії,1,1
+D197,gold_miss_one_oblique,news,F,1,45,9,8,4,3,0,16,15,7,7,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D197,gold_drop_p05,news,F,1,3,9,9,4,4,1,16,16,7,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D197,gold_drop_p10,news,F,1,1,9,9,4,4,1,16,16,7,5,1,1,,,F,1,1,1970,0,1,unknown,0,0,вчитель хімії,1,0
+D197,gold_drop_p20,news,F,1,1,9,6,4,2,1,16,11,7,5,1,1,,,F,1,1,1970,0,1,unknown,0,0,вчитель хімії,1,0
+D197,gold_drop_p40,news,F,1,1,9,6,4,2,1,16,11,7,3,1,0,,,F,1,1,1970,0,1,Вінницька,1,1,вчитель хімії,1,0
+D197,gold_keep_patronymic,news,F,1,37,9,7,4,3,0,16,14,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D198,gold_full,court,F,0,1054,6,6,3,3,1,16,16,10,10,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D198,gold_di_only,court,F,1,1,6,6,3,3,1,16,16,10,0,1,1,,,F,1,1,1970,1,1,Полтавська,1,0,економіст,1,1
+D198,gold_edrsr_policy,court,F,1,1,6,6,3,3,1,16,15,10,1,1,1,1,1,F,1,1,unknown,0,0,Полтавська,1,0,економіст,1,1
+D198,gold_miss_one_oblique,court,F,1,1,6,5,3,2,0,16,13,10,10,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D198,gold_drop_p05,court,F,1,55,6,5,3,2,1,16,14,10,9,1,1,,,F,1,1,unknown,0,0,unknown,0,0,економіст,1,1
+D198,gold_drop_p10,court,F,1,2,6,4,3,1,0,16,13,10,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,економіст,1,1
+D198,gold_drop_p20,court,F,1,2,6,4,3,1,0,16,13,10,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,економіст,1,1
+D198,gold_drop_p40,court,F,1,1,6,3,3,1,0,16,9,10,7,1,1,,,F,1,1,unknown,0,0,Полтавська,1,0,економіст,1,1
+D198,gold_keep_patronymic,court,F,1,54,6,4,3,2,0,16,14,10,10,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D199,gold_full,forum,F,0,1054,5,5,3,3,1,11,11,6,6,3,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D199,gold_di_only,forum,F,1,1,5,5,3,3,1,11,11,6,0,1,0,,,F,1,1,2000,1,1,unknown,0,0,лікар,1,1
+D199,gold_edrsr_policy,forum,F,1,1,5,5,3,3,1,11,11,6,0,1,1,1,1,F,1,1,2000,1,1,unknown,0,0,лікар,1,1
+D199,gold_miss_one_oblique,forum,F,1,53,5,4,3,2,0,11,10,6,6,2,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D199,gold_drop_p05,forum,F,0,1054,5,5,3,3,1,11,11,6,6,3,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D199,gold_drop_p10,forum,F,0,1054,5,5,3,3,1,11,11,6,6,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D199,gold_drop_p20,forum,F,1,1,5,4,3,2,0,11,8,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D199,gold_drop_p40,forum,F,1,1,5,3,3,2,0,11,7,6,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D199,gold_keep_patronymic,forum,F,1,41,5,3,3,2,0,11,9,6,6,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D200,gold_full,forum,F,0,1054,8,8,4,4,1,14,14,6,6,3,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D200,gold_di_only,forum,F,1,1,8,8,4,4,1,14,14,6,0,1,1,,,F,1,1,1990,1,1,Житомирська,1,1,продавець,0,0
+D200,gold_edrsr_policy,forum,F,1,1,8,8,4,4,1,14,14,6,0,1,1,1,1,F,1,1,1990,1,1,Житомирська,1,1,продавець,0,0
+D200,gold_miss_one_oblique,forum,F,1,32,8,7,4,3,0,14,13,6,6,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D200,gold_drop_p05,forum,F,1,11,8,8,4,4,1,14,14,6,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D200,gold_drop_p10,forum,F,1,6,8,7,4,3,1,14,13,6,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D200,gold_drop_p20,forum,F,1,6,8,7,4,3,1,14,13,6,4,2,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D200,gold_drop_p40,forum,F,1,1,8,5,4,1,0,14,9,6,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D200,gold_keep_patronymic,forum,F,1,33,8,7,4,3,0,14,13,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D201,gold_full,court,M,0,946,9,9,4,4,1,24,24,8,8,1,0,1,0,M,1,1,unknown,0,0,unknown,0,0,агроном,0,0
+D201,gold_di_only,court,M,1,1,9,9,4,4,1,24,24,8,0,1,1,,,M,1,1,1990,1,1,unknown,0,0,тракторист,1,1
+D201,gold_edrsr_policy,court,M,1,1,9,9,4,4,1,24,23,8,1,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,тракторист,1,1
+D201,gold_miss_one_oblique,court,M,1,1,9,8,4,3,0,24,21,8,8,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,агроном,0,0
+D201,gold_drop_p05,court,M,0,946,9,9,4,4,1,24,24,8,8,1,0,,,M,1,1,unknown,0,0,unknown,0,0,агроном,0,0
+D201,gold_drop_p10,court,M,1,42,9,9,4,4,1,24,24,8,7,1,1,,,unknown,0,1,unknown,0,0,unknown,0,0,тракторист,1,1
+D201,gold_drop_p20,court,M,1,42,9,8,4,3,1,24,21,8,7,1,1,,,unknown,0,1,unknown,0,0,unknown,0,0,тракторист,1,1
+D201,gold_drop_p40,court,M,1,1,9,5,4,1,0,24,13,8,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,тракторист,1,1
+D201,gold_keep_patronymic,court,M,1,40,9,7,4,3,0,24,22,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,агроном,0,0
+D202,gold_full,news,M,0,946,6,6,4,4,1,12,12,8,8,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D202,gold_di_only,news,M,1,1,6,6,4,4,1,12,12,8,0,1,1,,,M,1,1,1980,1,1,Полтавська,1,1,фермер,1,1
+D202,gold_edrsr_policy,news,M,1,1,6,6,4,4,1,12,12,8,0,1,1,1,1,M,1,1,1980,1,1,Полтавська,1,1,фермер,1,1
+D202,gold_miss_one_oblique,news,M,1,1,6,5,4,3,0,12,9,8,8,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D202,gold_drop_p05,news,M,0,946,6,6,4,4,1,12,12,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D202,gold_drop_p10,news,M,0,946,6,6,4,4,1,12,12,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D202,gold_drop_p20,news,M,1,8,6,6,4,4,1,12,12,8,5,1,2,,,M,1,1,unknown,0,1,unknown,0,0,фермер,1,0
+D202,gold_drop_p40,news,M,1,1,6,3,4,2,0,12,6,8,3,1,1,,,M,1,1,1980,1,1,Полтавська,1,1,фермер,1,0
+D202,gold_keep_patronymic,news,M,1,38,6,4,4,3,0,12,10,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D204,gold_full,forum,F,0,1054,6,6,3,3,1,11,11,4,4,1,0,1,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D204,gold_di_only,forum,F,1,3,6,6,3,3,1,11,11,4,0,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D204,gold_edrsr_policy,forum,F,1,3,6,6,3,3,1,11,11,4,0,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,інженер,0,0
+D204,gold_miss_one_oblique,forum,F,1,31,6,5,3,2,0,11,10,4,4,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D204,gold_drop_p05,forum,F,1,9,6,6,3,3,1,11,11,4,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D204,gold_drop_p10,forum,F,1,9,6,6,3,3,1,11,11,4,3,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D204,gold_drop_p20,forum,F,1,9,6,5,3,2,1,11,9,4,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D204,gold_drop_p40,forum,F,1,1,6,2,3,0,0,11,2,4,2,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D204,gold_keep_patronymic,forum,F,1,27,6,5,3,2,0,11,10,4,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D205,gold_full,court,M,0,946,6,6,3,3,1,16,16,8,8,1,0,1,4,M,1,1,unknown,0,0,unknown,0,0,інженер,0,0
+D205,gold_di_only,court,M,1,1,6,6,3,3,1,16,16,8,0,1,1,,,M,1,1,1990,1,1,Полтавська,1,1,інженер,0,0
+D205,gold_edrsr_policy,court,M,1,1,6,6,3,3,1,16,15,8,1,1,0,1,0,M,1,1,unknown,0,0,Полтавська,1,1,інженер,0,0
+D205,gold_miss_one_oblique,court,M,1,1,6,5,3,2,0,16,13,8,8,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,інженер,0,0
+D205,gold_drop_p05,court,M,0,946,6,6,3,3,1,16,16,8,8,1,0,,,M,1,1,unknown,0,0,unknown,0,0,інженер,0,0
+D205,gold_drop_p10,court,M,1,9,6,5,3,2,0,16,15,8,8,1,0,,,M,1,1,unknown,0,0,unknown,0,0,інженер,0,0
+D205,gold_drop_p20,court,M,1,9,6,4,3,1,0,16,13,8,8,1,0,,,M,1,1,unknown,0,0,unknown,0,0,інженер,0,0
+D205,gold_drop_p40,court,M,1,1,6,2,3,1,0,16,7,8,6,1,1,,,M,1,1,unknown,0,0,Полтавська,1,1,інженер,0,0
+D205,gold_keep_patronymic,court,M,1,39,6,4,3,2,0,16,14,8,8,1,0,,,M,1,1,unknown,0,0,unknown,0,0,інженер,0,0
+D206,gold_full,forum,M,0,946,7,7,4,4,1,13,13,7,7,1,3,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D206,gold_di_only,forum,M,1,1,7,7,4,4,1,13,13,7,0,1,1,,,M,1,1,1990,1,1,Одеська,1,1,продавець,0,0
+D206,gold_edrsr_policy,forum,M,1,1,7,7,4,4,1,13,13,7,0,1,1,1,1,M,1,1,1990,1,1,Одеська,1,1,продавець,0,0
+D206,gold_miss_one_oblique,forum,M,1,38,7,6,4,3,0,13,12,7,7,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D206,gold_drop_p05,forum,M,1,38,7,5,4,2,0,13,10,7,7,3,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D206,gold_drop_p10,forum,M,1,38,7,5,4,2,0,13,10,7,7,5,2,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D206,gold_drop_p20,forum,M,1,1,7,5,4,2,0,13,10,7,6,2,2,,,M,1,1,unknown,0,0,Одеська,1,1,unknown,0,0
+D206,gold_drop_p40,forum,M,1,1,7,4,4,1,0,13,8,7,6,2,2,,,M,1,1,unknown,0,0,Одеська,1,1,unknown,0,0
+D206,gold_keep_patronymic,forum,M,1,30,7,6,4,3,0,13,12,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D207,gold_full,forum,F,0,1054,6,6,3,3,1,12,12,4,4,1,4,1,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D207,gold_di_only,forum,F,1,1,6,6,3,3,1,12,12,4,0,1,1,,,F,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D207,gold_edrsr_policy,forum,F,1,1,6,6,3,3,1,12,12,4,0,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D207,gold_miss_one_oblique,forum,F,1,32,6,5,3,2,0,12,11,4,4,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D207,gold_drop_p05,forum,F,1,32,6,5,3,2,0,12,11,4,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D207,gold_drop_p10,forum,F,1,32,6,5,3,2,0,12,11,4,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D207,gold_drop_p20,forum,F,1,2,6,4,3,1,0,12,8,4,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D207,gold_drop_p40,forum,F,1,1,6,4,3,1,0,12,8,4,1,1,1,,,F,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D207,gold_keep_patronymic,forum,F,1,37,6,5,3,2,0,12,11,4,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D208,gold_full,forum,F,0,1054,5,5,3,3,1,10,10,6,6,2,0,2,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D208,gold_di_only,forum,F,1,1,5,5,3,3,1,10,10,6,0,1,1,,,F,1,1,1970,0,1,Полтавська,0,1,бухгалтер,1,1
+D208,gold_edrsr_policy,forum,F,1,1,5,5,3,3,1,10,10,6,0,1,1,1,1,F,1,1,1970,0,1,Полтавська,0,1,бухгалтер,1,1
+D208,gold_miss_one_oblique,forum,F,1,41,5,4,3,2,0,10,9,6,6,1,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D208,gold_drop_p05,forum,F,1,7,5,5,3,3,1,10,10,6,5,1,1,,,F,1,1,unknown,0,0,Вінницька,1,1,unknown,0,0
+D208,gold_drop_p10,forum,F,1,7,5,5,3,3,1,10,10,6,5,1,1,,,F,1,1,unknown,0,0,Полтавська,0,1,unknown,0,0
+D208,gold_drop_p20,forum,F,1,7,5,5,3,3,1,10,10,6,5,1,1,,,F,1,1,unknown,0,0,Житомирська,0,1,unknown,0,0
+D208,gold_drop_p40,forum,F,1,1,5,4,3,2,0,10,9,6,4,1,1,,,F,1,1,unknown,0,0,unknown,0,1,unknown,0,0
+D208,gold_keep_patronymic,forum,F,1,33,5,4,3,2,0,10,9,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D209,gold_full,forum,M,0,946,5,5,3,3,1,10,10,8,8,1,0,1,3,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D209,gold_di_only,forum,M,1,1,5,5,3,3,1,10,10,8,0,1,1,,,M,1,1,1970,0,1,Житомирська,0,1,охоронець,1,1
+D209,gold_edrsr_policy,forum,M,1,1,5,5,3,3,1,10,10,8,0,1,1,1,1,M,1,1,1970,0,1,Житомирська,0,1,охоронець,1,1
+D209,gold_miss_one_oblique,forum,M,1,27,5,4,3,2,0,10,9,8,8,1,1,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D209,gold_drop_p05,forum,M,1,1,5,4,3,2,0,10,7,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D209,gold_drop_p10,forum,M,1,1,5,3,3,2,0,10,6,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D209,gold_drop_p20,forum,M,1,1,5,3,3,2,0,10,6,8,6,1,1,,,M,1,1,unknown,0,0,Вінницька,0,1,охоронець,1,1
+D209,gold_drop_p40,forum,M,1,1,5,3,3,2,0,10,6,8,4,1,1,,,M,1,1,unknown,0,0,Вінницька,0,1,охоронець,1,1
+D209,gold_keep_patronymic,forum,M,1,42,5,4,3,2,0,10,9,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D210,gold_full,court,F,0,1054,9,9,4,4,1,22,22,8,8,1,0,1,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D210,gold_di_only,court,F,1,1,9,9,4,4,1,22,22,8,0,1,1,,,F,1,1,1960,1,1,Чернігівська,1,1,медична сестра,1,1
+D210,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,22,21,8,1,1,1,1,1,F,1,1,unknown,0,0,Чернігівська,1,1,медична сестра,1,1
+D210,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,22,19,8,8,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D210,gold_drop_p05,court,F,1,220,9,9,4,4,1,22,22,8,7,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D210,gold_drop_p10,court,F,1,220,9,8,4,3,1,22,20,8,7,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D210,gold_drop_p20,court,F,1,14,9,7,4,2,1,22,18,8,6,1,0,,,F,1,1,1960,1,1,unknown,0,0,unknown,0,0
+D210,gold_drop_p40,court,F,1,1,9,4,4,1,0,22,11,8,5,1,1,,,F,1,1,1960,1,1,Чернігівська,1,1,unknown,0,0
+D210,gold_keep_patronymic,court,F,1,38,9,7,4,3,0,22,20,8,8,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D211,gold_full,news,M,0,946,7,7,3,3,1,12,12,6,6,1,3,1,1,M,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D211,gold_di_only,news,M,1,1,7,7,3,3,1,12,12,6,0,1,1,,,M,1,1,2000,0,1,Полтавська,0,0,фермер,1,0
+D211,gold_edrsr_policy,news,M,1,1,7,7,3,3,1,12,12,6,0,1,1,1,1,M,1,1,1990,1,1,Полтавська,0,0,фермер,1,0
+D211,gold_miss_one_oblique,news,M,1,34,7,6,3,2,0,12,11,6,6,2,0,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D211,gold_drop_p05,news,M,1,3,7,7,3,3,1,12,12,6,5,1,3,,,M,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D211,gold_drop_p10,news,M,1,3,7,7,3,3,1,12,12,6,4,1,1,,,M,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D211,gold_drop_p20,news,M,1,1,7,4,3,2,0,12,7,6,4,1,1,,,M,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D211,gold_drop_p40,news,M,1,1,7,2,3,1,0,12,4,6,3,1,1,,,M,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D211,gold_keep_patronymic,news,M,1,34,7,6,3,2,0,12,11,6,6,1,1,,,M,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D212,gold_full,court,M,0,946,6,6,3,3,1,16,16,9,9,1,0,1,0,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D212,gold_di_only,court,M,1,1,6,6,3,3,1,16,16,9,0,1,1,,,M,1,1,2000,1,1,Житомирська,1,1,unknown,0,0
+D212,gold_edrsr_policy,court,M,1,1,6,6,3,3,1,16,15,9,1,1,1,1,1,M,1,1,unknown,0,0,Житомирська,1,1,unknown,0,0
+D212,gold_miss_one_oblique,court,M,1,1,6,5,3,2,0,16,13,9,9,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D212,gold_drop_p05,court,M,0,946,6,6,3,3,1,16,16,9,9,1,2,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D212,gold_drop_p10,court,M,1,1,6,4,3,2,0,16,13,9,9,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D212,gold_drop_p20,court,M,1,1,6,4,3,2,0,16,13,9,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D212,gold_drop_p40,court,M,1,1,6,3,3,1,0,16,11,9,5,3,1,,,M,1,1,2000,1,1,Житомирська,1,1,unknown,0,0
+D212,gold_keep_patronymic,court,M,1,31,6,4,3,2,0,16,14,9,9,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D213,gold_full,forum,M,0,946,8,8,4,4,1,13,13,4,4,2,0,1,0,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D213,gold_di_only,forum,M,1,1,8,8,4,4,1,13,13,4,0,1,0,,,M,1,1,2000,0,1,unknown,0,0,unknown,0,0
+D213,gold_edrsr_policy,forum,M,1,1,8,8,4,4,1,13,13,4,0,1,1,1,0,M,1,1,2000,0,1,unknown,0,0,unknown,0,0
+D213,gold_miss_one_oblique,forum,M,1,36,8,7,4,3,0,13,12,4,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D213,gold_drop_p05,forum,M,0,946,8,8,4,4,1,13,13,4,4,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D213,gold_drop_p10,forum,M,1,17,8,7,4,3,0,13,12,4,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D213,gold_drop_p20,forum,M,1,17,8,6,4,2,0,13,11,4,3,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D213,gold_drop_p40,forum,M,1,1,8,4,4,1,0,13,7,4,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D213,gold_keep_patronymic,forum,M,1,23,8,7,4,3,0,13,12,4,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D214,gold_full,forum,M,0,946,6,6,3,3,1,12,12,8,8,1,4,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D214,gold_di_only,forum,M,1,1,6,6,3,3,1,12,12,8,0,1,1,,,M,1,1,1990,0,1,Харківська,1,1,вчитель початкових класів,1,1
+D214,gold_edrsr_policy,forum,M,1,1,6,6,3,3,1,12,12,8,0,1,1,1,1,M,1,1,1990,0,1,Харківська,1,1,вчитель початкових класів,1,1
+D214,gold_miss_one_oblique,forum,M,1,46,6,5,3,2,0,12,11,8,8,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D214,gold_drop_p05,forum,M,1,9,6,6,3,3,1,12,12,8,7,1,3,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D214,gold_drop_p10,forum,M,1,9,6,6,3,3,1,12,12,8,7,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D214,gold_drop_p20,forum,M,1,1,6,3,3,1,0,12,8,8,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D214,gold_drop_p40,forum,M,1,1,6,3,3,1,0,12,8,8,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D214,gold_keep_patronymic,forum,M,1,27,6,5,3,2,0,12,11,8,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D215,gold_full,court,F,0,1054,6,6,3,3,1,16,16,8,8,2,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D215,gold_di_only,court,F,1,1,6,6,3,3,1,16,16,8,0,1,1,,,F,1,1,unknown,0,0,Харківська,1,1,електрик,1,1
+D215,gold_edrsr_policy,court,F,1,1,6,6,3,3,1,16,15,8,0,1,1,1,1,F,1,1,unknown,0,0,Харківська,1,1,електрик,1,1
+D215,gold_miss_one_oblique,court,F,1,1,6,5,3,2,0,16,13,8,8,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D215,gold_drop_p05,court,F,1,1,6,5,3,2,0,16,13,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D215,gold_drop_p10,court,F,1,1,6,4,3,1,0,16,11,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D215,gold_drop_p20,court,F,1,1,6,2,3,0,0,16,8,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D215,gold_drop_p40,court,F,1,1,6,2,3,0,0,16,6,8,7,1,1,,,F,1,1,unknown,0,0,Харківська,1,1,unknown,0,0
+D215,gold_keep_patronymic,court,F,1,29,6,4,3,2,0,16,14,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D216,gold_full,news,M,0,946,7,7,3,3,1,15,15,7,7,3,0,2,3,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D216,gold_di_only,news,M,1,1,7,7,3,3,1,15,15,7,0,1,1,,,M,1,1,1960,1,1,Чернігівська,1,1,фермер,1,1
+D216,gold_edrsr_policy,news,M,1,1,7,7,3,3,1,15,15,7,0,1,1,1,1,M,1,1,1960,1,1,Чернігівська,1,1,фермер,1,1
+D216,gold_miss_one_oblique,news,M,1,4,7,6,3,2,0,15,14,7,7,1,1,2,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D216,gold_drop_p05,news,M,1,26,7,7,3,3,1,15,15,7,5,1,1,,,M,1,1,1960,1,1,unknown,0,0,фермер,1,0
+D216,gold_drop_p10,news,M,1,26,7,7,3,3,1,15,15,7,5,1,5,,,M,1,1,1960,1,1,unknown,0,0,фермер,1,0
+D216,gold_drop_p20,news,M,1,1,7,3,3,1,0,15,8,7,5,1,3,,,M,1,1,1960,1,1,unknown,0,0,фермер,1,0
+D216,gold_drop_p40,news,M,1,1,7,2,3,1,0,15,5,7,3,1,1,,,M,1,1,1960,1,1,unknown,0,0,фермер,1,0
+D216,gold_keep_patronymic,news,M,1,30,7,4,3,2,0,15,12,7,7,2,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D217,gold_full,forum,F,0,1054,6,6,4,4,1,9,9,7,7,1,2,1,5,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D217,gold_di_only,forum,F,1,1,6,6,4,4,1,9,9,7,0,1,1,,,F,1,1,unknown,0,0,Житомирська,1,1,листоноша,1,1
+D217,gold_edrsr_policy,forum,F,1,1,6,6,4,4,1,9,9,7,0,1,1,1,1,F,1,1,unknown,0,0,Житомирська,1,1,листоноша,1,1
+D217,gold_miss_one_oblique,forum,F,1,36,6,5,4,3,0,9,8,7,7,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D217,gold_drop_p05,forum,F,1,490,6,5,4,3,1,9,7,7,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D217,gold_drop_p10,forum,F,1,490,6,5,4,3,1,9,7,7,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D217,gold_drop_p20,forum,F,1,2,6,4,4,2,0,9,6,7,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,листоноша,1,1
+D217,gold_drop_p40,forum,F,1,2,6,3,4,1,0,9,4,7,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,листоноша,1,1
+D217,gold_keep_patronymic,forum,F,0,1054,6,6,4,4,1,9,9,7,7,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D218,gold_full,court,F,0,1054,7,7,3,3,1,18,18,10,10,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D218,gold_di_only,court,F,1,1,7,7,3,3,1,18,18,10,0,1,1,,,F,1,1,1970,1,1,Вінницька,1,1,unknown,0,0
+D218,gold_edrsr_policy,court,F,1,1,7,7,3,3,1,18,17,10,1,1,1,1,1,F,1,1,unknown,0,0,Вінницька,1,1,unknown,0,0
+D218,gold_miss_one_oblique,court,F,1,1,7,6,3,2,0,18,15,10,10,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D218,gold_drop_p05,court,F,0,1054,7,7,3,3,1,18,18,10,10,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D218,gold_drop_p10,court,F,1,203,7,7,3,3,1,18,18,10,9,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D218,gold_drop_p20,court,F,1,203,7,7,3,3,1,18,18,10,9,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D218,gold_drop_p40,court,F,1,1,7,5,3,2,0,18,14,10,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D218,gold_keep_patronymic,court,F,1,38,7,4,3,2,0,18,15,10,10,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D219,gold_full,news,F,0,1054,8,8,4,4,1,14,14,4,4,1,1,1,3,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D219,gold_di_only,news,F,1,1,8,8,4,4,1,14,14,4,0,1,1,,,F,1,1,unknown,0,0,unknown,0,1,фермер,1,0
+D219,gold_edrsr_policy,news,F,1,1,8,8,4,4,1,14,14,4,0,1,1,1,1,F,1,1,unknown,0,0,unknown,0,1,фермер,1,0
+D219,gold_miss_one_oblique,news,F,1,31,8,7,4,3,0,14,13,4,4,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D219,gold_drop_p05,news,F,0,1054,8,8,4,4,1,14,14,4,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D219,gold_drop_p10,news,F,1,1,8,7,4,3,0,14,11,4,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D219,gold_drop_p20,news,F,1,1,8,7,4,3,0,14,11,4,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D219,gold_drop_p40,news,F,1,1,8,5,4,2,0,14,6,4,2,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D219,gold_keep_patronymic,news,F,1,29,8,6,4,3,0,14,12,4,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D220,gold_full,news,M,0,946,5,5,3,3,1,9,9,4,4,1,2,1,2,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D220,gold_di_only,news,M,1,1,5,5,3,3,1,9,9,4,0,1,1,,,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,1
+D220,gold_edrsr_policy,news,M,1,1,5,5,3,3,1,9,9,4,0,1,1,1,1,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,1
+D220,gold_miss_one_oblique,news,M,1,4,5,4,3,2,0,9,8,4,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D220,gold_drop_p05,news,M,0,946,5,5,3,3,1,9,9,4,4,1,2,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D220,gold_drop_p10,news,M,0,946,5,5,3,3,1,9,9,4,4,2,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D220,gold_drop_p20,news,M,1,1,5,5,3,3,1,9,9,4,2,1,1,,,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,0
+D220,gold_drop_p40,news,M,1,1,5,4,3,2,0,9,7,4,2,1,1,,,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,0
+D220,gold_keep_patronymic,news,M,1,42,5,3,3,2,0,9,7,4,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D221,gold_full,news,M,0,946,5,5,3,3,1,8,8,5,5,2,3,1,1,M,1,1,unknown,0,0,unknown,0,0,агроном,0,0
+D221,gold_di_only,news,M,1,1,5,5,3,3,1,8,8,5,0,1,1,,,M,1,1,unknown,0,0,Львівська,1,1,фермер,1,1
+D221,gold_edrsr_policy,news,M,1,1,5,5,3,3,1,8,8,5,0,1,1,1,1,M,1,1,unknown,0,0,Львівська,1,1,фермер,1,1
+D221,gold_miss_one_oblique,news,M,1,14,5,4,3,2,0,8,7,5,5,1,3,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D221,gold_drop_p05,news,M,1,82,5,5,3,3,1,8,8,5,4,1,4,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D221,gold_drop_p10,news,M,1,2,5,4,3,2,0,8,7,5,3,1,2,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D221,gold_drop_p20,news,M,1,1,5,2,3,1,0,8,4,5,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D221,gold_drop_p40,news,M,1,1,5,2,3,1,0,8,4,5,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D221,gold_keep_patronymic,news,M,1,44,5,4,3,2,0,8,7,5,5,1,5,,,M,1,1,unknown,0,0,unknown,0,0,агроном,0,0
+D222,gold_full,forum,F,0,1054,7,7,4,4,1,13,13,7,7,1,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D222,gold_di_only,forum,F,1,1,7,7,4,4,1,13,13,7,0,1,1,,,F,1,1,1960,1,1,unknown,0,0,будівельник,1,1
+D222,gold_edrsr_policy,forum,F,1,1,7,7,4,4,1,13,13,7,0,1,1,1,1,F,1,1,1960,1,1,unknown,0,0,будівельник,1,1
+D222,gold_miss_one_oblique,forum,F,1,26,7,6,4,3,0,13,12,7,7,1,0,1,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D222,gold_drop_p05,forum,F,0,1054,7,7,4,4,1,13,13,7,7,1,4,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D222,gold_drop_p10,forum,F,0,1054,7,7,4,4,1,13,13,7,7,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D222,gold_drop_p20,forum,F,1,1,7,6,4,3,0,13,10,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D222,gold_drop_p40,forum,F,1,1,7,5,4,3,0,13,8,7,5,1,1,,,F,1,1,1970,0,1,unknown,0,0,unknown,0,0
+D222,gold_keep_patronymic,forum,F,1,48,7,6,4,3,0,13,12,7,7,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D223,gold_full,forum,F,0,1054,7,7,4,4,1,14,14,8,8,1,0,1,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D223,gold_di_only,forum,F,1,1,7,7,4,4,1,14,14,8,0,1,1,,,F,1,1,1970,1,1,Одеська,1,1,охоронець,1,1
+D223,gold_edrsr_policy,forum,F,1,1,7,7,4,4,1,14,14,8,0,1,1,1,1,F,1,1,1970,1,1,Одеська,1,1,охоронець,1,1
+D223,gold_miss_one_oblique,forum,F,1,30,7,6,4,3,0,14,13,8,8,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D223,gold_drop_p05,forum,F,0,1054,7,7,4,4,1,14,14,8,8,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D223,gold_drop_p10,forum,F,0,1054,7,7,4,4,1,14,14,8,8,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D223,gold_drop_p20,forum,F,1,4,7,7,4,4,1,14,14,8,6,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D223,gold_drop_p40,forum,F,1,1,7,4,4,2,0,14,7,8,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D223,gold_keep_patronymic,forum,F,1,38,7,6,4,3,0,14,13,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D224,gold_full,news,F,0,1054,7,7,3,3,1,13,13,5,5,2,0,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D224,gold_di_only,news,F,1,1,7,7,3,3,1,13,13,5,0,1,1,,,F,1,1,unknown,0,0,Львівська,1,1,вчитель початкових класів,1,1
+D224,gold_edrsr_policy,news,F,1,1,7,7,3,3,1,13,13,5,0,1,1,1,1,F,1,1,unknown,0,0,Львівська,1,1,вчитель початкових класів,1,1
+D224,gold_miss_one_oblique,news,F,1,3,7,6,3,2,0,13,12,5,5,1,2,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D224,gold_drop_p05,news,F,1,3,7,5,3,1,0,13,10,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D224,gold_drop_p10,news,F,1,3,7,5,3,1,0,13,10,5,5,1,1,,,F,1,1,unknown,0,0,Полтавська,0,0,вчитель початкових класів,1,0
+D224,gold_drop_p20,news,F,1,2,7,5,3,1,0,13,10,5,4,1,1,,,F,1,1,unknown,0,0,Львівська,1,1,вчитель початкових класів,1,0
+D224,gold_drop_p40,news,F,1,1,7,3,3,1,0,13,5,5,2,1,1,,,F,1,1,unknown,0,0,Львівська,1,1,вчитель початкових класів,1,0
+D224,gold_keep_patronymic,news,F,1,35,7,6,3,2,0,13,12,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,0,0
+D225,gold_full,court,F,0,1054,9,9,4,4,1,24,24,7,7,1,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D225,gold_di_only,court,F,1,1,9,9,4,4,1,24,24,7,0,1,1,,,F,1,1,1990,1,1,Львівська,1,0,програміст,1,1
+D225,gold_edrsr_policy,court,F,1,1,9,9,4,4,1,24,23,7,1,1,1,1,1,F,1,1,unknown,0,0,Львівська,1,0,програміст,1,1
+D225,gold_miss_one_oblique,court,F,1,1,9,8,4,3,0,24,21,7,7,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D225,gold_drop_p05,court,F,1,25,9,8,4,3,0,24,23,7,6,1,1,,,F,1,1,unknown,0,0,Львівська,1,0,unknown,0,0
+D225,gold_drop_p10,court,F,1,25,9,8,4,3,0,24,22,7,6,1,1,,,F,1,1,unknown,0,0,Львівська,1,0,unknown,0,0
+D225,gold_drop_p20,court,F,1,1,9,5,4,2,0,24,14,7,6,1,1,,,F,1,1,unknown,0,0,Львівська,1,0,unknown,0,0
+D225,gold_drop_p40,court,F,1,1,9,5,4,2,0,24,14,7,5,1,1,,,F,1,1,1990,1,1,Львівська,1,0,unknown,0,0
+D225,gold_keep_patronymic,court,F,1,32,9,7,4,3,0,24,22,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D226,gold_full,court,M,0,946,9,9,4,4,1,23,23,6,6,1,4,1,2,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D226,gold_di_only,court,M,1,1,9,9,4,4,1,23,23,6,0,1,1,,,unknown,0,1,unknown,0,0,Полтавська,0,0,будівельник,1,1
+D226,gold_edrsr_policy,court,M,1,1,9,9,4,4,1,23,22,6,0,1,1,1,1,M,1,1,unknown,0,0,Полтавська,0,0,будівельник,1,1
+D226,gold_miss_one_oblique,court,M,1,1,9,8,4,3,0,23,20,6,6,1,1,1,1,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D226,gold_drop_p05,court,M,0,946,9,9,4,4,1,23,23,6,6,3,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D226,gold_drop_p10,court,M,0,946,9,9,4,4,1,23,23,6,6,1,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D226,gold_drop_p20,court,M,1,946,9,8,4,3,1,23,21,6,6,1,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D226,gold_drop_p40,court,M,1,7,9,8,4,3,1,23,20,6,5,1,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D226,gold_keep_patronymic,court,M,1,35,9,7,4,3,0,23,21,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D227,gold_full,news,M,0,946,8,8,4,4,1,12,12,7,7,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D227,gold_di_only,news,M,1,1,8,8,4,4,1,12,12,7,0,1,1,,,M,1,1,1980,1,1,unknown,0,0,вчитель хімії,1,0
+D227,gold_edrsr_policy,news,M,1,1,8,8,4,4,1,12,12,7,0,1,1,1,1,M,1,1,1990,0,1,unknown,0,0,вчитель хімії,1,0
+D227,gold_miss_one_oblique,news,M,1,46,8,7,4,3,0,12,11,7,7,1,1,1,2,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D227,gold_drop_p05,news,M,1,197,8,8,4,4,1,12,12,7,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D227,gold_drop_p10,news,M,1,197,8,8,4,4,1,12,12,7,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D227,gold_drop_p20,news,M,1,1,8,6,4,2,0,12,9,7,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D227,gold_drop_p40,news,M,1,1,8,6,4,2,0,12,9,7,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D227,gold_keep_patronymic,news,M,1,31,8,6,4,3,0,12,10,7,7,1,2,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D228,gold_full,news,F,0,1054,9,9,4,4,1,17,17,8,8,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,агроном,0,0
+D228,gold_di_only,news,F,1,1,9,9,4,4,1,17,17,8,0,1,1,,,F,1,1,1990,1,1,Харківська,1,1,фермер,1,1
+D228,gold_edrsr_policy,news,F,1,1,9,9,4,4,1,17,17,8,0,1,1,1,1,F,1,1,1990,1,1,Харківська,1,1,фермер,1,1
+D228,gold_miss_one_oblique,news,F,1,41,9,8,4,3,0,17,16,8,8,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D228,gold_drop_p05,news,F,0,1054,9,9,4,4,1,17,17,8,8,1,4,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D228,gold_drop_p10,news,F,1,53,9,9,4,4,1,17,17,8,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D228,gold_drop_p20,news,F,1,3,9,8,4,3,0,17,16,8,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D228,gold_drop_p40,news,F,1,1,9,7,4,2,0,17,15,8,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D228,gold_keep_patronymic,news,F,1,38,9,6,4,3,0,17,14,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D229,gold_full,court,M,0,946,6,6,3,3,1,16,16,10,10,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D229,gold_di_only,court,M,1,1,6,6,3,3,1,16,16,10,0,1,1,,,M,1,1,1960,1,1,Вінницька,1,1,unknown,0,0
+D229,gold_edrsr_policy,court,M,1,1,6,6,3,3,1,16,15,10,1,1,1,1,1,M,1,1,unknown,0,0,Вінницька,1,1,unknown,0,0
+D229,gold_miss_one_oblique,court,M,1,1,6,5,3,2,0,16,13,10,10,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D229,gold_drop_p05,court,M,1,3,6,5,3,2,0,16,15,10,10,1,2,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D229,gold_drop_p10,court,M,1,1,6,5,3,2,0,16,15,10,9,1,1,,,M,1,1,unknown,0,0,Вінницька,1,1,unknown,0,0
+D229,gold_drop_p20,court,M,1,1,6,3,3,1,0,16,10,10,8,1,1,,,M,1,1,unknown,0,0,Вінницька,1,1,unknown,0,0
+D229,gold_drop_p40,court,M,1,1,6,2,3,1,0,16,7,10,5,1,1,,,M,1,1,unknown,0,0,Вінницька,1,1,unknown,0,0
+D229,gold_keep_patronymic,court,M,1,36,6,4,3,2,0,16,14,10,10,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D230,gold_full,news,M,0,946,6,6,3,3,1,11,11,7,7,1,4,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D230,gold_di_only,news,M,1,1,6,6,3,3,1,11,11,7,0,1,1,,,M,1,1,1970,1,1,Харківська,1,1,фермер,1,1
+D230,gold_edrsr_policy,news,M,1,1,6,6,3,3,1,11,11,7,0,1,1,1,1,M,1,1,1970,1,1,Харківська,1,1,фермер,1,1
+D230,gold_miss_one_oblique,news,M,1,1,6,5,3,2,0,11,8,7,7,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D230,gold_drop_p05,news,M,0,946,6,6,3,3,1,11,11,7,7,1,3,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D230,gold_drop_p10,news,M,0,946,6,6,3,3,1,11,11,7,7,1,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D230,gold_drop_p20,news,M,1,172,6,6,3,3,1,11,11,7,6,1,0,,,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,0
+D230,gold_drop_p40,news,M,1,5,6,5,3,2,0,11,10,7,6,1,0,,,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,0
+D230,gold_keep_patronymic,news,M,1,33,6,4,3,2,0,11,9,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D231,gold_full,news,F,0,1054,7,7,4,4,1,11,11,8,8,1,1,1,2,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D231,gold_di_only,news,F,1,1,7,7,4,4,1,11,11,8,0,1,1,,,F,1,1,1990,1,1,Полтавська,1,1,вчитель хімії,1,1
+D231,gold_edrsr_policy,news,F,1,1,7,7,4,4,1,11,11,8,0,1,1,1,1,F,1,1,1990,1,1,Полтавська,1,1,вчитель хімії,1,1
+D231,gold_miss_one_oblique,news,F,1,39,7,6,4,3,0,11,10,8,8,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D231,gold_drop_p05,news,F,1,1,7,7,4,4,1,11,11,8,5,1,1,,,F,1,1,1990,1,0,Полтавська,1,1,вчитель початкових класів,0,0
+D231,gold_drop_p10,news,F,1,1,7,7,4,4,1,11,11,8,5,1,1,,,F,1,1,1990,1,0,Полтавська,1,1,вчитель хімії,1,0
+D231,gold_drop_p20,news,F,1,1,7,7,4,4,1,11,11,8,5,1,1,,,F,1,1,1990,1,0,Полтавська,1,1,вчитель хімії,1,0
+D231,gold_drop_p40,news,F,1,1,7,7,4,4,1,11,11,8,5,1,1,,,F,1,1,1990,1,0,Полтавська,1,1,вчитель початкових класів,0,0
+D231,gold_keep_patronymic,news,F,1,29,7,6,4,3,0,11,10,8,8,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D232,gold_full,news,F,0,1054,8,8,3,3,1,14,14,3,3,1,2,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D232,gold_di_only,news,F,1,1,8,8,3,3,1,14,14,3,0,1,1,,,F,1,1,unknown,0,0,Полтавська,1,1,фермер,1,0
+D232,gold_edrsr_policy,news,F,1,1,8,8,3,3,1,14,14,3,0,1,1,1,1,F,1,1,unknown,0,0,Полтавська,1,1,фермер,1,0
+D232,gold_miss_one_oblique,news,F,1,46,8,7,3,2,0,14,13,3,3,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,агроном,0,0
+D232,gold_drop_p05,news,F,1,58,8,8,3,3,1,14,14,3,2,1,1,,,F,1,1,unknown,0,0,Полтавська,1,1,фермер,1,0
+D232,gold_drop_p10,news,F,1,1,8,7,3,2,0,14,13,3,2,1,1,,,F,1,1,unknown,0,0,Полтавська,1,1,фермер,1,0
+D232,gold_drop_p20,news,F,1,1,8,6,3,1,0,14,11,3,2,1,1,,,F,1,1,unknown,0,0,Полтавська,1,1,фермер,1,0
+D232,gold_drop_p40,news,F,1,1,8,5,3,1,0,14,9,3,1,1,1,,,F,1,1,unknown,0,0,Полтавська,1,1,фермер,1,0
+D232,gold_keep_patronymic,news,F,1,38,8,5,3,2,0,14,11,3,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D233,gold_full,court,M,0,946,9,9,4,4,1,24,24,7,7,1,0,1,1,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D233,gold_di_only,court,M,1,1,9,9,4,4,1,24,24,7,0,1,0,,,M,1,1,1960,1,1,Одеська,1,1,перукар,1,1
+D233,gold_edrsr_policy,court,M,1,1,9,9,4,4,1,24,23,7,1,1,0,1,1,M,1,1,unknown,0,0,Одеська,1,1,перукар,1,1
+D233,gold_miss_one_oblique,court,M,1,1,9,8,4,3,0,24,21,7,7,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D233,gold_drop_p05,court,M,1,2,9,9,4,4,1,24,24,7,6,2,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D233,gold_drop_p10,court,M,1,2,9,8,4,3,1,24,20,7,6,1,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D233,gold_drop_p20,court,M,1,1,9,8,4,3,1,24,20,7,5,1,0,,,unknown,0,1,1960,1,1,unknown,0,0,unknown,0,0
+D233,gold_drop_p40,court,M,1,1,9,5,4,2,0,24,13,7,4,1,1,,,M,1,1,1960,1,1,Одеська,1,1,unknown,0,0
+D233,gold_keep_patronymic,court,M,1,30,9,7,4,3,0,24,22,7,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D234,gold_full,forum,F,0,1054,6,6,3,3,1,11,11,7,7,2,5,1,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D234,gold_di_only,forum,F,1,1,6,6,3,3,1,11,11,7,0,1,1,,,F,1,1,2000,1,1,Одеська,1,1,перукар,1,1
+D234,gold_edrsr_policy,forum,F,1,1,6,6,3,3,1,11,11,7,0,1,1,1,1,F,1,1,2000,1,1,Одеська,1,1,перукар,1,1
+D234,gold_miss_one_oblique,forum,F,1,30,6,5,3,2,0,11,10,7,7,1,3,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D234,gold_drop_p05,forum,F,1,1054,6,6,3,3,1,11,11,7,6,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D234,gold_drop_p10,forum,F,1,1054,6,6,3,3,1,11,11,7,6,2,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D234,gold_drop_p20,forum,F,1,1054,6,6,3,3,1,11,11,7,6,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D234,gold_drop_p40,forum,F,1,1,6,2,3,1,0,11,3,7,3,1,1,,,F,1,1,2000,1,1,unknown,0,0,unknown,0,0
+D234,gold_keep_patronymic,forum,F,1,33,6,5,3,2,0,11,10,7,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D235,gold_full,news,M,0,946,7,7,3,3,1,13,13,3,3,2,5,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D235,gold_di_only,news,M,1,2,7,7,3,3,1,13,13,3,0,1,2,,,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,0
+D235,gold_edrsr_policy,news,M,1,2,7,7,3,3,1,13,13,3,0,1,2,1,1,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,0
+D235,gold_miss_one_oblique,news,M,1,32,7,6,3,2,0,13,12,3,3,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D235,gold_drop_p05,news,M,0,946,7,7,3,3,1,13,13,3,3,2,4,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D235,gold_drop_p10,news,M,1,15,7,7,3,3,1,13,13,3,2,1,2,,,M,1,1,unknown,0,0,unknown,0,1,фермер,1,0
+D235,gold_drop_p20,news,M,1,1,7,5,3,2,0,13,7,3,2,1,1,,,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,0
+D235,gold_drop_p40,news,M,1,1,7,5,3,2,0,13,7,3,1,1,1,,,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,0
+D235,gold_keep_patronymic,news,M,1,44,7,5,3,2,0,13,11,3,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D236,gold_full,news,M,0,946,7,7,4,4,1,13,13,4,4,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D236,gold_di_only,news,M,1,1,7,7,4,4,1,13,13,4,0,1,1,,,M,1,1,unknown,0,0,Львівська,1,1,unknown,0,0
+D236,gold_edrsr_policy,news,M,1,1,7,7,4,4,1,13,13,4,0,1,1,1,1,M,1,1,unknown,0,0,Львівська,1,1,вчитель початкових класів,0,0
+D236,gold_miss_one_oblique,news,M,1,38,7,6,4,3,0,13,12,4,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D236,gold_drop_p05,news,M,0,946,7,7,4,4,1,13,13,4,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D236,gold_drop_p10,news,M,1,2,7,6,4,3,1,13,11,4,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D236,gold_drop_p20,news,M,1,1,7,6,4,3,1,13,11,4,2,1,3,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D236,gold_drop_p40,news,M,1,1,7,6,4,3,1,13,11,4,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D236,gold_keep_patronymic,news,M,1,35,7,5,4,3,0,13,11,4,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D237,gold_full,news,M,0,946,5,5,3,3,1,8,8,4,4,1,0,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D237,gold_di_only,news,M,1,1,5,5,3,3,1,8,8,4,0,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D237,gold_edrsr_policy,news,M,1,1,5,5,3,3,1,8,8,4,0,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D237,gold_miss_one_oblique,news,M,1,20,5,4,3,2,0,8,7,4,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D237,gold_drop_p05,news,M,0,946,5,5,3,3,1,8,8,4,4,1,0,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D237,gold_drop_p10,news,M,1,415,5,5,3,3,1,8,8,4,3,1,2,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D237,gold_drop_p20,news,M,1,1,5,4,3,2,0,8,7,4,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D237,gold_drop_p40,news,M,1,1,5,4,3,2,0,8,7,4,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D237,gold_keep_patronymic,news,M,1,34,5,4,3,2,0,8,7,4,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D238,gold_full,court,M,0,946,6,6,3,3,1,15,15,9,9,1,3,1,5,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D238,gold_di_only,court,M,1,1,6,6,3,3,1,15,15,9,0,1,1,,,M,1,1,1960,1,1,unknown,0,0,будівельник,1,1
+D238,gold_edrsr_policy,court,M,1,1,6,6,3,3,1,15,14,9,1,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,будівельник,1,1
+D238,gold_miss_one_oblique,court,M,1,1,6,5,3,2,0,15,12,9,9,1,0,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D238,gold_drop_p05,court,M,0,946,6,6,3,3,1,15,15,9,9,1,5,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D238,gold_drop_p10,court,M,0,946,6,6,3,3,1,15,15,9,9,2,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D238,gold_drop_p20,court,M,1,415,6,6,3,3,1,15,14,9,8,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D238,gold_drop_p40,court,M,1,1,6,4,3,2,0,15,8,9,7,1,1,,,M,1,1,1960,1,1,unknown,0,0,unknown,0,0
+D238,gold_keep_patronymic,court,M,1,30,6,4,3,2,0,15,13,9,9,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D239,gold_full,court,M,0,946,9,9,4,4,1,23,23,6,6,0,2,1,2,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D239,gold_di_only,court,M,1,1,9,9,4,4,1,23,23,6,0,1,2,,,unknown,0,1,1970,1,1,Харківська,1,1,unknown,0,0
+D239,gold_edrsr_policy,court,M,1,1,9,9,4,4,1,23,22,6,1,1,1,1,1,unknown,0,1,unknown,0,0,Харківська,1,1,unknown,0,0
+D239,gold_miss_one_oblique,court,M,1,1,9,8,4,3,0,23,20,6,6,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D239,gold_drop_p05,court,M,1,946,9,9,4,4,1,23,22,6,6,2,1,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D239,gold_drop_p10,court,M,1,946,9,9,4,4,1,23,22,6,6,1,1,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D239,gold_drop_p20,court,M,1,172,9,9,4,4,1,23,22,6,5,1,1,,,unknown,0,1,unknown,0,0,Харківська,1,1,unknown,0,0
+D239,gold_drop_p40,court,M,1,1,9,6,4,3,0,23,14,6,5,1,1,,,M,1,1,unknown,0,0,Харківська,1,1,unknown,0,0
+D239,gold_keep_patronymic,court,M,1,39,9,7,4,3,0,23,21,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D240,gold_full,forum,F,0,1054,5,5,3,3,1,10,10,6,6,1,5,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D240,gold_di_only,forum,F,1,1,5,5,3,3,1,10,10,6,0,1,1,,,F,1,1,2000,1,1,Чернігівська,0,1,програміст,0,0
+D240,gold_edrsr_policy,forum,F,1,1,5,5,3,3,1,10,10,6,0,1,1,1,1,F,1,1,2000,1,1,Вінницька,0,1,програміст,0,0
+D240,gold_miss_one_oblique,forum,F,1,42,5,4,3,2,0,10,9,6,6,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D240,gold_drop_p05,forum,F,0,1054,5,5,3,3,1,10,10,6,6,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D240,gold_drop_p10,forum,F,0,1054,5,5,3,3,1,10,10,6,6,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D240,gold_drop_p20,forum,F,1,91,5,5,3,3,1,10,10,6,5,1,0,,,F,1,1,2000,1,1,unknown,0,0,unknown,0,0
+D240,gold_drop_p40,forum,F,1,1,5,4,3,2,0,10,8,6,5,1,1,,,F,1,1,2000,1,1,unknown,0,0,unknown,0,0
+D240,gold_keep_patronymic,forum,F,1,34,5,4,3,2,0,10,9,6,6,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D241,gold_full,news,M,0,946,6,6,3,3,1,13,13,6,6,1,4,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D241,gold_di_only,news,M,1,1,6,6,3,3,1,13,13,6,0,1,1,,,M,1,1,unknown,0,0,Вінницька,1,1,вчитель початкових класів,1,1
+D241,gold_edrsr_policy,news,M,1,1,6,6,3,3,1,13,13,6,0,1,1,1,1,M,1,1,unknown,0,0,Вінницька,1,1,вчитель початкових класів,1,1
+D241,gold_miss_one_oblique,news,M,1,7,6,5,3,2,0,13,12,6,6,2,0,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D241,gold_drop_p05,news,M,1,1,6,5,3,2,0,13,10,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D241,gold_drop_p10,news,M,1,1,6,5,3,2,0,13,10,6,5,1,1,,,M,1,1,unknown,0,0,Вінницька,1,1,вчитель початкових класів,1,0
+D241,gold_drop_p20,news,M,1,1,6,5,3,2,0,13,10,6,5,1,1,,,M,1,1,unknown,0,0,Вінницька,1,1,вчитель початкових класів,1,0
+D241,gold_drop_p40,news,M,1,1,6,5,3,2,0,13,10,6,5,1,1,,,M,1,1,unknown,0,0,Вінницька,1,1,вчитель початкових класів,1,0
+D241,gold_keep_patronymic,news,M,1,44,6,3,3,2,0,13,10,6,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D242,gold_full,court,F,0,1054,6,6,3,3,1,16,16,10,10,2,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D242,gold_di_only,court,F,1,1,6,6,3,3,1,16,16,10,0,1,1,,,F,1,1,1970,1,1,Житомирська,1,1,кухар,1,1
+D242,gold_edrsr_policy,court,F,1,1,6,6,3,3,1,16,15,10,1,1,1,1,1,F,1,1,unknown,0,0,Житомирська,1,1,кухар,1,1
+D242,gold_miss_one_oblique,court,F,1,1,6,5,3,2,0,16,13,10,10,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D242,gold_drop_p05,court,F,1,7,6,6,3,3,1,16,16,10,9,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D242,gold_drop_p10,court,F,1,7,6,6,3,3,1,16,16,10,9,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D242,gold_drop_p20,court,F,1,1,6,5,3,2,0,16,13,10,9,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D242,gold_drop_p40,court,F,1,1,6,3,3,2,0,16,8,10,8,1,1,,,F,1,1,unknown,0,0,Житомирська,1,1,кухар,1,1
+D242,gold_keep_patronymic,court,F,1,45,6,4,3,2,0,16,14,10,10,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D243,gold_full,news,F,0,1054,8,8,4,4,1,14,14,5,5,1,5,1,3,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D243,gold_di_only,news,F,1,1,8,8,4,4,1,14,14,5,0,1,1,,,F,1,1,unknown,0,0,Вінницька,1,1,вчитель початкових класів,1,1
+D243,gold_edrsr_policy,news,F,1,1,8,8,4,4,1,14,14,5,0,1,1,1,1,F,1,1,unknown,0,0,Вінницька,1,1,вчитель початкових класів,1,1
+D243,gold_miss_one_oblique,news,F,1,33,8,7,4,3,0,14,13,5,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,0,0
+D243,gold_drop_p05,news,F,0,1054,8,8,4,4,1,14,14,5,5,1,5,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D243,gold_drop_p10,news,F,0,1054,8,8,4,4,1,14,14,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D243,gold_drop_p20,news,F,1,19,8,7,4,3,0,14,13,5,5,3,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D243,gold_drop_p40,news,F,1,19,8,5,4,1,0,14,10,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D243,gold_keep_patronymic,news,F,1,38,8,6,4,3,0,14,12,5,5,1,3,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D244,gold_full,forum,M,0,946,6,6,3,3,1,12,12,5,5,2,0,1,4,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D244,gold_di_only,forum,M,1,1,6,6,3,3,1,12,12,5,0,1,1,,,M,1,1,unknown,0,0,unknown,0,0,юрист,1,1
+D244,gold_edrsr_policy,forum,M,1,1,6,6,3,3,1,12,12,5,0,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,юрист,1,1
+D244,gold_miss_one_oblique,forum,M,1,46,6,5,3,2,0,12,11,5,5,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D244,gold_drop_p05,forum,M,0,946,6,6,3,3,1,12,12,5,5,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D244,gold_drop_p10,forum,M,0,946,6,6,3,3,1,12,12,5,5,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D244,gold_drop_p20,forum,M,1,415,6,6,3,3,1,12,12,5,4,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D244,gold_drop_p40,forum,M,1,1,6,3,3,1,0,12,5,5,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D244,gold_keep_patronymic,forum,M,1,38,6,5,3,2,0,12,11,5,5,2,3,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D245,gold_full,forum,F,0,1054,6,6,4,4,1,12,12,6,6,1,3,1,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D245,gold_di_only,forum,F,1,1,6,6,4,4,1,12,12,6,0,1,1,,,F,1,1,1990,1,1,Львівська,1,1,кухар,0,0
+D245,gold_edrsr_policy,forum,F,1,1,6,6,4,4,1,12,12,6,0,1,1,1,1,F,1,1,1990,1,1,Львівська,1,1,кухар,0,0
+D245,gold_miss_one_oblique,forum,F,1,25,6,5,4,3,0,12,11,6,6,4,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D245,gold_drop_p05,forum,F,0,1054,6,6,4,4,1,12,12,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D245,gold_drop_p10,forum,F,0,1054,6,6,4,4,1,12,12,6,6,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D245,gold_drop_p20,forum,F,1,490,6,6,4,4,1,12,12,6,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D245,gold_drop_p40,forum,F,1,1,6,5,4,3,1,12,9,6,2,1,1,,,F,1,1,1990,1,1,Львівська,1,1,unknown,0,0
+D245,gold_keep_patronymic,forum,F,1,28,6,5,4,3,0,12,11,6,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D246,gold_full,news,F,0,1054,6,6,4,4,1,10,10,5,5,1,1,1,4,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D246,gold_di_only,news,F,1,1,6,6,4,4,1,10,10,5,0,1,1,,,F,1,1,1960,1,1,Вінницька,0,1,вчитель початкових класів,1,0
+D246,gold_edrsr_policy,news,F,1,1,6,6,4,4,1,10,10,5,0,1,1,1,1,F,1,1,1960,1,1,Одеська,1,1,вчитель початкових класів,1,0
+D246,gold_miss_one_oblique,news,F,1,2,6,5,4,3,0,10,8,5,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D246,gold_drop_p05,news,F,1,81,6,6,4,4,1,10,10,5,4,1,1,,,F,1,1,1970,0,1,unknown,0,0,вчитель початкових класів,1,0
+D246,gold_drop_p10,news,F,1,81,6,6,4,4,1,10,10,5,4,1,1,,,F,1,1,1970,0,1,unknown,0,0,вчитель початкових класів,1,0
+D246,gold_drop_p20,news,F,1,81,6,4,4,2,1,10,6,5,4,1,1,,,F,1,1,1960,1,1,unknown,0,0,вчитель початкових класів,1,0
+D246,gold_drop_p40,news,F,1,2,6,3,4,1,0,10,5,5,4,1,1,,,F,1,1,1960,1,1,unknown,0,0,вчитель початкових класів,1,0
+D246,gold_keep_patronymic,news,F,1,33,6,5,4,3,0,10,9,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D247,gold_full,forum,M,0,946,6,6,3,3,1,11,11,7,7,1,0,1,4,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D247,gold_di_only,forum,M,1,1,6,6,3,3,1,11,11,7,0,1,1,,,M,1,1,2000,0,1,Чернігівська,1,1,слюсар,1,1
+D247,gold_edrsr_policy,forum,M,1,1,6,6,3,3,1,11,11,7,0,1,1,1,0,M,1,1,2000,0,1,Чернігівська,1,1,слюсар,1,1
+D247,gold_miss_one_oblique,forum,M,1,29,6,5,3,2,0,11,10,7,7,1,1,1,0,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D247,gold_drop_p05,forum,M,1,3,6,5,3,2,0,11,10,7,6,1,0,,,M,1,1,2000,0,1,unknown,0,0,unknown,0,0
+D247,gold_drop_p10,forum,M,1,1,6,4,3,2,0,11,9,7,6,1,0,,,M,1,1,2000,0,1,unknown,0,0,unknown,0,0
+D247,gold_drop_p20,forum,M,1,1,6,4,3,2,0,11,9,7,6,1,0,,,M,1,1,2000,0,1,unknown,0,0,unknown,0,0
+D247,gold_drop_p40,forum,M,1,1,6,3,3,1,0,11,7,7,4,1,1,,,M,1,1,2000,0,1,unknown,0,0,слюсар,1,1
+D247,gold_keep_patronymic,forum,M,1,23,6,5,3,2,0,11,10,7,7,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D248,gold_full,news,F,0,1054,7,7,3,3,1,13,13,4,4,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D248,gold_di_only,news,F,1,1,7,7,3,3,1,13,13,4,0,1,2,,,F,1,1,1990,1,1,unknown,0,0,фермер,1,0
+D248,gold_edrsr_policy,news,F,1,1,7,7,3,3,1,13,13,4,0,1,1,1,1,F,1,1,1990,1,1,unknown,0,0,фермер,1,0
+D248,gold_miss_one_oblique,news,F,1,25,7,6,3,2,0,13,12,4,4,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D248,gold_drop_p05,news,F,0,1054,7,7,3,3,1,13,13,4,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D248,gold_drop_p10,news,F,0,1054,7,7,3,3,1,13,13,4,4,1,5,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D248,gold_drop_p20,news,F,1,1054,7,6,3,2,1,13,11,4,4,1,2,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D248,gold_drop_p40,news,F,1,1,7,5,3,1,0,13,9,4,3,1,3,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D248,gold_keep_patronymic,news,F,1,38,7,4,3,2,0,13,10,4,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D249,gold_full,court,F,0,1054,6,6,3,3,1,16,16,10,10,2,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D249,gold_di_only,court,F,1,1,6,6,3,3,1,16,16,10,0,1,1,,,F,1,1,1980,1,1,Харківська,1,1,вчитель початкових класів,1,1
+D249,gold_edrsr_policy,court,F,1,1,6,6,3,3,1,16,15,10,1,1,1,1,1,F,1,1,unknown,0,0,Харківська,1,1,вчитель початкових класів,1,1
+D249,gold_miss_one_oblique,court,F,1,1,6,5,3,2,0,16,13,10,10,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D249,gold_drop_p05,court,F,0,1054,6,6,3,3,1,16,16,10,10,2,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D249,gold_drop_p10,court,F,0,1054,6,6,3,3,1,16,16,10,10,2,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D249,gold_drop_p20,court,F,0,1054,6,6,3,3,1,16,16,10,10,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D249,gold_drop_p40,court,F,1,4,6,5,3,2,1,16,13,10,7,2,1,,,F,1,1,1980,1,1,Харківська,1,1,unknown,0,0
+D249,gold_keep_patronymic,court,F,1,29,6,4,3,2,0,16,14,10,10,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D250,gold_full,forum,F,0,1054,6,6,4,4,1,11,11,5,5,1,0,2,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D250,gold_di_only,forum,F,1,1,6,6,4,4,1,11,11,5,0,1,1,,,F,1,1,1980,1,1,unknown,0,0,unknown,0,0
+D250,gold_edrsr_policy,forum,F,1,1,6,6,4,4,1,11,11,5,0,1,1,1,1,F,1,1,1980,1,1,unknown,0,0,unknown,0,0
+D250,gold_miss_one_oblique,forum,F,1,35,6,5,4,3,0,11,10,5,5,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D250,gold_drop_p05,forum,F,0,1054,6,6,4,4,1,11,11,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D250,gold_drop_p10,forum,F,1,1054,6,5,4,3,1,11,9,5,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D250,gold_drop_p20,forum,F,1,4,6,4,4,2,0,11,7,5,4,1,1,,,F,1,1,1980,1,1,unknown,0,0,unknown,0,0
+D250,gold_drop_p40,forum,F,1,1,6,3,4,2,0,11,4,5,4,1,1,,,F,1,1,1980,1,1,unknown,0,0,unknown,0,0
+D250,gold_keep_patronymic,forum,F,1,54,6,5,4,3,0,11,10,5,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D101,rule,news,M,1,3,6,6,3,3,1,10,10,4,3,1,4,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D102,rule,court,F,1,1,9,9,4,4,1,22,22,7,3,1,0,1,3,F,1,1,unknown,0,0,Одеська,0,1,бухгалтер,1,1
+D103,rule,news,M,1,1,6,6,3,3,1,12,12,5,2,1,3,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D104,rule,forum,F,1,1,7,7,3,3,1,14,14,3,1,2,2,1,1,F,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D105,rule,court,F,1,2,6,6,3,3,1,16,16,8,5,1,3,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D106,rule,news,F,1,1,6,5,3,2,0,12,11,7,4,1,1,1,3,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D107,rule,forum,M,1,1,7,7,4,4,1,12,12,6,3,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D108,rule,court,F,1,1,10,10,4,4,1,25,25,6,2,1,1,1,1,F,1,1,unknown,0,0,Львівська,0,0,листоноша,1,1
+D109,rule,forum,M,1,1,6,5,3,2,0,11,10,5,3,1,4,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D110,rule,court,F,1,2,9,9,4,4,1,22,22,7,4,1,1,1,3,F,1,1,unknown,0,0,Львівська,1,0,unknown,0,0
+D111,rule,news,M,1,1,7,7,4,4,1,11,11,8,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D112,rule,forum,M,1,1,6,6,3,3,1,12,12,6,3,1,1,1,0,M,1,1,unknown,0,0,unknown,0,0,тракторист,1,1
+D113,rule,news,M,1,2,6,6,3,3,1,10,10,3,2,1,0,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D114,rule,forum,M,1,1,6,6,3,3,1,13,13,7,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D115,rule,news,F,1,2,8,8,4,4,1,14,14,6,1,1,3,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,0,0
+D116,rule,forum,M,1,1,5,5,3,3,1,10,10,8,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,бухгалтер,1,1
+D117,rule,news,M,1,2,6,6,3,3,1,13,13,6,2,1,1,1,2,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D118,rule,court,F,1,1,9,9,4,4,1,24,24,7,4,1,1,1,1,F,1,1,unknown,0,0,Харківська,1,0,слюсар,1,1
+D119,rule,court,F,1,1,9,9,4,4,1,22,22,7,3,1,1,1,0,F,1,1,unknown,0,0,Харківська,0,1,unknown,0,0
+D120,rule,court,F,1,1,6,6,3,3,1,15,15,8,4,1,1,1,1,F,1,1,unknown,0,0,Полтавська,1,0,агроном,1,1
+D121,rule,forum,F,1,8,6,6,4,4,1,11,11,5,2,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D122,rule,news,F,1,3,7,7,3,3,1,13,13,5,3,2,0,2,2,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D123,rule,news,M,1,1,8,6,3,2,0,13,11,8,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D124,rule,court,M,1,2,10,10,4,4,1,24,24,8,4,1,1,1,0,M,1,1,unknown,0,0,Житомирська,0,0,unknown,0,0
+D125,rule,forum,M,1,1,6,6,4,4,1,12,12,9,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,листоноша,1,1
+D126,rule,news,M,1,2,5,5,3,3,1,11,11,3,2,1,4,1,2,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D127,rule,news,F,1,1,6,6,3,3,1,11,11,5,3,1,2,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D128,rule,news,M,1,1,6,6,4,4,1,10,10,9,5,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D129,rule,forum,F,1,1,5,5,3,3,1,11,11,6,3,1,1,1,3,F,1,1,unknown,0,0,unknown,0,0,водій вантажівки,1,1
+D130,rule,forum,M,1,1,6,6,3,3,1,13,13,7,3,1,1,1,2,M,1,1,unknown,0,0,unknown,0,0,психолог,1,1
+D131,rule,news,M,1,2,7,7,4,4,1,11,11,6,3,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D132,rule,news,M,1,2,9,9,4,4,1,12,12,6,1,1,5,1,3,M,1,1,unknown,0,0,Вінницька,1,0,вчитель початкових класів,1,0
+D133,rule,news,M,1,1,8,8,3,3,1,12,12,6,2,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D134,rule,forum,M,1,1,8,7,4,3,0,14,13,8,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D135,rule,forum,F,1,2,6,6,3,3,1,12,12,5,3,1,2,1,4,F,1,1,unknown,0,0,unknown,0,0,лікар,1,1
+D136,rule,forum,M,1,1,6,6,3,3,1,13,13,8,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D137,rule,forum,M,1,2,7,7,4,4,1,14,14,8,3,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,електрик,1,0
+D138,rule,court,F,1,1,6,6,3,3,1,16,16,9,6,1,1,1,1,F,1,1,unknown,0,0,Житомирська,1,0,електрик,1,1
+D139,rule,court,F,1,6,9,9,4,4,1,21,21,5,3,1,0,2,2,F,1,1,unknown,0,0,Вінницька,1,0,unknown,0,0
+D140,rule,court,F,1,1,6,6,3,3,1,16,16,10,5,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,інженер,1,1
+D141,rule,court,M,1,1,9,9,4,4,1,24,24,5,2,1,1,1,0,unknown,0,1,unknown,0,0,Вінницька,0,1,інженер,1,0
+D142,rule,news,M,1,2,6,4,3,2,0,10,8,4,1,1,1,1,0,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D143,rule,news,M,1,1,8,7,4,3,0,13,12,7,4,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D144,rule,court,F,1,9,9,9,4,4,1,21,21,5,3,2,2,1,1,F,1,1,unknown,0,0,Житомирська,1,0,unknown,0,0
+D145,rule,court,M,1,3,6,6,3,3,1,15,15,7,4,1,0,1,0,M,1,1,unknown,0,0,Полтавська,0,0,unknown,0,0
+D146,rule,forum,F,1,1,6,6,4,4,1,11,11,6,3,2,1,1,1,F,1,1,unknown,0,0,unknown,0,0,медична сестра,1,1
+D147,rule,forum,F,1,1,6,6,3,3,1,12,12,6,3,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,водій вантажівки,1,1
+D148,rule,forum,M,1,2,7,7,4,4,1,14,14,7,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,програміст,1,1
+D149,rule,court,F,1,1,6,6,3,3,1,16,16,8,4,1,1,1,1,F,1,1,unknown,0,0,Чернігівська,1,1,unknown,0,0
+D150,rule,court,M,1,1,6,6,3,3,1,16,16,10,6,1,2,2,1,M,1,1,unknown,0,0,Вінницька,1,1,фермер,1,1
+D151,rule,court,F,1,1,9,9,4,4,1,22,22,5,2,1,1,1,1,F,1,1,unknown,0,0,Чернігівська,1,1,юрист,1,1
+D152,rule,forum,M,1,1,6,5,3,2,0,11,10,6,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D153,rule,news,F,1,1,6,5,3,2,0,11,10,6,3,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D155,rule,news,F,1,1,8,8,3,3,1,15,15,6,3,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D156,rule,court,F,1,5,6,6,3,3,1,17,17,8,6,1,1,1,2,F,1,1,unknown,0,0,Львівська,1,0,unknown,0,0
+D157,rule,court,M,1,1,9,9,4,4,1,22,22,8,3,1,1,1,1,M,1,1,unknown,0,0,Вінницька,0,1,охоронець,1,1
+D158,rule,news,F,1,1,9,9,3,3,1,15,15,5,3,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D159,rule,court,F,1,1,9,9,4,4,1,24,24,8,4,1,1,1,1,F,1,1,unknown,0,0,Полтавська,1,1,водій вантажівки,1,1
+D160,rule,forum,F,1,2,5,5,3,3,1,10,10,4,2,1,1,1,0,F,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D161,rule,court,F,1,1,9,9,4,4,1,22,22,5,3,1,3,1,1,F,1,1,unknown,0,0,Полтавська,1,1,unknown,0,0
+D162,rule,forum,F,1,1,7,7,3,3,1,15,15,3,1,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D163,rule,court,F,1,1,9,9,4,4,1,21,21,7,3,1,0,1,4,F,1,1,unknown,0,0,Львівська,0,0,водій вантажівки,1,1
+D164,rule,court,M,1,5,6,6,3,3,1,15,15,8,5,2,0,2,0,unknown,0,1,unknown,0,0,Львівська,0,0,інженер,0,0
+D165,rule,forum,F,1,3,6,6,4,4,1,11,11,7,4,1,0,1,3,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D166,rule,news,F,1,1,9,8,4,3,0,14,13,7,3,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D167,rule,court,F,1,2,9,9,4,4,1,21,21,7,4,1,0,1,3,F,1,1,unknown,0,0,Полтавська,1,0,unknown,0,0
+D168,rule,forum,M,1,1,6,6,3,3,1,12,12,6,2,1,1,1,3,M,1,1,unknown,0,0,unknown,0,0,слюсар,1,1
+D169,rule,forum,M,1,7,7,7,4,4,1,14,14,5,3,1,1,1,3,M,1,1,unknown,0,0,unknown,0,0,агроном,1,0
+D170,rule,court,F,1,3,9,9,4,4,1,21,21,6,3,1,1,1,3,F,1,1,unknown,0,0,Житомирська,1,0,unknown,0,0
+D171,rule,news,F,1,3,8,8,4,4,1,15,15,5,2,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D172,rule,news,F,1,4,7,7,3,3,1,11,11,5,3,1,2,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D173,rule,news,M,1,1,7,7,4,4,1,11,11,10,6,2,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D175,rule,forum,F,1,1,7,7,4,4,1,13,13,5,2,1,5,1,1,F,1,1,unknown,0,0,unknown,0,0,лікар,1,1
+D176,rule,forum,F,1,3,7,7,4,4,1,13,13,5,2,2,0,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D177,rule,forum,M,1,2,6,6,3,3,1,12,12,6,3,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D178,rule,court,M,1,3,9,9,4,4,1,22,22,6,3,1,0,1,2,M,1,1,unknown,0,0,Вінницька,0,0,unknown,0,0
+D179,rule,court,F,1,1,6,6,3,3,1,16,16,9,5,1,1,1,3,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,0,0
+D180,rule,news,M,1,2,7,7,4,4,1,12,12,5,3,1,1,1,1,M,1,1,1990,0,0,unknown,0,0,unknown,0,0
+D181,rule,forum,M,1,3,5,5,3,3,1,10,10,5,2,1,5,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D182,rule,news,F,1,1,6,6,3,3,1,12,12,5,1,1,3,1,1,F,1,1,unknown,0,0,Житомирська,1,0,вчитель початкових класів,1,1
+D183,rule,news,M,1,1,6,4,3,2,0,10,8,7,3,1,1,1,1,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,1
+D184,rule,forum,F,1,9,6,6,3,3,1,13,13,3,2,1,0,2,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D185,rule,court,F,1,1,9,9,4,4,1,22,22,8,3,1,1,1,1,F,1,1,unknown,0,0,Харківська,1,1,медична сестра,1,1
+D186,rule,forum,F,1,8,7,7,4,4,1,13,13,4,1,1,5,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D187,rule,court,M,1,2,6,6,3,3,1,15,15,7,4,1,1,1,1,M,1,1,unknown,0,0,Полтавська,0,0,лікар,1,1
+D188,rule,forum,F,1,4,5,5,3,3,1,11,11,5,3,1,4,1,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D189,rule,court,M,1,3,6,6,3,3,1,16,16,9,6,1,5,1,4,unknown,0,1,unknown,0,0,Харківська,1,0,програміст,0,0
+D191,rule,court,F,1,1,6,6,3,3,1,16,16,10,6,1,1,1,1,F,1,1,unknown,0,0,Чернігівська,1,1,unknown,0,0
+D192,rule,forum,M,1,1,7,7,4,4,1,13,13,6,2,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,тракторист,1,1
+D193,rule,news,M,1,1,7,7,3,3,1,11,11,5,2,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D194,rule,news,F,1,1,7,7,4,4,1,11,11,8,4,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D195,rule,news,M,1,1,5,5,3,3,1,9,9,6,3,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D196,rule,court,M,1,1,6,6,3,3,1,16,16,11,6,2,1,2,2,M,1,1,unknown,0,0,Львівська,1,1,продавець,1,1
+D197,rule,news,F,1,1,9,8,4,3,1,16,15,7,3,1,2,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D198,rule,court,F,1,1,6,6,3,3,1,16,16,10,5,1,1,1,1,F,1,1,unknown,0,0,Полтавська,1,0,економіст,1,1
+D199,rule,forum,F,1,1,5,5,3,3,1,11,11,6,3,1,1,1,3,F,1,1,unknown,0,0,unknown,0,0,лікар,1,1
+D200,rule,forum,F,1,1,8,7,4,3,0,14,13,6,4,1,0,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D201,rule,court,M,1,1,9,9,4,4,1,24,24,8,3,1,1,1,0,unknown,0,1,unknown,0,0,unknown,0,0,тракторист,1,1
+D202,rule,news,M,1,1,6,6,4,4,1,12,12,8,3,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D204,rule,forum,F,1,3,6,6,3,3,1,11,11,4,2,1,0,1,2,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D205,rule,court,M,1,1,6,6,3,3,1,16,16,8,5,1,0,1,0,M,1,1,unknown,0,0,Полтавська,1,1,інженер,0,0
+D206,rule,forum,M,1,5,7,7,4,4,1,13,13,7,5,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D207,rule,forum,F,1,1,6,6,3,3,1,12,12,4,1,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D208,rule,forum,F,1,1,5,5,3,3,1,10,10,6,3,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,1,1
+D209,rule,forum,M,1,1,5,5,3,3,1,10,10,8,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,охоронець,1,1
+D210,rule,court,F,1,1,9,9,4,4,1,22,22,8,3,1,1,1,1,F,1,1,unknown,0,0,Чернігівська,1,1,медична сестра,1,1
+D211,rule,news,M,1,1,7,7,3,3,1,12,12,6,3,1,1,1,1,M,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D212,rule,court,M,1,1,6,6,3,3,1,16,16,9,6,1,1,1,0,unknown,0,1,unknown,0,0,Житомирська,1,1,unknown,0,0
+D213,rule,forum,M,1,4,8,8,4,4,1,13,13,4,2,3,4,1,0,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D214,rule,forum,M,1,1,6,6,3,3,1,12,12,8,4,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D215,rule,court,F,1,1,6,6,3,3,1,16,16,8,4,1,1,1,1,F,1,1,unknown,0,0,Харківська,1,1,електрик,1,1
+D216,rule,news,M,1,1,7,7,3,3,1,15,15,7,3,2,1,2,2,M,1,1,unknown,0,0,Чернігівська,1,1,фермер,1,1
+D217,rule,forum,F,1,1,6,4,4,3,0,9,7,7,2,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,листоноша,1,1
+D218,rule,court,F,1,1,7,7,3,3,1,18,18,10,6,1,1,1,1,F,1,1,unknown,0,0,Вінницька,1,1,unknown,0,0
+D219,rule,news,F,1,1,8,8,4,4,1,14,14,4,2,1,2,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D220,rule,news,M,1,2,5,5,3,3,1,9,9,4,2,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D221,rule,news,M,1,1,5,5,3,3,1,8,8,5,2,1,0,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D222,rule,forum,F,1,1,7,7,4,4,1,13,13,7,2,1,2,1,2,F,1,1,unknown,0,0,unknown,0,0,будівельник,1,1
+D223,rule,forum,F,1,1,7,7,4,4,1,14,14,8,3,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,охоронець,1,1
+D224,rule,news,F,1,1,7,7,3,3,1,13,13,5,3,2,2,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D225,rule,court,F,1,1,9,9,4,4,1,24,24,7,3,1,1,1,1,F,1,1,unknown,0,0,Львівська,1,0,програміст,1,1
+D226,rule,court,M,1,1,9,9,4,4,1,23,23,6,2,1,1,1,1,M,1,1,unknown,0,0,Полтавська,0,0,будівельник,1,1
+D227,rule,news,M,1,1,8,8,4,4,1,12,12,7,2,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D228,rule,news,F,1,2,9,9,4,4,1,17,17,8,3,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D229,rule,court,M,1,1,6,6,3,3,1,16,16,10,6,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D230,rule,news,M,1,1,6,6,3,3,1,11,11,7,4,1,2,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D231,rule,news,F,1,1,7,7,4,4,1,11,11,8,4,1,1,1,1,F,1,1,1990,1,0,unknown,0,0,вчитель хімії,1,1
+D232,rule,news,F,1,1,8,7,3,2,0,14,13,3,2,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D233,rule,court,M,1,1,9,9,4,4,1,24,24,7,3,1,2,1,1,M,1,1,unknown,0,0,Одеська,1,1,перукар,1,1
+D234,rule,forum,F,1,1,6,6,3,3,1,11,11,7,4,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D235,rule,news,M,1,4,7,7,3,3,1,13,13,3,2,1,5,1,1,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D236,rule,news,M,1,1,7,7,4,4,1,13,13,4,2,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D237,rule,news,M,1,1,5,5,3,3,1,8,8,4,2,1,5,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D238,rule,court,M,1,1,6,6,3,3,1,15,15,9,5,1,1,1,4,M,1,1,unknown,0,0,Одеська,0,0,будівельник,1,1
+D239,rule,court,M,1,3,9,9,4,4,1,23,23,6,4,2,5,1,2,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D240,rule,forum,F,1,2,5,5,3,3,1,10,10,6,4,1,1,1,1,F,1,1,1980,0,0,unknown,0,0,unknown,0,0
+D241,rule,news,M,1,1,6,6,3,3,1,13,13,6,2,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D242,rule,court,F,1,1,6,6,3,3,1,16,16,10,5,1,2,1,1,F,1,1,unknown,0,0,Житомирська,1,1,кухар,1,1
+D243,rule,news,F,1,2,8,8,4,4,1,14,14,5,2,1,2,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D244,rule,forum,M,1,1,6,6,3,3,1,12,12,5,2,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,юрист,1,1
+D245,rule,forum,F,1,4,6,6,4,4,1,12,12,6,4,1,3,1,0,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D246,rule,news,F,1,3,6,6,4,4,1,10,10,5,3,1,1,1,1,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D247,rule,forum,M,1,1,6,6,3,3,1,11,11,7,3,1,1,1,1,M,1,1,unknown,0,0,unknown,0,0,слюсар,1,1
+D248,rule,news,F,1,3,7,7,3,3,1,13,13,4,3,1,0,1,1,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D249,rule,court,F,1,1,6,6,3,3,1,16,16,10,6,1,1,1,1,F,1,1,unknown,0,0,Харківська,1,1,вчитель початкових класів,1,1
+D250,rule,forum,F,1,1,6,5,4,3,0,11,10,5,2,1,3,1,1,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D101,spacy,news,M,1,3,6,6,3,3,1,10,10,4,3,1,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D102,spacy,court,F,1,1,9,8,4,3,0,22,21,7,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,1,1
+D103,spacy,news,M,1,24,6,6,3,3,1,12,12,5,3,1,0,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D104,spacy,forum,F,1,1,7,6,3,2,0,14,13,3,1,1,0,,,F,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D105,spacy,court,F,1,1,6,5,3,2,0,16,15,8,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D106,spacy,news,F,1,1,6,6,3,3,1,12,12,7,3,1,2,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D107,spacy,forum,M,1,1,7,7,4,4,1,12,12,6,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D108,spacy,court,F,1,1,10,9,4,3,0,25,24,6,3,1,0,,,F,1,1,unknown,0,0,unknown,0,0,листоноша,1,1
+D109,spacy,forum,M,1,6,6,6,3,3,1,11,11,5,3,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D110,spacy,court,F,1,1,9,8,4,3,0,22,21,7,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D111,spacy,news,M,1,7,7,7,4,4,1,11,11,8,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D112,spacy,forum,M,1,1,6,6,3,3,1,12,12,6,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,тракторист,1,1
+D113,spacy,news,M,1,946,6,6,3,3,1,10,10,3,3,1,0,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D114,spacy,forum,M,1,1,6,6,3,3,1,13,13,7,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D115,spacy,news,F,1,2,8,8,4,4,1,14,14,6,2,1,0,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,0,0
+D116,spacy,forum,M,1,1,5,5,3,3,1,10,10,8,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,бухгалтер,1,1
+D117,spacy,news,M,1,2,6,6,3,3,1,13,13,6,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D118,spacy,court,F,1,1,9,9,4,4,1,24,24,7,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,слюсар,1,1
+D119,spacy,court,F,1,1,9,8,4,3,0,22,21,7,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D120,spacy,court,F,1,1,6,6,3,3,1,15,15,8,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,агроном,1,1
+D121,spacy,forum,F,1,1,6,5,4,3,0,11,10,5,2,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D122,spacy,news,F,1,3,7,7,3,3,1,13,13,5,3,2,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D123,spacy,news,M,1,1,8,8,3,3,1,13,13,8,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D124,spacy,court,M,1,2,10,10,4,4,1,24,24,8,5,1,5,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D125,spacy,forum,M,1,1,6,6,4,4,1,12,12,9,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,листоноша,1,1
+D126,spacy,news,M,1,2,5,5,3,3,1,11,11,3,2,1,3,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D127,spacy,news,F,1,1,6,6,3,3,1,11,11,5,3,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D128,spacy,news,M,1,1,6,6,4,4,1,10,10,9,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D129,spacy,forum,F,1,1,5,5,3,3,1,11,11,6,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,водій вантажівки,1,1
+D130,spacy,forum,M,1,1,6,6,3,3,1,13,13,7,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,психолог,1,1
+D131,spacy,news,M,1,2,7,7,4,4,1,11,11,6,3,1,2,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D132,spacy,news,M,1,2,9,9,4,4,1,12,12,6,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D133,spacy,news,M,1,1,8,8,3,3,1,12,12,6,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D134,spacy,forum,M,1,1,8,7,4,3,0,14,13,8,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D135,spacy,forum,F,1,2,6,6,3,3,1,12,12,5,3,1,2,,,F,1,1,unknown,0,0,unknown,0,0,лікар,1,1
+D136,spacy,forum,M,1,1,6,6,3,3,1,13,13,8,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D137,spacy,forum,M,1,2,7,7,4,4,1,14,14,8,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,електрик,1,0
+D138,spacy,court,F,1,1,6,5,3,2,0,16,15,9,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,електрик,1,1
+D139,spacy,court,F,1,1,9,8,4,3,0,21,20,5,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D140,spacy,court,F,1,1,6,5,3,2,0,16,15,10,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,інженер,1,1
+D141,spacy,court,M,1,5,9,9,4,4,1,24,24,5,3,1,1,,,unknown,0,1,unknown,0,0,unknown,0,0,інженер,1,0
+D142,spacy,news,M,1,2,6,5,3,2,0,10,9,4,1,1,2,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D143,spacy,news,M,1,1,8,7,4,3,0,13,12,7,4,1,2,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D144,spacy,court,F,1,9,9,9,4,4,1,21,21,5,4,4,4,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D145,spacy,court,M,1,3,6,6,3,3,1,15,15,7,5,1,5,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D146,spacy,forum,F,1,1,6,6,4,4,1,11,11,6,3,2,1,,,F,1,1,unknown,0,0,unknown,0,0,медична сестра,1,1
+D147,spacy,forum,F,1,1,6,5,3,2,0,12,11,6,3,1,0,,,F,1,1,unknown,0,0,unknown,0,0,водій вантажівки,1,1
+D148,spacy,forum,M,1,2,7,7,4,4,1,14,14,7,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,програміст,1,1
+D149,spacy,court,F,1,1,6,6,3,3,1,16,16,8,5,2,4,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D150,spacy,court,M,1,1,6,6,3,3,1,16,16,10,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D151,spacy,court,F,1,1,9,9,4,4,1,22,22,5,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,юрист,1,1
+D152,spacy,forum,M,1,5,6,6,3,3,1,11,11,6,4,1,4,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D153,spacy,news,F,1,1,6,6,3,3,1,11,11,6,3,1,3,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D155,spacy,news,F,1,6,8,8,3,3,1,15,15,6,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D156,spacy,court,F,1,1,6,5,3,2,0,17,16,8,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D157,spacy,court,M,1,1,9,8,4,3,0,22,21,8,4,1,1,,,unknown,0,1,unknown,0,0,unknown,0,0,охоронець,1,1
+D158,spacy,news,F,1,1,9,9,3,3,1,15,15,5,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D159,spacy,court,F,1,1,9,9,4,4,1,24,24,8,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,водій вантажівки,1,1
+D160,spacy,forum,F,1,2,5,5,3,3,1,10,10,4,2,1,1,,,F,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D161,spacy,court,F,1,1,9,8,4,3,0,22,21,5,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D162,spacy,forum,F,1,1,7,6,3,2,0,15,14,3,1,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D163,spacy,court,F,1,1,9,8,4,3,0,21,20,7,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,водій вантажівки,1,1
+D164,spacy,court,M,1,1,6,5,3,2,0,15,14,8,6,1,5,,,M,1,1,unknown,0,0,unknown,0,0,інженер,0,0
+D165,spacy,forum,F,1,3,6,6,4,4,1,11,11,7,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D166,spacy,news,F,1,1,9,8,4,3,0,14,13,7,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D167,spacy,court,F,1,2,9,9,4,4,1,21,21,7,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D168,spacy,forum,M,1,1,6,6,3,3,1,12,12,6,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,слюсар,1,1
+D169,spacy,forum,M,1,5,7,7,4,4,1,14,14,5,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,агроном,1,0
+D170,spacy,court,F,1,3,9,9,4,4,1,21,21,6,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D171,spacy,news,F,1,25,8,8,4,4,1,15,15,5,3,1,4,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D172,spacy,news,F,1,1,7,6,3,2,0,11,10,5,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D173,spacy,news,M,1,12,7,7,4,4,1,11,11,10,7,2,2,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D175,spacy,forum,F,1,1,7,7,4,4,1,13,13,5,2,1,1,,,F,1,1,unknown,0,0,unknown,0,0,лікар,1,1
+D176,spacy,forum,F,1,3,7,7,4,4,1,13,13,5,2,2,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D177,spacy,forum,M,1,2,6,6,3,3,1,12,12,6,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D178,spacy,court,M,1,1,9,8,4,3,0,22,21,6,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D179,spacy,court,F,1,1,6,5,3,2,0,16,15,9,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,0,0
+D180,spacy,news,M,1,2,7,7,4,4,1,12,12,5,3,1,0,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D181,spacy,forum,M,1,3,5,5,3,3,1,10,10,5,2,1,4,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D182,spacy,news,F,1,14,6,6,3,3,1,12,12,5,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D183,spacy,news,M,1,1,6,5,3,2,0,10,9,7,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D184,spacy,forum,F,1,9,6,6,3,3,1,13,13,3,2,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D185,spacy,court,F,1,1,9,8,4,3,0,22,21,8,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,медична сестра,1,1
+D186,spacy,forum,F,1,1,7,6,4,3,0,13,12,4,1,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D187,spacy,court,M,1,2,6,6,3,3,1,15,15,7,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,лікар,1,1
+D188,spacy,forum,F,1,4,5,5,3,3,1,11,11,5,3,1,4,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D189,spacy,court,M,1,1,6,5,3,2,0,16,15,9,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,програміст,0,0
+D191,spacy,court,F,1,2,6,6,3,3,1,16,16,10,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D192,spacy,forum,M,1,1,7,7,4,4,1,13,13,6,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,тракторист,1,1
+D193,spacy,news,M,1,1,7,7,3,3,1,11,11,5,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D194,spacy,news,F,1,1,7,7,4,4,1,11,11,8,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D195,spacy,news,M,1,1,5,5,3,3,1,9,9,6,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D196,spacy,court,M,1,1,6,5,3,2,0,16,15,11,7,1,1,,,M,1,1,unknown,0,0,unknown,0,0,продавець,1,1
+D197,spacy,news,F,1,9,9,9,4,4,1,16,16,7,4,1,2,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D198,spacy,court,F,1,1,6,5,3,2,0,16,15,10,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,економіст,1,1
+D199,spacy,forum,F,1,1,5,5,3,3,1,11,11,6,3,1,4,,,F,1,1,unknown,0,0,unknown,0,0,лікар,1,1
+D200,spacy,forum,F,1,1,8,7,4,3,0,14,13,6,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D201,spacy,court,M,1,1,9,8,4,3,0,24,23,8,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,тракторист,1,1
+D202,spacy,news,M,1,1,6,6,4,4,1,12,12,8,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D204,spacy,forum,F,1,3,6,6,3,3,1,11,11,4,2,1,5,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D205,spacy,court,M,1,1,6,5,3,2,0,16,15,8,6,1,0,,,M,1,1,unknown,0,0,unknown,0,0,інженер,0,0
+D206,spacy,forum,M,1,5,7,7,4,4,1,13,13,7,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D207,spacy,forum,F,1,1,6,6,3,3,1,12,12,4,1,1,1,,,F,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D208,spacy,forum,F,1,1,5,5,3,3,1,10,10,6,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,1,1
+D209,spacy,forum,M,1,1,5,5,3,3,1,10,10,8,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,охоронець,1,1
+D210,spacy,court,F,1,2,9,9,4,4,1,22,22,8,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,медична сестра,1,1
+D211,spacy,news,M,1,1,7,7,3,3,1,12,12,6,3,1,1,,,M,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D212,spacy,court,M,1,3,6,6,3,3,1,16,16,9,7,1,2,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D213,spacy,forum,M,1,1,8,7,4,3,0,13,12,4,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D214,spacy,forum,M,1,1,6,6,3,3,1,12,12,8,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D215,spacy,court,F,1,1,6,5,3,2,0,16,15,8,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,електрик,1,1
+D216,spacy,news,M,1,2,7,7,3,3,1,15,15,7,3,2,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D217,spacy,forum,F,1,1,6,6,4,4,1,9,9,7,2,1,1,,,F,1,1,unknown,0,0,unknown,0,0,листоноша,1,1
+D218,spacy,court,F,1,1,7,7,3,3,1,18,18,10,7,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D219,spacy,news,F,1,1,8,8,4,4,1,14,14,4,2,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D220,spacy,news,M,1,2,5,5,3,3,1,9,9,4,2,2,2,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D221,spacy,news,M,1,1,5,5,3,3,1,8,8,5,2,1,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D222,spacy,forum,F,1,1,7,7,4,4,1,13,13,7,2,1,2,,,F,1,1,unknown,0,0,unknown,0,0,будівельник,1,1
+D223,spacy,forum,F,1,1,7,6,4,3,0,14,13,8,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,охоронець,1,1
+D224,spacy,news,F,1,45,7,7,3,3,1,13,13,5,4,2,0,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D225,spacy,court,F,1,1,9,9,4,4,1,24,24,7,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,програміст,1,1
+D226,spacy,court,M,1,1,9,9,4,4,1,23,23,6,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,будівельник,1,1
+D227,spacy,news,M,1,108,8,8,4,4,1,12,12,7,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D228,spacy,news,F,1,2,9,9,4,4,1,17,17,8,3,1,2,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D229,spacy,court,M,1,1,6,6,3,3,1,16,16,10,7,1,2,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D230,spacy,news,M,1,1,6,6,3,3,1,11,11,7,4,1,3,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D231,spacy,news,F,1,4,7,7,4,4,1,11,11,8,5,1,1,,,F,1,1,1990,1,0,unknown,0,0,вчитель хімії,1,1
+D232,spacy,news,F,1,4,8,8,3,3,1,14,14,3,2,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D233,spacy,court,M,1,1,9,9,4,4,1,24,24,7,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D234,spacy,forum,F,1,1,6,5,3,2,0,11,10,7,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D235,spacy,news,M,1,1,7,6,3,2,0,13,12,3,2,1,2,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D236,spacy,news,M,1,416,7,7,4,4,1,13,13,4,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D237,spacy,news,M,1,415,5,5,3,3,1,8,8,4,3,1,4,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D238,spacy,court,M,1,1,6,6,3,3,1,15,15,9,6,1,2,,,M,1,1,unknown,0,0,unknown,0,0,будівельник,1,1
+D239,spacy,court,M,1,1,9,8,4,3,0,23,22,6,5,1,1,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D240,spacy,forum,F,1,2,5,5,3,3,1,10,10,6,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D241,spacy,news,M,1,7,6,6,3,3,1,13,13,6,3,1,2,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D242,spacy,court,F,1,1,6,5,3,2,0,16,15,10,6,1,1,,,F,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D243,spacy,news,F,1,2,8,8,4,4,1,14,14,5,2,1,2,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D244,spacy,forum,M,1,1,6,6,3,3,1,12,12,5,2,1,2,,,M,1,1,unknown,0,0,unknown,0,0,юрист,1,1
+D245,spacy,forum,F,1,4,6,6,4,4,1,12,12,6,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D246,spacy,news,F,1,490,6,6,4,4,1,10,10,5,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D247,spacy,forum,M,1,1,6,6,3,3,1,11,11,7,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,слюсар,1,1
+D248,spacy,news,F,1,3,7,7,3,3,1,13,13,4,3,1,5,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D249,spacy,court,F,1,1,6,5,3,2,0,16,15,10,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D250,spacy,forum,F,1,2,6,6,4,4,1,11,11,5,2,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D101,llm,news,M,1,946,6,6,3,3,1,10,10,4,3,1,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D102,llm,court,F,1,1,9,9,4,4,1,22,22,7,3,1,4,,,F,1,1,unknown,0,0,Одеська,0,1,unknown,0,0
+D103,llm,news,M,1,2,6,6,3,3,1,12,12,5,1,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D104,llm,forum,F,1,9,7,7,3,3,1,14,14,3,2,3,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D105,llm,court,F,1,3,6,6,3,3,1,16,15,8,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D106,llm,news,F,1,53,6,6,3,3,1,12,12,7,4,2,4,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D107,llm,forum,M,1,7,7,7,4,4,1,12,12,6,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D108,llm,court,F,1,6,10,10,4,4,1,25,25,6,3,2,0,,,F,1,1,unknown,0,0,Львівська,0,0,unknown,0,0
+D109,llm,forum,M,1,7,6,6,3,3,1,11,11,5,2,1,4,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D110,llm,court,F,1,2,9,9,4,4,1,22,21,7,3,1,1,,,F,1,1,unknown,0,0,Львівська,1,0,unknown,0,0
+D111,llm,news,M,1,946,7,7,4,4,1,11,11,8,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D112,llm,forum,M,1,1,6,6,3,3,1,12,12,6,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D113,llm,news,M,1,946,6,6,3,3,1,10,10,3,2,3,0,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D114,llm,forum,M,1,7,6,6,3,3,1,13,13,7,6,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D115,llm,news,F,1,3,8,8,4,4,1,14,14,6,3,1,5,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D116,llm,forum,M,1,1,5,5,3,3,1,10,10,8,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,бухгалтер,1,1
+D117,llm,news,M,1,2,6,6,3,3,1,13,13,6,3,2,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D118,llm,court,F,1,4,9,9,4,4,1,24,23,7,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D119,llm,court,F,1,2,9,9,4,4,1,22,22,7,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D120,llm,court,F,1,1,6,5,3,2,0,15,14,8,4,1,1,,,F,1,1,unknown,0,0,Полтавська,1,0,unknown,0,0
+D121,llm,forum,F,1,8,6,6,4,4,1,11,11,5,2,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D122,llm,news,F,1,3,7,7,3,3,1,13,13,5,3,2,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D123,llm,news,M,1,64,8,8,3,3,1,13,13,8,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D124,llm,court,M,1,8,10,10,4,4,1,24,23,8,6,1,5,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D125,llm,forum,M,1,5,6,6,4,4,1,12,12,9,6,2,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D126,llm,news,M,1,946,5,5,3,3,1,11,11,3,2,1,5,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D127,llm,news,F,1,1,6,6,3,3,1,11,11,5,3,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D128,llm,news,M,1,2,6,6,4,4,1,10,10,9,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D129,llm,forum,F,1,9,5,5,3,3,1,11,11,6,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,водій вантажівки,1,0
+D130,llm,forum,M,1,1,6,6,3,3,1,13,13,7,5,1,1,,,M,1,1,unknown,0,0,unknown,0,0,психолог,1,1
+D131,llm,news,M,1,946,7,7,4,4,1,11,11,6,4,1,2,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D132,llm,news,M,1,946,9,8,4,3,1,12,11,6,4,1,5,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D133,llm,news,M,1,946,8,8,3,3,1,12,12,6,4,1,0,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D134,llm,forum,M,1,7,8,8,4,4,1,14,14,8,5,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D135,llm,forum,F,1,10,6,6,3,3,1,12,12,5,2,1,2,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D136,llm,forum,M,1,2,6,6,3,3,1,13,13,8,6,1,2,,,M,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D137,llm,forum,M,1,2,7,7,4,4,1,14,14,8,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,електрик,1,1
+D138,llm,court,F,1,5,6,6,3,3,1,16,16,9,6,1,1,,,F,1,1,unknown,0,0,Житомирська,1,0,unknown,0,0
+D139,llm,court,F,1,6,9,9,4,4,1,21,21,5,3,2,5,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D140,llm,court,F,1,1,6,6,3,3,1,16,16,10,7,1,0,,,F,1,1,unknown,0,0,unknown,0,0,інженер,1,1
+D141,llm,court,M,1,5,9,9,4,4,1,24,24,5,3,1,1,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D142,llm,news,M,1,4,6,6,3,3,1,10,10,4,1,1,0,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,0
+D143,llm,news,M,1,1,8,8,4,4,1,13,13,7,5,1,3,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D144,llm,court,F,1,1,9,8,4,3,0,21,20,5,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D145,llm,court,M,1,5,6,6,3,3,1,15,15,7,5,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D146,llm,forum,F,1,9,6,6,4,4,1,11,11,6,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D147,llm,forum,F,1,9,6,6,3,3,1,12,12,6,3,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D148,llm,forum,M,1,2,7,7,4,4,1,14,14,7,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,програміст,1,1
+D149,llm,court,F,1,11,6,6,3,3,1,16,16,8,6,2,5,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D150,llm,court,M,1,1,6,6,3,3,1,16,15,10,6,1,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D151,llm,court,F,1,1,9,9,4,4,1,22,21,5,1,1,1,,,F,1,1,unknown,0,0,Чернігівська,1,1,юрист,1,1
+D152,llm,forum,M,1,12,6,6,3,3,1,11,11,6,4,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D153,llm,news,F,1,1,6,6,3,3,1,11,11,6,2,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D155,llm,news,F,1,4,8,8,3,3,1,15,15,6,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D156,llm,court,F,1,5,6,6,3,3,1,17,17,8,4,1,1,,,F,1,1,unknown,0,0,Львівська,1,0,unknown,0,0
+D157,llm,court,M,1,7,9,9,4,4,1,22,22,8,6,1,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D158,llm,news,F,1,1054,9,9,3,3,1,15,15,5,3,2,4,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D159,llm,court,F,1,2,9,7,4,2,1,24,21,8,4,1,2,,,F,1,1,unknown,0,0,Полтавська,1,1,unknown,0,0
+D160,llm,forum,F,1,9,5,5,3,3,1,10,10,4,3,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D161,llm,court,F,1,1,9,9,4,4,1,22,22,5,2,1,2,,,F,1,1,unknown,0,0,Полтавська,1,1,unknown,0,0
+D162,llm,forum,F,1,10,7,7,3,3,1,15,15,3,1,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D163,llm,court,F,1,1,9,6,4,3,0,21,18,7,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D164,llm,court,M,1,5,6,6,3,3,1,15,15,8,5,2,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D165,llm,forum,F,1,3,6,6,4,4,1,11,11,7,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D166,llm,news,F,1,25,9,9,4,4,1,14,14,7,3,1,3,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D167,llm,court,F,1,7,9,9,4,4,1,21,21,7,5,2,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D168,llm,forum,M,1,9,6,6,3,3,1,12,12,6,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D169,llm,forum,M,1,5,7,7,4,4,1,14,14,5,2,1,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D170,llm,court,F,1,3,9,9,4,4,1,21,21,6,3,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D171,llm,news,F,1,3,8,8,4,4,1,15,15,5,0,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D172,llm,news,F,1,4,7,7,3,3,1,11,11,5,3,1,2,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D173,llm,news,M,1,64,7,7,4,4,1,11,11,10,8,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D175,llm,forum,F,1,1,7,7,4,4,1,13,13,5,1,1,5,,,F,1,1,unknown,0,0,unknown,0,0,лікар,1,1
+D176,llm,forum,F,1,9,7,7,4,4,1,13,13,5,4,3,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D177,llm,forum,M,1,9,6,6,3,3,1,12,12,6,4,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D178,llm,court,M,1,8,9,9,4,4,1,22,22,6,4,3,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D179,llm,court,F,1,5,6,6,3,3,1,16,16,9,8,1,0,,,F,1,1,unknown,0,0,unknown,0,0,бухгалтер,0,0
+D180,llm,news,M,1,946,7,6,4,3,1,12,11,5,3,1,1,,,M,1,1,1990,0,0,unknown,0,0,вчитель хімії,0,0
+D181,llm,forum,M,1,7,5,5,3,3,1,10,10,5,3,1,1,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D182,llm,news,F,1,1,6,6,3,3,1,12,12,5,2,1,5,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D183,llm,news,M,1,4,6,6,3,3,1,10,10,7,4,1,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D184,llm,forum,F,1,9,6,6,3,3,1,13,13,3,1,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D185,llm,court,F,1,7,9,9,4,4,1,22,21,8,6,3,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D186,llm,forum,F,1,8,7,7,4,4,1,13,13,4,2,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D187,llm,court,M,1,6,6,6,3,3,1,15,15,7,5,2,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D188,llm,forum,F,1,9,5,5,3,3,1,11,11,5,3,3,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D189,llm,court,M,1,3,6,6,3,3,1,16,16,9,6,1,2,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D191,llm,court,F,1,1,6,6,3,3,1,16,16,10,7,1,3,,,F,1,1,unknown,0,0,Чернігівська,1,1,unknown,0,0
+D192,llm,forum,M,1,2,7,7,4,4,1,13,13,6,3,1,5,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D193,llm,news,M,1,82,7,7,3,3,1,11,11,5,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D194,llm,news,F,1,490,7,7,4,4,1,11,11,8,4,1,0,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D195,llm,news,M,1,946,5,5,3,3,1,9,9,6,5,1,3,,,M,1,1,1990,1,0,unknown,0,0,вчитель хімії,1,0
+D196,llm,court,M,1,5,6,6,3,3,1,16,16,11,9,2,2,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D197,llm,news,F,1,1,9,9,4,4,1,16,16,7,4,1,2,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D198,llm,court,F,1,1,6,6,3,3,1,16,15,10,6,2,2,,,F,1,1,unknown,0,0,Полтавська,1,0,економіст,1,1
+D199,llm,forum,F,1,9,5,5,3,3,1,11,11,6,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D200,llm,forum,F,1,11,8,8,4,4,1,14,14,6,5,3,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D201,llm,court,M,1,8,9,9,4,4,1,24,24,8,5,1,1,,,unknown,0,1,unknown,0,0,unknown,0,0,агроном,0,0
+D202,llm,news,M,1,82,6,6,4,4,1,12,12,8,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D204,llm,forum,F,1,9,6,6,3,3,1,11,11,4,3,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D205,llm,court,M,1,1,6,6,3,3,1,16,16,8,4,1,0,,,M,1,1,unknown,0,0,Полтавська,1,1,інженер,0,0
+D206,llm,forum,M,1,9,7,7,4,4,1,13,13,7,5,2,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D207,llm,forum,F,1,10,6,6,3,3,1,12,12,4,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D208,llm,forum,F,1,11,5,5,3,3,1,10,10,6,3,2,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D209,llm,forum,M,1,3,5,5,3,3,1,10,10,8,4,1,4,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D210,llm,court,F,1,12,9,9,4,4,1,22,21,8,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D211,llm,news,M,1,946,7,7,3,3,1,12,12,6,5,1,0,,,M,1,1,1990,1,0,unknown,0,0,фермер,1,0
+D212,llm,court,M,1,1,6,6,3,3,1,16,16,9,5,1,0,,,M,1,1,unknown,0,0,Житомирська,1,1,unknown,0,0
+D213,llm,forum,M,1,2,8,7,4,3,0,13,12,4,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D214,llm,forum,M,1,9,6,6,3,3,1,12,12,8,7,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D215,llm,court,F,1,1,6,6,3,3,1,16,16,8,5,1,4,,,F,1,1,unknown,0,0,unknown,0,0,електрик,1,1
+D216,llm,news,M,1,82,7,7,3,3,1,15,15,7,3,2,4,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D217,llm,forum,F,1,4,6,6,4,4,1,9,9,7,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D218,llm,court,F,1,1,7,5,3,2,0,18,16,10,7,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D219,llm,news,F,1,1,8,8,4,4,1,14,14,4,1,1,4,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D220,llm,news,M,1,946,5,5,3,3,1,9,9,4,1,1,1,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D221,llm,news,M,1,3,5,5,3,3,1,8,8,5,2,2,0,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D222,llm,forum,F,1,2,7,7,4,4,1,13,13,7,3,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D223,llm,forum,F,1,4,7,7,4,4,1,14,14,8,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D224,llm,news,F,1,1,7,7,3,3,1,13,13,5,2,2,2,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,1
+D225,llm,court,F,1,9,9,9,4,4,1,24,24,7,5,1,0,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D226,llm,court,M,1,1,9,7,4,3,0,23,21,6,2,1,1,,,M,1,1,unknown,0,0,unknown,0,0,будівельник,1,1
+D227,llm,news,M,1,946,8,8,4,4,1,12,12,7,4,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D228,llm,news,F,1,2,9,9,4,4,1,17,17,8,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D229,llm,court,M,1,1,6,6,3,3,1,16,16,10,8,1,1,,,M,1,1,unknown,0,0,Вінницька,1,1,unknown,0,0
+D230,llm,news,M,1,82,6,6,3,3,1,11,11,7,4,1,5,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,1
+D231,llm,news,F,1,25,7,7,4,4,1,11,11,8,5,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D232,llm,news,F,1,4,8,8,3,3,1,14,14,3,0,1,2,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D233,llm,court,M,1,1,9,8,4,3,1,24,22,7,5,1,5,,,M,1,1,unknown,0,0,Одеська,1,1,unknown,0,0
+D234,llm,forum,F,1,1,6,6,3,3,1,11,11,7,3,1,1,,,F,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D235,llm,news,M,1,946,7,7,3,3,1,13,13,3,1,1,4,,,M,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D236,llm,news,M,1,1,7,7,4,4,1,13,13,4,0,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,0,0
+D237,llm,news,M,1,20,5,4,3,2,0,8,7,4,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,0,0
+D238,llm,court,M,1,1,6,6,3,3,1,15,15,9,5,1,1,,,unknown,0,1,unknown,0,0,Вінницька,0,0,будівельник,1,1
+D239,llm,court,M,1,3,9,8,4,3,1,23,22,6,4,1,0,,,unknown,0,1,unknown,0,0,unknown,0,0,unknown,0,0
+D240,llm,forum,F,1,10,5,5,3,3,1,10,10,6,3,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D241,llm,news,M,1,216,6,6,3,3,1,13,13,6,3,1,2,,,M,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D242,llm,court,F,1,1,6,6,3,3,1,16,16,10,6,1,1,,,F,1,1,unknown,0,0,Житомирська,1,1,unknown,0,0
+D243,llm,news,F,1,3,8,8,4,4,1,14,14,5,3,1,4,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D244,llm,forum,M,1,1,6,6,3,3,1,12,12,5,3,1,1,,,M,1,1,unknown,0,0,unknown,0,0,юрист,1,1
+D245,llm,forum,F,1,4,6,6,4,4,1,12,12,6,2,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D246,llm,news,F,1,33,6,5,4,3,0,10,9,5,4,1,1,,,F,1,1,unknown,0,0,unknown,0,0,вчитель початкових класів,1,0
+D247,llm,forum,M,1,2,6,6,3,3,1,11,11,7,3,1,0,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D248,llm,news,F,1,1054,7,7,3,3,1,13,13,4,3,1,0,,,F,1,1,unknown,0,0,unknown,0,0,фермер,1,0
+D249,llm,court,F,1,11,6,6,3,3,1,16,16,10,8,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D250,llm,forum,F,1,2,6,6,4,4,1,11,11,5,1,1,3,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D101,unmasked,news,M,1,1,6,0,3,0,0,10,0,4,0,1,1,,,M,1,1,1970,1,1,Одеська,1,1,фермер,1,0
+D102,unmasked,court,F,1,1,9,0,4,0,0,22,0,7,0,1,1,,,F,1,1,1970,1,1,Вінницька,0,1,бухгалтер,1,1
+D103,unmasked,news,M,1,1,6,0,3,0,0,12,0,5,0,1,1,,,M,1,1,unknown,0,0,Житомирська,1,1,вчитель хімії,1,1
+D104,unmasked,forum,F,1,1,7,0,3,0,0,14,0,3,0,1,1,,,F,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D105,unmasked,court,F,1,1,6,0,3,0,0,16,0,8,0,1,1,,,F,1,1,1960,1,1,Львівська,0,1,агроном,0,0
+D106,unmasked,news,F,1,1,6,0,3,0,0,12,0,7,0,1,1,,,F,1,1,1970,1,1,Одеська,1,1,фермер,1,1
+D107,unmasked,forum,M,1,1,7,0,4,0,0,12,0,6,0,1,1,,,M,1,1,1990,1,1,Вінницька,1,1,вчитель початкових класів,1,1
+D108,unmasked,court,F,1,1,10,0,4,0,0,25,0,6,0,1,1,,,F,1,1,unknown,0,0,Чернігівська,0,1,листоноша,1,1
+D109,unmasked,forum,M,1,1,6,0,3,0,0,11,0,5,0,1,1,,,M,1,1,unknown,0,0,Житомирська,0,1,програміст,0,0
+D110,unmasked,court,F,1,1,9,0,4,0,0,22,0,7,0,1,1,,,F,1,1,1990,1,1,Львівська,1,1,unknown,0,0
+D111,unmasked,news,M,1,1,7,0,4,0,0,11,0,8,0,1,1,,,M,1,1,unknown,0,0,Харківська,1,1,вчитель хімії,1,1
+D112,unmasked,forum,M,1,1,6,0,3,0,0,12,0,6,0,1,1,,,M,1,1,1970,1,1,Харківська,1,1,тракторист,1,1
+D113,unmasked,news,M,1,1,6,0,3,0,0,10,0,3,0,1,1,,,M,1,1,unknown,0,0,Чернігівська,1,1,вчитель початкових класів,0,0
+D114,unmasked,forum,M,1,1,6,0,3,0,0,13,0,7,0,1,1,,,M,1,1,1990,0,1,Вінницька,1,1,водій вантажівки,0,0
+D115,unmasked,news,F,1,1,8,0,4,0,0,14,0,6,0,1,1,,,F,1,1,1970,0,0,Полтавська,0,0,вчитель початкових класів,1,0
+D116,unmasked,forum,M,1,1,5,0,3,0,0,10,0,8,0,1,1,,,M,1,1,2000,0,1,Львівська,1,1,бухгалтер,1,1
+D117,unmasked,news,M,1,1,6,0,3,0,0,13,0,6,0,1,1,,,M,1,1,unknown,0,0,Вінницька,0,1,фермер,1,1
+D118,unmasked,court,F,1,1,9,0,4,0,0,24,0,7,0,1,1,,,F,1,1,1980,1,1,Харківська,1,1,слюсар,1,1
+D119,unmasked,court,F,1,1,9,0,4,0,0,22,0,7,0,1,1,,,F,1,1,1980,1,1,Вінницька,1,1,unknown,0,0
+D120,unmasked,court,F,1,1,6,0,3,0,0,15,0,8,0,1,1,,,F,1,1,unknown,0,0,Полтавська,1,0,агроном,1,1
+D121,unmasked,forum,F,1,1,6,0,4,0,0,11,0,5,0,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D122,unmasked,news,F,1,1,7,0,3,0,0,13,0,5,0,1,1,,,F,1,1,1990,1,1,Чернігівська,1,1,фермер,1,1
+D123,unmasked,news,M,1,1,8,0,3,0,0,13,0,8,0,1,1,,,M,1,1,unknown,0,0,Львівська,1,1,вчитель початкових класів,1,1
+D124,unmasked,court,M,1,1,10,0,4,0,0,24,0,8,0,1,1,,,M,1,1,1990,1,1,Вінницька,1,1,unknown,0,0
+D125,unmasked,forum,M,1,1,6,0,4,0,0,12,0,9,0,1,1,,,M,1,1,1970,1,1,Вінницька,0,1,листоноша,1,1
+D126,unmasked,news,M,1,1,5,0,3,0,0,11,0,3,0,1,1,,,M,1,1,1970,0,1,unknown,0,0,фермер,1,0
+D127,unmasked,news,F,1,1,6,0,3,0,0,11,0,5,0,1,1,,,F,1,1,1990,1,1,Львівська,1,1,фермер,1,0
+D128,unmasked,news,M,1,1,6,0,4,0,0,10,0,9,0,1,1,,,M,1,1,1990,1,1,Львівська,1,1,фермер,1,1
+D129,unmasked,forum,F,1,1,5,0,3,0,0,11,0,6,0,1,1,,,F,1,1,1970,1,1,unknown,0,0,водій вантажівки,1,1
+D130,unmasked,forum,M,1,1,6,0,3,0,0,13,0,7,0,1,1,,,M,1,1,1980,0,1,unknown,0,0,психолог,1,1
+D131,unmasked,news,M,1,1,7,0,4,0,0,11,0,6,0,1,1,,,M,1,1,unknown,0,0,Одеська,1,1,фермер,1,1
+D132,unmasked,news,M,1,1,9,0,4,0,0,12,0,6,0,1,1,,,M,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D133,unmasked,news,M,1,1,8,0,3,0,0,12,0,6,0,1,1,,,M,1,1,1970,1,1,unknown,0,0,вчитель хімії,1,1
+D134,unmasked,forum,M,1,1,8,0,4,0,0,14,0,8,0,1,1,,,M,1,1,1990,0,1,Вінницька,0,1,кухар,1,1
+D135,unmasked,forum,F,1,1,6,0,3,0,0,12,0,5,0,1,1,,,F,1,1,unknown,0,0,unknown,0,1,лікар,1,1
+D136,unmasked,forum,M,1,1,6,0,3,0,0,13,0,8,0,1,1,,,M,1,1,1980,0,1,Львівська,1,1,кухар,1,1
+D137,unmasked,forum,M,1,1,7,0,4,0,0,14,0,8,0,1,1,,,M,1,1,1990,1,1,Харківська,0,1,електрик,1,1
+D138,unmasked,court,F,1,1,6,0,3,0,0,16,0,9,0,1,1,,,F,1,1,1990,1,1,Житомирська,1,1,електрик,1,1
+D139,unmasked,court,F,1,1,9,0,4,0,0,21,0,5,0,1,1,,,F,1,1,1970,1,1,unknown,0,0,unknown,0,0
+D140,unmasked,court,F,1,1,6,0,3,0,0,16,0,10,0,1,1,,,F,1,1,1980,1,1,unknown,0,1,інженер,1,1
+D141,unmasked,court,M,1,1,9,0,4,0,0,24,0,5,0,1,1,,,M,1,1,unknown,0,0,Вінницька,0,1,інженер,1,1
+D142,unmasked,news,M,1,1,6,0,3,0,0,10,0,4,0,1,1,,,M,1,1,unknown,0,0,unknown,0,0,вчитель хімії,1,1
+D143,unmasked,news,M,1,1,8,0,4,0,0,13,0,7,0,1,1,,,M,1,1,1990,0,1,Харківська,1,1,фермер,1,0
+D144,unmasked,court,F,1,1,9,0,4,0,0,21,0,5,0,1,1,,,F,1,1,unknown,0,0,Житомирська,1,1,unknown,0,0
+D145,unmasked,court,M,1,1,6,0,3,0,0,15,0,7,0,1,1,,,M,1,1,unknown,0,0,Полтавська,0,0,агроном,0,0
+D146,unmasked,forum,F,1,1,6,0,4,0,0,11,0,6,0,1,1,,,F,1,1,2000,1,1,unknown,0,0,медична сестра,1,1
+D147,unmasked,forum,F,1,1,6,0,3,0,0,12,0,6,0,1,1,,,F,1,1,1980,1,1,Вінницька,0,1,водій вантажівки,1,1
+D148,unmasked,forum,M,1,1,7,0,4,0,0,14,0,7,0,1,1,,,M,1,1,1970,1,1,Чернігівська,1,1,програміст,1,1
+D149,unmasked,court,F,1,1,6,0,3,0,0,16,0,8,0,1,1,,,F,1,1,unknown,0,0,Чернігівська,1,1,unknown,0,0
+D150,unmasked,court,M,1,1,6,0,3,0,0,16,0,10,0,1,1,,,M,1,1,1970,1,1,Вінницька,1,1,фермер,1,1
+D151,unmasked,court,F,1,1,9,0,4,0,0,22,0,5,0,1,1,,,F,1,1,unknown,0,0,Чернігівська,1,1,юрист,1,1
+D152,unmasked,forum,M,1,1,6,0,3,0,0,11,0,6,0,1,0,,,M,1,1,1960,1,1,Житомирська,1,1,водій вантажівки,0,0
+D153,unmasked,news,F,1,1,6,0,3,0,0,11,0,6,0,1,1,,,F,1,1,1980,0,1,Вінницька,1,1,фермер,1,1
+D155,unmasked,news,F,1,1,8,0,3,0,0,15,0,6,0,1,1,,,F,1,1,1990,1,1,Вінницька,1,1,вчитель хімії,1,1
+D156,unmasked,court,F,1,1,6,0,3,0,0,17,0,8,0,1,1,,,F,1,1,1970,1,1,Львівська,1,1,будівельник,0,0
+D157,unmasked,court,M,1,1,9,0,4,0,0,22,0,8,0,1,1,,,M,1,1,1990,1,1,Вінницька,0,1,охоронець,1,1
+D158,unmasked,news,F,1,1,9,0,3,0,0,15,0,5,0,1,1,,,F,1,1,1980,1,1,Вінницька,1,1,фермер,1,0
+D159,unmasked,court,F,1,1,9,0,4,0,0,24,0,8,0,1,1,,,F,1,1,1970,1,1,Полтавська,1,1,водій вантажівки,1,1
+D160,unmasked,forum,F,1,1,5,0,3,0,0,10,0,4,0,1,1,,,F,1,1,unknown,0,0,unknown,0,0,перукар,1,1
+D161,unmasked,court,F,1,1,9,0,4,0,0,22,0,5,0,1,1,,,F,1,1,1960,1,1,Полтавська,1,1,unknown,0,0
+D162,unmasked,forum,F,1,1,7,0,3,0,0,15,0,3,0,1,1,,,F,1,1,1990,0,0,unknown,0,0,unknown,0,0
+D163,unmasked,court,F,1,1,9,0,4,0,0,21,0,7,0,1,1,,,F,1,1,1970,1,1,Львівська,0,0,водій вантажівки,1,1
+D164,unmasked,court,M,1,1,6,0,3,0,0,15,0,8,0,1,1,,,M,1,1,1970,1,1,Львівська,0,0,інженер,0,0
+D165,unmasked,forum,F,1,1,6,0,4,0,0,11,0,7,0,1,1,,,F,1,1,2000,0,1,Одеська,1,1,програміст,0,0
+D166,unmasked,news,F,1,1,9,0,4,0,0,14,0,7,0,1,1,,,F,1,1,1970,1,1,Харківська,1,1,вчитель хімії,1,1
+D167,unmasked,court,F,1,1,9,0,4,0,0,21,0,7,0,1,1,,,F,1,1,1960,1,1,Полтавська,1,1,unknown,0,0
+D168,unmasked,forum,M,1,1,6,0,3,0,0,12,0,6,0,1,1,,,M,1,1,1990,0,0,Львівська,1,1,слюсар,1,1
+D169,unmasked,forum,M,1,1,7,0,4,0,0,14,0,5,0,1,1,,,M,1,1,1960,1,1,unknown,0,0,агроном,1,1
+D170,unmasked,court,F,1,1,9,0,4,0,0,21,0,6,0,1,1,,,F,1,1,unknown,0,0,Житомирська,1,1,unknown,0,0
+D171,unmasked,news,F,1,1,8,0,4,0,0,15,0,5,0,1,1,,,F,1,1,unknown,0,0,Львівська,1,1,вчитель хімії,1,1
+D172,unmasked,news,F,1,1,7,0,3,0,0,11,0,5,0,1,1,,,F,1,1,unknown,0,0,Харківська,1,1,фермер,1,1
+D173,unmasked,news,M,1,1,7,0,4,0,0,11,0,10,0,1,1,,,M,1,1,1980,1,1,Вінницька,1,1,вчитель початкових класів,1,1
+D175,unmasked,forum,F,1,1,7,0,4,0,0,13,0,5,0,1,1,,,F,1,1,1990,0,0,unknown,0,0,лікар,1,1
+D176,unmasked,forum,F,1,1,7,0,4,0,0,13,0,5,0,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D177,unmasked,forum,M,1,1,6,0,3,0,0,12,0,6,0,1,1,,,M,1,1,1970,1,1,Вінницька,1,1,перукар,1,1
+D178,unmasked,court,M,1,1,9,0,4,0,0,22,0,6,0,1,1,,,M,1,1,1980,1,1,Львівська,1,1,unknown,0,0
+D179,unmasked,court,F,1,1,6,0,3,0,0,16,0,9,0,1,1,,,F,1,1,1980,1,1,unknown,0,1,бухгалтер,0,0
+D180,unmasked,news,M,1,1,7,0,4,0,0,12,0,5,0,1,1,,,M,1,1,2000,1,1,Полтавська,1,1,вчитель початкових класів,1,0
+D181,unmasked,forum,M,1,1,5,0,3,0,0,10,0,5,0,1,1,,,M,1,1,1970,1,1,unknown,0,0,unknown,0,0
+D182,unmasked,news,F,1,1,6,0,3,0,0,12,0,5,0,1,1,,,F,1,1,unknown,0,0,Житомирська,1,0,вчитель початкових класів,1,1
+D183,unmasked,news,M,1,1,6,0,3,0,0,10,0,7,0,1,1,,,M,1,1,1980,1,1,Харківська,1,1,фермер,1,1
+D184,unmasked,forum,F,1,1,6,0,3,0,0,13,0,3,0,1,1,,,F,1,1,1990,0,0,Житомирська,1,1,unknown,0,0
+D185,unmasked,court,F,1,1,9,0,4,0,0,22,0,8,0,1,1,,,F,1,1,2000,1,1,Харківська,1,1,медична сестра,1,1
+D186,unmasked,forum,F,1,1,7,0,4,0,0,13,0,4,0,1,1,,,F,1,1,unknown,0,0,unknown,0,0,unknown,0,0
+D187,unmasked,court,M,1,1,6,0,3,0,0,15,0,7,0,1,1,,,M,1,1,unknown,0,0,Полтавська,0,0,лікар,1,1
+D188,unmasked,forum,F,1,1,5,0,3,0,0,11,0,5,0,1,1,,,F,1,1,1980,1,1,unknown,0,0,unknown,0,0
+D189,unmasked,court,M,1,1,6,0,3,0,0,16,0,9,0,1,1,,,M,1,1,1970,1,1,Харківська,1,1,програміст,0,0
+D191,unmasked,court,F,1,1,6,0,3,0,0,16,0,10,0,1,1,,,F,1,1,1980,1,1,Чернігівська,1,1,unknown,0,0
+D192,unmasked,forum,M,1,1,7,0,4,0,0,13,0,6,0,1,1,,,M,1,1,1990,1,1,unknown,0,0,тракторист,1,1
+D193,unmasked,news,M,1,1,7,0,3,0,0,11,0,5,0,1,1,,,M,1,1,unknown,0,0,Львівська,0,0,фермер,1,1
+D194,unmasked,news,F,1,1,7,0,4,0,0,11,0,8,0,1,1,,,F,1,1,1970,0,1,Львівська,1,1,вчитель початкових класів,1,1
+D195,unmasked,news,M,1,1,5,0,3,0,0,9,0,6,0,1,1,,,M,1,1,1990,1,1,Вінницька,1,1,вчитель хімії,1,1
+D196,unmasked,court,M,1,1,6,0,3,0,0,16,0,11,0,1,1,,,M,1,1,1980,1,1,Львівська,1,1,продавець,1,1
+D197,unmasked,news,F,1,1,9,0,4,0,0,16,0,7,0,1,1,,,F,1,1,1970,0,1,Вінницька,1,1,вчитель хімії,1,1
+D198,unmasked,court,F,1,1,6,0,3,0,0,16,0,10,0,1,1,,,F,1,1,1970,1,1,Полтавська,1,1,економіст,1,1
+D199,unmasked,forum,F,1,1,5,0,3,0,0,11,0,6,0,1,1,,,F,1,1,2000,1,1,unknown,0,0,лікар,1,1
+D200,unmasked,forum,F,1,1,8,0,4,0,0,14,0,6,0,1,1,,,F,1,1,1990,1,1,Житомирська,1,1,продавець,0,0
+D201,unmasked,court,M,1,1,9,0,4,0,0,24,0,8,0,1,1,,,M,1,1,1990,1,1,unknown,0,1,тракторист,1,1
+D202,unmasked,news,M,1,1,6,0,4,0,0,12,0,8,0,1,1,,,M,1,1,1980,1,1,Полтавська,1,1,фермер,1,1
+D204,unmasked,forum,F,1,1,6,0,3,0,0,11,0,4,0,1,1,,,F,1,1,1980,0,0,unknown,0,0,unknown,0,0
+D205,unmasked,court,M,1,1,6,0,3,0,0,16,0,8,0,1,1,,,M,1,1,1990,1,1,Полтавська,1,1,інженер,0,0
+D206,unmasked,forum,M,1,1,7,0,4,0,0,13,0,7,0,1,1,,,M,1,1,1990,1,1,Одеська,1,1,продавець,0,0
+D207,unmasked,forum,F,1,1,6,0,3,0,0,12,0,4,0,1,1,,,F,1,1,unknown,0,0,unknown,0,0,кухар,1,1
+D208,unmasked,forum,F,1,1,5,0,3,0,0,10,0,6,0,1,1,,,F,1,1,1970,0,1,Полтавська,0,1,бухгалтер,1,1
+D209,unmasked,forum,M,1,1,5,0,3,0,0,10,0,8,0,1,1,,,M,1,1,1970,0,1,Львівська,1,1,охоронець,1,1
+D210,unmasked,court,F,1,1,9,0,4,0,0,22,0,8,0,1,1,,,F,1,1,1960,1,1,Чернігівська,1,1,медична сестра,1,1
+D211,unmasked,news,M,1,1,7,0,3,0,0,12,0,6,0,1,1,,,M,1,1,2000,0,1,Полтавська,0,0,фермер,1,0
+D212,unmasked,court,M,1,1,6,0,3,0,0,16,0,9,0,1,1,,,M,1,1,2000,1,1,Житомирська,1,1,unknown,0,0
+D213,unmasked,forum,M,1,1,8,0,4,0,0,13,0,4,0,1,1,,,M,1,1,2000,0,1,unknown,0,0,unknown,0,0
+D214,unmasked,forum,M,1,1,6,0,3,0,0,12,0,8,0,1,1,,,M,1,1,1990,0,1,Харківська,1,1,вчитель початкових класів,1,1
+D215,unmasked,court,F,1,1,6,0,3,0,0,16,0,8,0,1,1,,,F,1,1,unknown,0,0,Харківська,1,1,електрик,1,1
+D216,unmasked,news,M,1,1,7,0,3,0,0,15,0,7,0,1,1,,,M,1,1,1960,1,1,Чернігівська,1,1,фермер,1,1
+D217,unmasked,forum,F,1,1,6,0,4,0,0,9,0,7,0,1,1,,,F,1,1,1990,0,0,Житомирська,1,1,листоноша,1,1
+D218,unmasked,court,F,1,1,7,0,3,0,0,18,0,10,0,1,1,,,F,1,1,1970,1,1,Вінницька,1,1,продавець,0,0
+D219,unmasked,news,F,1,1,8,0,4,0,0,14,0,4,0,1,1,,,F,1,1,unknown,0,0,unknown,0,1,фермер,1,0
+D220,unmasked,news,M,1,1,5,0,3,0,0,9,0,4,0,1,1,,,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,1
+D221,unmasked,news,M,1,1,5,0,3,0,0,8,0,5,0,1,1,,,M,1,1,unknown,0,0,Львівська,1,1,фермер,1,1
+D222,unmasked,forum,F,1,1,7,0,4,0,0,13,0,7,0,1,1,,,F,1,1,1960,1,1,unknown,0,0,будівельник,1,1
+D223,unmasked,forum,F,1,1,7,0,4,0,0,14,0,8,0,1,1,,,F,1,1,1970,1,1,Одеська,1,1,охоронець,1,1
+D224,unmasked,news,F,1,1,7,0,3,0,0,13,0,5,0,1,1,,,F,1,1,unknown,0,0,Львівська,1,1,вчитель початкових класів,1,1
+D225,unmasked,court,F,1,1,9,0,4,0,0,24,0,7,0,1,1,,,F,1,1,1990,1,1,Львівська,1,1,програміст,1,1
+D226,unmasked,court,M,1,1,9,0,4,0,0,23,0,6,0,1,1,,,M,1,1,unknown,0,0,Полтавська,0,0,будівельник,1,1
+D227,unmasked,news,M,1,1,8,0,4,0,0,12,0,7,0,1,1,,,M,1,1,1980,1,1,unknown,0,0,вчитель початкових класів,0,0
+D228,unmasked,news,F,1,1,9,0,4,0,0,17,0,8,0,1,1,,,F,1,1,1990,1,1,Харківська,1,1,фермер,1,1
+D229,unmasked,court,M,1,1,6,0,3,0,0,16,0,10,0,1,1,,,M,1,1,1960,1,1,Вінницька,1,1,водій вантажівки,0,0
+D230,unmasked,news,M,1,1,6,0,3,0,0,11,0,7,0,1,1,,,M,1,1,1970,1,1,Харківська,1,1,фермер,1,1
+D231,unmasked,news,F,1,1,7,0,4,0,0,11,0,8,0,1,1,,,F,1,1,1990,1,1,Полтавська,1,1,вчитель хімії,1,1
+D232,unmasked,news,F,1,1,8,0,3,0,0,14,0,3,0,1,1,,,F,1,1,unknown,0,0,Полтавська,1,1,фермер,1,0
+D233,unmasked,court,M,1,1,9,0,4,0,0,24,0,7,0,1,1,,,M,1,1,1960,1,1,Одеська,1,1,перукар,1,1
+D234,unmasked,forum,F,1,1,6,0,3,0,0,11,0,7,0,1,1,,,F,1,1,2000,1,1,Одеська,1,1,перукар,1,1
+D235,unmasked,news,M,1,1,7,0,3,0,0,13,0,3,0,1,1,,,M,1,1,unknown,0,0,Харківська,1,1,фермер,1,0
+D236,unmasked,news,M,1,1,7,0,4,0,0,13,0,4,0,1,1,,,M,1,1,unknown,0,0,Львівська,1,1,unknown,0,0
+D237,unmasked,news,M,1,1,5,0,3,0,0,8,0,4,0,1,1,,,M,1,1,unknown,0,0,Чернігівська,0,0,вчитель початкових класів,1,0
+D238,unmasked,court,M,1,1,6,0,3,0,0,15,0,9,0,1,1,,,M,1,1,1960,1,1,unknown,0,0,будівельник,1,1
+D239,unmasked,court,M,1,1,9,0,4,0,0,23,0,6,0,1,1,,,M,1,1,1970,1,1,Харківська,1,1,unknown,0,0
+D240,unmasked,forum,F,1,1,5,0,3,0,0,10,0,6,0,1,1,,,F,1,1,2000,1,1,Вінницька,0,1,програміст,0,0
+D241,unmasked,news,M,1,1,6,0,3,0,0,13,0,6,0,1,1,,,M,1,1,unknown,0,0,Вінницька,1,1,вчитель початкових класів,1,1
+D242,unmasked,court,F,1,1,6,0,3,0,0,16,0,10,0,1,1,,,F,1,1,1970,1,1,Житомирська,1,1,кухар,1,1
+D243,unmasked,news,F,1,1,8,0,4,0,0,14,0,5,0,1,1,,,F,1,1,1980,1,0,Вінницька,1,1,вчитель початкових класів,1,1
+D244,unmasked,forum,M,1,1,6,0,3,0,0,12,0,5,0,1,1,,,M,1,1,unknown,0,0,unknown,0,0,юрист,1,1
+D245,unmasked,forum,F,1,1,6,0,4,0,0,12,0,6,0,1,1,,,F,1,1,1990,1,1,Львівська,1,1,unknown,0,0
+D246,unmasked,news,F,1,1,6,0,4,0,0,10,0,5,0,1,1,,,F,1,1,1960,1,1,Вінницька,0,1,вчитель початкових класів,1,0
+D247,unmasked,forum,M,1,1,6,0,3,0,0,11,0,7,0,1,1,,,M,1,1,2000,0,1,Чернігівська,1,1,слюсар,1,1
+D248,unmasked,news,F,1,1,7,0,3,0,0,13,0,4,0,1,1,,,F,1,1,1990,1,1,Львівська,0,0,фермер,1,0
+D249,unmasked,court,F,1,1,6,0,3,0,0,16,0,10,0,1,1,,,F,1,1,1980,1,1,Харківська,1,1,вчитель початкових класів,1,1
+D250,unmasked,forum,F,1,1,6,0,4,0,0,11,0,5,0,1,1,,,F,1,1,1980,1,1,unknown,0,0,unknown,0,0
