@@ -8,3 +8,5 @@ data/cache/
 check_report.jsonl
 .venv/
 .cache/
+docs/data_understanding_plan.md
+docs/remaining_work.md

@@ -8,7 +8,8 @@ PASS/FAIL per document and writes check_report.jsonl. Exits with 1 if any docume
 2. plan coverage: every planned fact, identifier and name form is in the document
 3. untagged names: a form of the target's name, or a side character's name, outside a span
 4. consistency: age or birth year, number of children, and settlement/oblast spans match the population
-5. sanity: length for the genre, at least 3 mentions of the target
+5. family status: a word like «заміжня» or «мій чоловік» outside a span
+6. sanity: length for the genre, at least 3 mentions of the target
 """
 import json
 import re
@@ -26,6 +27,14 @@ MIN_MENTIONS = 3
 NUMBER_WORDS = {"двох": 2, "двоє": 2, "двома": 2, "трьох": 3, "троє": 3, "трьома": 3,
                 "чотирьох": 4, "четверо": 4, "п’ятьох": 5, "п’ятеро": 5}
 ONE_CHILD = ("син", "доньк", "дочк", "дочер", "дитин")
+# words that give away family status; a spouse only counts after a possessive,
+# since «чоловік» alone usually just means "a man"
+STATUS_WORDS = re.compile(r"(?<![\w’])(?:(?:не)?заміжн\w*|(?:не)?одружен\w*|розлуч\w*|вдов\w*|"
+                          r"вдівц?е?ць|вдівц\w*|овдові\w*|шлюб\w*)(?![\w’])", re.I)
+SPOUSE = re.compile(r"(?<![\w’])(чолов(?:ік|іка|іку|ікові|іком)|дружин(?:а|и|і|у|ою))(?![\w’])",
+                    re.I)
+POSSESSIVE = re.compile(r"(?:мій|моя|мого|моєї|моєму|моїй|моїм|моєю|свого|своєї|своєму|своїй|"
+                        r"своїм|своєю|її|його)\s+$", re.I)
 
 
 def find_word(text, form):
@@ -134,6 +143,20 @@ def plan_coverage(doc, plan):
     return errors
 
 
+def family_status(doc):
+    """Untagged words that give away family status. A spouse word only counts after a
+    possessive or right before a tagged name, since «чоловік» alone often just means "a man"."""
+    text, spans = doc["text"], doc["spans"]
+    name_starts = {s["start"] for s in spans if s["category"] == "PERSON"}
+    found = [m.span() for m in STATUS_WORDS.finditer(text)]
+    for m in SPOUSE.finditer(text):
+        after = len(text) - len(text[m.end():].lstrip(" "))
+        if POSSESSIVE.search(text[max(0, m.start() - 12):m.start()]) or after in name_starts:
+            found.append(m.span())
+    return [f"untagged family status: «{text[a:b]}» at {a}" for a, b in sorted(found)
+            if not covered(text, spans, a, b)]
+
+
 def sanity(doc):
     errors = []
     for s in doc["spans"]:
@@ -160,6 +183,7 @@ def check_doc(doc, population, plan=None):
         errors += plan_coverage(doc, plan)
     errors += untagged_names(doc, person, plan)
     errors += consistency(doc, person)
+    errors += family_status(doc)
     errors += sanity(doc)
     return errors
 

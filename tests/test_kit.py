@@ -478,3 +478,17 @@ def test_merged_name_parts_fail():
                              "[[Оксана Миколаївна|PERSON|DI|E1|nom|first]]"))
     errors = checks.check_doc(doc, st.make_population())
     assert any("several name parts" in e for e in errors)
+
+
+def test_family_status_words_must_be_tagged():
+    import checks
+    text, spans = st.parse_tagged("[[Ірина|PERSON|DI|E1|nom|first]]: я заміжня, мій чоловік "
+                                  "[[Олег|PERSON|DI|E2|nom|first]] підтримує. Чоловік у черзі мовчав.")
+    errors = checks.family_status({"text": text, "spans": spans})
+    assert [e.split("«")[1].split("»")[0] for e in errors] == ["заміжня", "чоловік"]
+    text, spans = st.parse_tagged("Вдома підтримує [[дружина|DEM|QI|E3|nom|-|family_status]] "
+                                  "[[Софія|PERSON|DI|E2|nom|first]], а [[Петро|PERSON|DI|E1|nom|first]] "
+                                  "[[одружений|DEM|QI|E4|nom|-|family_status]].")
+    assert checks.family_status({"text": text, "spans": spans}) == []
+    text, _ = st.parse_tagged("Вдома підтримує дружина [[Софія|PERSON|DI|E2|nom|first]].")
+    assert len(checks.family_status({"text": text, "spans": _})) == 1

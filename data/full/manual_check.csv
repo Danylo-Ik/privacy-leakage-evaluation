@@ -1,0 +1,25 @@
+reviewer,doc_id,genre,spans,person_spans,missed,missed_items,boundary,category,entity,case_wrong,attr_owner,extra_facts,naturalness,grammar,notes
+A,D104,forum,17,14,0,,0,0,0,0,0,,2,1,'ситуація від Світлани Андріївни Вакарчук' is weird 3rd-person self-reference
+A,D140,court,26,13,0,,0,0,0,0,0,,2,1,"'Бориспольський' is misspelled; 'У суді вона пояснила, що перебуває у шлюбі, проте не має дітей, тому стягнення цих коштів є критично важливим для її родини' is not logical; 'грошове забезпечення' is odd for wages"
+A,D141,court,29,21,0,,0,0,0,0,0,,3,1,'судді Зелений' should be genitive (Зеленого/Зеленої)
+A,D148,forum,20,13,1,дружина DEM,0,0,0,0,0,,2,2,"'Миколи, не сперечайся' is wrong case; 'Мій керівник Алла Павленко ... сказала' gender mismatch; 'дружина' reveals marital status but is untagged (not in plan)"
+A,D153,news,17,11,0,,0,0,0,0,0,,3,0,
+A,D164,court,22,13,1,посаді інженера DEM,0,0,0,0,0,працював на посаді інженера,2,1,'звернувся до Білим' is wrong case; occupation 'інженер' contradicts profile (бухгалтер) and is untagged
+A,D168,forum,18,11,0,,0,0,0,0,0,,2,3,"'Я неодружений і не має дітей' is wrong form; 'Працював слюсарем, живем в місто Львів' is wrong case and verb form; 'Мій керівник Мар’яна ... вона' gender mismatch"
+A,D174,forum,20,12,0,,0,0,0,0,1,моїй доньці вже 20 років,2,0,'моїй доньці вже 20 років' is tagged as the target's birth_year (wrong owner) and the daughter is an extra person; also impossible for a 20-year-old mother; 'чоловік Артем' restates marital status but 'чоловік' is untagged
+A,D224,news,18,13,0,,0,0,0,0,0,,2,1,"'У місті Львів, що Львівська область' is ungrammatical; 'напористу працю' is odd"
+A,D232,news,17,14,0,,0,0,0,0,0,'сусідки' (colleague called neighbour),3,0,colleague called 'сусідки' is a small inconsistency
+A,D241,news,19,13,0,,0,0,0,0,0,створює навчальні посібники,3,0,
+A,D242,court,26,13,0,,0,0,0,0,0,,2,2,'звернувся до Ларисою' is wrong case; 'судді Чорнотова' should be genitive
+B,D104,forum,17,14,0,,0,0,0,0,0,,2,1,'ситуація від Світлани Андріївни Вакарчук' is wrong
+B,D123,news,22,13,0,,1,0,0,0,0,,3,0,"'селі' and 'Ямельниця' are tagged as two separate spans and two entities (E2, E3); should be one span 'село Ямельниця'"
+B,D140,court,26,13,0,,0,0,0,0,0,,2,1,'Бориспольський' is misspelled; 'тому стягнення цих коштів є критично важливим для її родини' does not follow from the previous sentence
+B,D149,court,24,13,0,,0,0,0,0,0,wages are her only source of income,3,0,
+B,D150,court,26,13,0,,0,0,0,0,0,,3,1,'в Вінницькій області' should be 'у Вінницькій'
+B,D168,forum,18,11,0,,0,0,0,0,0,,2,1,'живем в місто Львів' is wrong
+B,D177,forum,18,11,0,,0,0,0,0,0,,2,1,'у такому місці як місто Вінниця' is awkward; 'працював разом із Сергієнком' is 3rd-person self-reference
+B,D197,news,23,16,0,,0,0,0,0,0,продовжуватиме розвивати шкільну лабораторію,3,0,
+B,D210,court,30,19,0,,0,0,0,0,0,,3,1,'Стягнути з Світлани' should be 'зі Світлани'
+B,D224,news,18,13,0,,0,0,0,0,0,,2,1,"'У місті Львів, що Львівська область' is wrong"
+B,D230,news,18,11,0,,0,0,0,0,0,,2,1,'багатою відбувається' is a nonsense word; 'успіхи успішного фермера' is tautological
+B,D245,forum,17,11,1,чоловік DEM,0,0,0,0,0,,2,2,"'я живу в місто Львів' is wrong case; 'Слухай, Вікторією тут керують емоції' is nonsense; 'чоловік Роман' reveals marital status but 'чоловік' is untagged"

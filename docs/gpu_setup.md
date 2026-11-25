@@ -1,5 +1,7 @@
 # GPU setup (vast.ai + vLLM)
 
+For copy-paste commands in order, see `docs/gpu_runbook.md`.
+
 One GPU server runs the model, and everyone in the group uses it through an SSH tunnel. One person holds the vast.ai credit and rents, starts and stops the server. The others only need their own SSH key and the server's API key.
 
 The vast.ai team is shared by the whole course. Other groups can see the instances in it, and possibly stop them, so nothing secret goes into the instance settings, and the instance gets a clear label.

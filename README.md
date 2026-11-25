@@ -48,7 +48,7 @@ python data_understanding/llm.py ping
 python data_understanding/generate.py data/sample --limit 3
 ```
 
-The corpus in `data/full/` (147 documents) and the sample in `data/sample/` (30) were generated with Gemma 4 31B on one A100. Each document is checked after generation. If something is missing (a fact, a name form, a tag), the model gets the list of problems and another try, twice at most. Every call is cached in `data/cache/llm/`, so a rerun costs nothing. The prompt is in `docs/prompts/generate_v2.md`.
+The corpus in `data/full/` (146 documents) and the sample in `data/sample/` (30) were generated with Gemma 4 31B on one A100. Each document is checked after generation. If something is missing (a fact, a name form, a tag), the model gets the list of problems and another try, twice at most. Every call is cached in `data/cache/llm/`, so a rerun costs nothing. The prompt is in `docs/prompts/generate_v2.md`.
 
 ## Checking documents
 
@@ -62,9 +62,20 @@ This prints PASS or FAIL for every document and writes `check_report.jsonl`. A d
 - something from its plan is missing (a fact, an identifier, a required name form)
 - any form of the target's name, or a side character's name, appears without a tag
 - the age, birth year or number of children doesn't match the population
+- a word that gives away family status («заміжня», «мій чоловік») has no tag
 - it is far too short or too long, or names the target fewer than three times
 
 An untagged name is the one mistake we can't afford: no metric sees it, but an attacker does. `generate.py` runs the same checks and sends the errors back to the model.
+
+The automatic checks can only find what they know to look for. For the rest, two people read 20 documents by hand:
+
+```
+python data_understanding/review.py pick      # review sheets in data/full/review/ and an empty manual_check.csv
+python data_understanding/review.py summary   # error rates and agreement once the csv is filled in
+python data_understanding/review.py fix       # apply corrections from manual_fixes.jsonl
+```
+
+What to look for and how to record it is in `docs/manual_check.md`. The review found family status leaking through untagged words like «мій чоловік Олег», which is now an automatic check; 25 documents were fixed and one dropped.
 
 To compare models, run the same 10 plans through each one and print a summary:
 

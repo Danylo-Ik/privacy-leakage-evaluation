@@ -1,0 +1,25 @@
+{
+ "docs": 20,
+ "docs_with_missed": 0.15,
+ "missed_per_100_spans": 0.702576112412178,
+ "case_label_accuracy": 1.0,
+ "boundary_errors": 1.0,
+ "category_errors": 0,
+ "entity_errors": 0,
+ "attr_owner_errors": 1.0,
+ "docs_with_extra_facts": 0.3,
+ "grammar_per_doc": 0.9,
+ "naturalness": 2.375,
+ "overlap_docs": 4,
+ "agreement": {
+  "missed": 1.0,
+  "boundary": 1.0,
+  "category": 1.0,
+  "entity": 1.0,
+  "case_wrong": 1.0,
+  "attr_owner": 1.0,
+  "grammar": 1.0,
+  "extra_facts": 1.0,
+  "naturalness": 1.0
+ }
+}
