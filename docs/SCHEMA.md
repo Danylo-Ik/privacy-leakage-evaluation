@@ -87,6 +87,28 @@ A name is split into parts (`Ковальчинського` + `Тараса` + 
 
 `apply_masking()` and `gold_conditions()` in `seed_tools.py` show the reference behaviour. Model training can extend them for the drop-out conditions.
 
+## 4. `candidates.jsonl` (owner: evaluation)
+
+```json
+{"doc_id": "D101", "design": "balanced", "n": 10, "candidates": ["P0458", "P0013", "..."]}
+```
+
+One row per (document, design, n), with n = 10 and 100, in the order shown to the attacker. Every masker and condition of a document is attacked with the same lists. A list always contains the target and all their look-alikes; target positions are spread evenly over the corpus. `evaluation/README.md` explains the two designs, `balanced` and `random`. Not available for `data/seed/`, which has no `targets.csv`.
+
+## 5. `attacks/{reid,nodoc,attr}.jsonl` (owner: evaluation)
+
+```json
+{"doc_id": "D101", "system_or_condition": "rule", "design": "balanced", "n": 10,
+ "model": "...", "prompt_version": "attack_reid_v1", "prompt_hash": "01b3d04a9d961a07",
+ "ranking": ["P1516", "P0458", null, "P0013", "P0027"], "target_rank": 4,
+ "clues": "...", "parse_ok": true, "errors": [], "attempts": 1, "usage": {"prompt": 1391, "completion": 40}}
+```
+
+- One row per call; `doc_id`, `system_or_condition`, `design`, `n`, `model` and `prompt_version` identify it. `system_or_condition` is null for `nodoc`; `design` and `n` are null for `attr`. The condition `unmasked` is the original text.
+- `ranking` holds up to five people, most likely first; null is a label that was not in the list. `target_rank` is 1–5, or null when the target is not among them. `attr` rows have `values` (`gender`, `birth_decade`, `oblast`, `occupation`) instead; a value can be `"unknown"`, or null when the answer was missing or not allowed.
+- `parse_ok` is false when no attempt gave a usable answer. Such rows count as misses.
+- `prompt_hash` changes with the masked text, the candidate list or the prompt, so a stale row can be recognised.
+
 ## What each seed document exercises
 
 | doc | genre | target | Ukrainian-specific cases |
