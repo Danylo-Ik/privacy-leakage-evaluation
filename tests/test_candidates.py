@@ -20,7 +20,8 @@ def data(request):
     gold = st.read_jsonl(d / "gold_docs.jsonl")
     population = st.load_population(d / "population.csv")
     targets = cd.load_targets(d / "targets.csv")
-    return d, gold, population, targets, cd.make_rows(gold, population, targets)
+    generated = cd.load_generated(d)
+    return d, gold, population, targets, cd.make_rows(gold, population, targets, generated=generated)
 
 
 def pick(rows, design, n):
@@ -62,9 +63,10 @@ def test_balanced_lists_are_whole_groups_of_one_genre(data):
 
 
 def test_lists_are_deterministic_and_do_not_share_an_order(data):
-    _, gold, population, targets, rows = data
-    assert cd.make_rows(gold, population, targets) == rows
-    assert cd.make_rows(gold, population, targets, seed=cd.SEED + 1) != rows
+    d, gold, population, targets, rows = data
+    generated = cd.load_generated(d)
+    assert cd.make_rows(gold, population, targets, generated=generated) == rows
+    assert cd.make_rows(gold, population, targets, seed=cd.SEED + 1, generated=generated) != rows
     assert len({tuple(r["candidates"]) for r in rows}) == len(rows)
 
 
@@ -76,7 +78,16 @@ def test_target_positions_are_even(data, design, n):
     slots = [r["candidates"].index(person[r["doc_id"]]) for r in pick(rows, design, n)]
     count = Counter(s * 10 // n for s in slots)  # tenths of the list
     assert set(count) == set(range(10))
-    assert max(count.values()) - min(count.values()) <= 1
+    assert max(count.values()) - min(count.values()) <= 2  # 1, or 2 after a document is dropped
+
+
+def test_dropping_a_document_leaves_the_other_lists_alone(data):
+    d, gold, population, targets, rows = data
+    generated = cd.load_generated(d) or gold
+    dropped = gold[3]["doc_id"]
+    fewer = cd.make_rows([g for g in gold if g["doc_id"] != dropped], population, targets,
+                         generated=generated)
+    assert fewer == [r for r in rows if r["doc_id"] != dropped]
 
 
 def test_target_slots_are_not_tied_to_document_order():

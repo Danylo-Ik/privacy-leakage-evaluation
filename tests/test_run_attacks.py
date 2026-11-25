@@ -186,6 +186,17 @@ def test_only_changed_documents_are_attacked_again(data, model, tmp_path):
     assert ra.validate(rows, new) == []
 
 
+def test_rows_of_dropped_documents_are_removed(data, model, tmp_path):
+    fake, path = model(ranking()), tmp_path / "reid.jsonl"
+    js = jobs(data)
+    ra.run(js, path)
+    gone = js[0]["doc_id"]
+    rest = [j for j in js if j["doc_id"] != gone]
+    rows, _ = ra.run(rest, path, docs={j["doc_id"] for j in rest})
+    assert len(fake.calls) == 6 and len(rows) == 4
+    assert gone not in path.read_text(encoding="utf-8")
+
+
 def test_another_model_adds_rows_instead_of_replacing(data, model, tmp_path):
     model(ranking())
     ra.run(jobs(data), tmp_path / "reid.jsonl")

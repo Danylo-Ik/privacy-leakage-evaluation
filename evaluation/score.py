@@ -118,7 +118,8 @@ def load(data_dir, attack_dir=None, model=None):
     gold = {g["doc_id"]: g for g in st.read_jsonl(d / "gold_docs.jsonl")}
     masked = [r for r in st.read_jsonl(d / "masked_docs.jsonl") if not r.get("llm_failed")]
     population = st.load_population(d / "population.csv")
-    attacks = load_attacks(attack_dir or d / "attacks", model)
+    attacks = {task: [r for r in rows if r["doc_id"] in gold]
+               for task, rows in load_attacks(attack_dir or d / "attacks", model).items()}
     if any(r["system_or_condition"] == UNMASKED for rows in attacks.values() for r in rows):
         masked += [{"doc_id": i, "system_or_condition": UNMASKED, "masked_spans": []} for i in gold]
     return {"gold": gold, "masked": masked, "population": population, "attacks": attacks,

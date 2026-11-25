@@ -117,14 +117,17 @@ def candidate_list(doc, design, n, slot, population, targets, seed=SEED):
     return others[:slot] + own[:1] + others[slot:]
 
 
-def make_rows(gold_docs, population, targets, designs=DESIGNS, sizes=SIZES, seed=SEED):
-    rows = []
+def make_rows(gold_docs, population, targets, designs=DESIGNS, sizes=SIZES, seed=SEED, generated=None):
+    """`generated`: all documents as first generated, so that dropping one later does not
+    move the target in the lists of the others."""
+    rows, kept = [], {d["doc_id"] for d in gold_docs}
+    generated = generated or gold_docs
     for design in designs:
         for n in sizes:
-            slots = target_slots(len(gold_docs), n, random.Random(f"{seed}:{design}:{n}"))
+            slots = target_slots(len(generated), n, random.Random(f"{seed}:{design}:{n}"))
             rows += [{"doc_id": d["doc_id"], "design": design, "n": n,
                       "candidates": candidate_list(d, design, n, slot, population, targets, seed)}
-                     for d, slot in zip(gold_docs, slots)]
+                     for d, slot in zip(generated, slots) if d["doc_id"] in kept]
     return rows
 
 
@@ -215,6 +218,12 @@ def load_targets(path):
     return {t["person_id"]: t for t in st.load_population(path)}
 
 
+def load_generated(data_dir):
+    """Documents before the manual fixes, or None."""
+    path = Path(data_dir) / "gold_docs.generated.jsonl"
+    return st.read_jsonl(path) if path.exists() else None
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("data_dir", type=Path)
@@ -224,7 +233,7 @@ def main(argv=None):
     gold = st.read_jsonl(args.data_dir / "gold_docs.jsonl")
     population = st.load_population(args.data_dir / "population.csv")
     targets = load_targets(args.data_dir / "targets.csv")
-    rows = make_rows(gold, population, targets)
+    rows = make_rows(gold, population, targets, generated=load_generated(args.data_dir))
     out = args.out or args.data_dir / "candidates.jsonl"
     with open(out, "w", encoding="utf-8", newline="\n") as f:
         for r in rows:

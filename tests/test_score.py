@@ -214,6 +214,14 @@ def test_rows_of_an_old_prompt_are_ignored(tmp_path, empty):
     assert sc.load_attacks(tmp_path)["reid"] == []
 
 
+def test_rows_of_dropped_documents_are_ignored(tmp_path, empty):
+    d = next(iter(empty["gold"]))
+    write(tmp_path / "reid.jsonl", [reid_row(d, "rule", 1), reid_row("D999", "rule", 1)])
+    write(tmp_path / "nodoc.jsonl", [reid_row("D999", None, 1)])
+    data = sc.load(SAMPLE, tmp_path)
+    assert len(data["attacks"]["reid"]) == 1 and data["attacks"]["nodoc"] == []
+
+
 def test_unmasked_text_is_scored_as_a_condition(attacked):
     docs = list(attacked["gold"])
     attacked["attacks"]["reid"] += [reid_row(d, "unmasked", 1) for d in docs]

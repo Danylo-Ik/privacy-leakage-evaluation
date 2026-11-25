@@ -177,15 +177,20 @@ def validate(rows, jobs):
 
 # ---------- run ----------
 
-def run(jobs, path, workers=8):
-    """Run the missing jobs. Returns (all rows of the file, number of failed calls)."""
+def run(jobs, path, workers=8, docs=None):
+    """Run the missing jobs. Returns (all rows of the file, number of failed calls).
+    Rows of documents outside `docs` (dropped from the corpus) are removed."""
     path.parent.mkdir(parents=True, exist_ok=True)
     rows = read_rows(path)
+    gone = [k for k, r in rows.items() if docs is not None and r["doc_id"] not in docs]
+    for k in gone:
+        del rows[k]
     todo = [j for j in jobs if rows.get(key(j), {}).get("prompt_hash") != j["prompt_hash"]]
     print(f"{path.name}: {len(jobs)} jobs, {len(jobs) - len(todo)} already done")
+    if todo or gone:
+        write_rows(path, rows.values())  # also drops a half-written last line
     if not todo:
         return list(rows.values()), 0
-    write_rows(path, rows.values())  # drops a half-written last line
     done, failed, stop = 0, [], threading.Event()
 
     def attempt(job):
@@ -263,7 +268,8 @@ def main(argv=None):
     model = llm.settings()["model"]
     if not model and not args.dry_run:
         sys.exit("Set LLM_BASE_URL and LLM_MODEL (in .env or the environment).")
-    jobs = make_jobs(load(args.data_dir), args.task, model,
+    data = load(args.data_dir)
+    jobs = make_jobs(data, args.task, model,
                      args.conditions.split(",") if args.conditions else None,
                      [int(n) for n in args.n.split(",")], args.design, args.limit)
     if args.dry_run:
@@ -271,7 +277,7 @@ def main(argv=None):
         print(f"{len(jobs)} jobs, {sum(size)} characters, longest prompt {max(size)}")
         return True
     path = (args.out or args.data_dir / "attacks") / f"{args.task}.jsonl"
-    rows, n_failed = run(jobs, path, args.workers)
+    rows, n_failed = run(jobs, path, args.workers, {g["doc_id"] for g in data["gold"]})
     errors = validate(rows, jobs)
     summary(rows, jobs)
     print(f"{path}: " + ("complete" if not errors else
