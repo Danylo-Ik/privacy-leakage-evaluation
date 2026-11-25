@@ -26,13 +26,10 @@ All three produce plain spans; `common.to_row()` resolves overlaps (longest wins
 The LLM used for the reported outputs is **Qwen3-32B**, deliberately a different model family from the generator (Gemma 4). Its answers are aligned back to the text by the masker itself (exact and inflected forms, name parts), so offsets are always exact. If an answer is empty or not valid JSON (thinking used up the token budget, or the model looped), it is retried once without thinking and with a mild repetition penalty; a cut-off answer keeps the complete mentions it has. Every `llm` row carries `llm_status` (`ok`, `retry`, `salvaged` or `failed`); a `failed` row is unmasked and also has `llm_failed: true`, so exclude it. On `data/full`: ok=140, retry=7, failed=0.
 
 ```
-uv venv .venv && uv pip install --python .venv/bin/python -r requirements.txt
-.venv/bin/python -m spacy download uk_core_news_trf          # ~500 MB
-# .env (gitignored): MASK_LLM_BASE_URL, MASK_LLM_MODEL, MASK_LLM_API_KEY, MASK_LLM_MAX_TOKENS=8000
-#   (falls back to LLM_*; see docs/gpu_setup.md for the vast.ai + vLLM server)
-.venv/bin/python model_training/run_all.py data/sample       # conditions + all systems
-.venv/bin/python model_training/run_all.py data/seed --systems rule   # quick check
-.venv/bin/python model_training/check_outputs.py data/sample data/full  # before handing over
+uv sync --group masking                                      # spaCy + uk_core_news_trf, about 1.5 GB
+export LLM_BASE_URL=... LLM_API_KEY=... LLM_MODEL=...        # any OpenAI-compatible endpoint
+uv run model_training/run_all.py data/sample                 # conditions + all systems
+uv run model_training/run_all.py data/seed --systems rule    # quick check
 ```
 
 `run_all.py` writes `masked_docs.jsonl`, validates it and prints *dev* scores from `common.score()` (span recall by category / DI-QI / case / name part, entity recall, over-masking). If a requested system fails (no model, closed tunnel, no `.env`), it does **not** overwrite the file unless `--allow-missing` is given. LLM answers are cached in `.cache/llm/` (not in git), so a rerun needs no GPU unless the prompt, model or settings change.
