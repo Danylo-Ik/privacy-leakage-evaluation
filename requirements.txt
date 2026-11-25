@@ -1,6 +1,0 @@
-pytest
-pymorphy3
-pymorphy3-dicts-uk
-openai
-spacy>=3.8,<3.9
-spacy-transformers

@@ -2,10 +2,18 @@
 
 Does partial masking of Ukrainian texts still protect people? Three workstreams (data understanding, model training, evaluation) on synthetic data. See `docs/methods.md` for the method and `docs/SCHEMA.md` for file formats.
 
+Dependencies are managed with [uv](https://docs.astral.sh/uv/getting-started/installation/) (`pyproject.toml` and `uv.lock`):
+
 ```
-pip install -r requirements.txt
-python seed_tools.py build && python -m pytest -q tests
+uv sync                        # base + pytest
+uv sync --group evaluation     # + matplotlib for the plots
+uv sync --group masking        # + spaCy, torch and uk_core_news_trf (about 1.5 GB)
+uv sync --all-groups           # everything
+
+uv run python seed_tools.py build && uv run pytest -q tests
 ```
+
+`uv sync` removes packages of groups that are not listed, so every needed group has to be named. Run the commands below with `uv run` in front (`uv run python ...`), or activate `.venv` first. Add a dependency with `uv add <package>` (`--group <name>` for a group) and commit `uv.lock`.
 
 ## Data
 
@@ -36,7 +44,6 @@ LLM_API_KEY=...
 For vLLM on a rented GPU, follow `docs/gpu_setup.md`: one shared server, each person connects through their own SSH tunnel. For OpenRouter, use `https://openrouter.ai/api/v1` and a model id ending in `:free`. Free models allow 20 requests a minute and 50 a day, or 1,000 a day once the account has $10 of credits. The client waits between calls on its own.
 
 ```
-pip install openai
 python data_understanding/llm.py ping
 python data_understanding/generate.py data/sample --limit 3
 ```

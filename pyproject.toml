@@ -1,0 +1,29 @@
+[project]
+name = "privacy-leakage-evaluation"
+version = "0.1.0"
+description = "Privacy leakage evaluation for Ukrainian pseudonymization"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "openai",
+    "pymorphy3",
+    "pymorphy3-dicts-uk",
+]
+
+[dependency-groups]
+# installed by default with `uv sync`
+dev = ["pytest"]
+# plots: `uv sync --group evaluation`
+evaluation = ["matplotlib"]
+# the spaCy masker, about 1.5 GB with torch: `uv sync --group masking`
+masking = [
+    "spacy>=3.8,<3.9",
+    "spacy-transformers",
+    "uk-core-news-trf",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+uk-core-news-trf = { url = "https://github.com/explosion/spacy-models/releases/download/uk_core_news_trf-3.8.0/uk_core_news_trf-3.8.0-py3-none-any.whl" }

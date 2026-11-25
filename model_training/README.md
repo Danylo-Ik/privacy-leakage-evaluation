@@ -24,11 +24,10 @@ Writes every gold condition to `DATA_DIR/masked_docs.jsonl` and lists the rows t
 All three produce plain spans; `common.to_row()` resolves overlaps (longest wins), groups name mentions of one person (`cluster_persons`) and numbers placeholders.
 
 ```
-uv venv .venv && uv pip install --python .venv/bin/python -r requirements.txt
-.venv/bin/python -m spacy download uk_core_news_trf          # ~500 MB
+uv sync --group masking                                      # spaCy + uk_core_news_trf, about 1.5 GB
 export LLM_BASE_URL=... LLM_API_KEY=... LLM_MODEL=...        # any OpenAI-compatible endpoint
-.venv/bin/python model_training/run_all.py data/sample       # conditions + all systems
-.venv/bin/python model_training/run_all.py data/seed --systems rule   # quick check
+uv run model_training/run_all.py data/sample                 # conditions + all systems
+uv run model_training/run_all.py data/seed --systems rule    # quick check
 ```
 
 `run_all.py` writes `masked_docs.jsonl`, validates it and prints *dev* scores from `common.score()` (span recall by category / DI-QI / case / name part, entity recall, over-masking). LLM answers are cached in `.cache/llm/`.
