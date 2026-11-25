@@ -67,3 +67,27 @@ Results go to `data/full/attacks/` (format in `docs/SCHEMA.md`). `--dry-run` cou
 - The first attempt uses temperature 0. A reply that is unreadable, too short or holds an invented label is repeated up to twice at 0.7, and the best reply is kept. A repeated label in an otherwise complete ranking is dropped without a retry. Without a usable reply the row counts as a miss.
 - Failed calls leave no row. After ten of them the run stops; the same command continues it.
 - `unmasked` attacks the original text. It should be close to 100% for N = 10; if not, the attack itself does not work.
+
+## Scoring
+
+```
+python evaluation/score.py data/full
+```
+
+Reads the attack files, the masked and gold documents and the population, prints the main tables and writes them to `data/full/results/`:
+
+| file | content |
+|---|---|
+| `summary.csv` | one row per condition: mention, entity and QI recall, k = 1, median k, top-1 and top-5, gender accuracy |
+| `reid.csv` | top-1 and top-5 per design, N and condition; difference to the no-document baseline and to `gold_full` on the same documents |
+| `attributes.csv` | accuracy per attribute, the share of always guessing the commonest value, accuracy where the attribute is still visible and where it is masked |
+| `gender.csv` | gender accuracy per condition and genre |
+| `k_buckets.csv` | top-1 by k (1, 2–5, 6–50, 51+) where the target's name is fully masked, all conditions pooled |
+| `by_doc.csv` | one row per document and condition, the source of everything above; a rank of 0 is a miss, an empty rank means the attack was not run |
+
+- Intervals are 95% bootstrap intervals over documents (2,000 draws, fixed seed). When a document contributes several rows, it is resampled as a whole.
+- `top1_changed` leaves out the documents in which a drop-out condition changed nothing.
+- `rule_without_document` is the expected top-1 of a rule that never reads the document (see "Candidate lists"); `chance` is 1/N.
+- "unknown" and unusable answers count as wrong. `accuracy_answered` covers the answered ones only.
+- Rows with `llm_failed` and rows of an older prompt version are ignored. Missing rows are reported, not filled in.
+- Recall follows the open-mention rule through `model_training/common.py`, until `data_understanding/recall.py` exists. k comes from `data_understanding/uniqueness.py`.
