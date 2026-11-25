@@ -79,11 +79,21 @@ def strip_thoughts(text):
     return re.split(r"<(?:think|thought)>", text)[0].strip()
 
 
-def cached_chat(prompt, model, client=None, cache_dir=None, retries=3, cfg=None):
-    """One chat completion at temperature 0, cached on disk."""
+def cached_chat(prompt, model, client=None, cache_dir=None, retries=3, cfg=None, fallback=False):
+    """One chat completion at temperature 0, cached on disk.
+
+    fallback=True is the second attempt after an empty or unreadable answer: no
+    thinking (so the token budget goes to the answer) and a mild repetition penalty
+    (against loops like "Ковальського", "Ковальським", … until the limit).
+    """
     cfg = cfg or settings()
     params = {"temperature": 0, "max_tokens": cfg["max_tokens"]}
-    extra = {"chat_template_kwargs": {"enable_thinking": False}} if cfg["no_think"] else None
+    extra = {}
+    if cfg["no_think"] or fallback:
+        extra["chat_template_kwargs"] = {"enable_thinking": False}
+    if fallback:
+        extra["repetition_penalty"] = 1.05
+    extra = extra or None
     blob = json.dumps([model, prompt, params, extra], ensure_ascii=False, sort_keys=True)
     path = Path(cache_dir or CACHE_DIR) / f"{hashlib.sha256(blob.encode()).hexdigest()}.json"
     if path.exists():
@@ -108,16 +118,12 @@ def cached_chat(prompt, model, client=None, cache_dir=None, retries=3, cfg=None)
     return content
 
 
-def parse_entities(content):
-    """Extract the entity list from a model answer (tolerates code fences and chatter)."""
-    m = re.search(r"\{.*\}", content or "", re.S)
-    if not m:
-        return []
-    try:
-        data = json.loads(m.group(0))
-    except json.JSONDecodeError:
-        return []
-    ents = data.get("entities", []) if isinstance(data, dict) else []
+STRING = re.compile(r'"((?:[^"\\]|\\.)*)"')
+ENTITY = re.compile(r'"category"\s*:\s*"([A-Za-z]+)"\s*,\s*"mentions"\s*:\s*\[([^\]]*)', re.S)
+
+
+def _clean(ents):
+    """Normalize categories and drop repeated mentions (models sometimes loop)."""
     out = []
     for e in ents:
         if not isinstance(e, dict):
@@ -125,8 +131,34 @@ def parse_entities(content):
         cat = str(e.get("category", "MISC")).upper()
         cat = ALIASES.get(cat, cat if cat in CATEGORIES else "MISC")
         mentions = [m for m in e.get("mentions", []) if isinstance(m, str) and m.strip()]
-        out.append({"category": cat, "mentions": mentions})
+        out.append({"category": cat, "mentions": list(dict.fromkeys(mentions))})
     return out
+
+
+def parse_entities(content):
+    """Return (entities, how): how is "ok", "salvaged" (cut-off answer, complete
+    mentions recovered) or "failed" (empty or unreadable answer)."""
+    text = content or ""
+    m = re.search(r"\{.*\}", text, re.S)
+    if m:
+        blob = re.sub(r",\s*([\]}])", r"\1", m.group(0))  # trailing commas
+        try:
+            data = json.loads(blob)
+        except json.JSONDecodeError:
+            data = None
+        if isinstance(data, dict) and isinstance(data.get("entities"), list):
+            return _clean(data["entities"]), "ok"
+    salvaged = []
+    for cat, body in ENTITY.findall(text):
+        mentions = []
+        for s in STRING.findall(body):  # only strings whose closing quote arrived
+            try:
+                mentions.append(json.loads(f'"{s}"'))
+            except json.JSONDecodeError:
+                pass
+        salvaged.append({"category": cat, "mentions": mentions})
+    salvaged = [e for e in _clean(salvaged) if e["mentions"]]
+    return (salvaged, "salvaged") if salvaged else ([], "failed")
 
 
 # ---------- alignment ----------
@@ -190,23 +222,51 @@ def spans_from_entities(text, entities):
 # ---------- running ----------
 
 def mask_doc(doc, model=None, client=None, template=None, cfg=None):
-    """Return (system spans, mentions that could not be found in the text)."""
+    """Return (system spans, mentions not found in the text, status).
+
+    status: "ok"; "retry" (first answer unusable, the no-thinking retry worked);
+    "salvaged" (only a cut-off answer, complete mentions recovered from it);
+    "failed" (nothing usable: the document is left unmasked and must be flagged).
+    """
     cfg = cfg or settings()
     model = model or cfg["model"]
     if not model or (client is None and not cfg["base_url"]):
         raise RuntimeError("set MASK_LLM_BASE_URL and MASK_LLM_MODEL (or LLM_*) in .env")
-    content = cached_chat(prompt_for(doc["text"], template), model, client, cfg=cfg)
-    return spans_from_entities(doc["text"], parse_entities(content))
+    prompt = prompt_for(doc["text"], template)
+    ents, how = parse_entities(cached_chat(prompt, model, client, cfg=cfg))
+    status = how
+    if how != "ok":
+        ents2, how2 = parse_entities(cached_chat(prompt, model, client, cfg=cfg, fallback=True))
+        if how2 == "ok":
+            ents, status = ents2, "retry"
+        elif how2 == "salvaged" and how == "failed":
+            ents, status = ents2, "salvaged"
+    spans, missing = spans_from_entities(doc["text"], ents)
+    return spans, missing, status
 
 
 def run(gold_docs, name="llm", model=None, client=None, workers=8):
+    """Rows for masked_docs.jsonl. Each row carries llm_status; a row whose status is
+    "failed" is unmasked and also gets llm_failed: true, so it can be excluded."""
     cfg = settings()
 
     def one(d):
-        spans, missing = mask_doc(d, model, client, cfg=cfg)
+        spans, missing, status = mask_doc(d, model, client, cfg=cfg)
         if missing:
             print(f"  {d['doc_id']}: {len(missing)} mention(s) not found in text: "
                   f"{missing[:3]}", file=sys.stderr)
-        return common.to_row(d["doc_id"], name, d["text"], spans)
+        row = common.to_row(d["doc_id"], name, d["text"], spans)
+        row["llm_status"] = status
+        if status == "failed":
+            row["llm_failed"] = True
+        return row
     with ThreadPoolExecutor(workers) as ex:
-        return list(ex.map(one, gold_docs))
+        rows = list(ex.map(one, gold_docs))
+    by_status = {}
+    for r in rows:
+        by_status.setdefault(r["llm_status"], []).append(r["doc_id"])
+    print("  llm status: " + ", ".join(f"{s}={len(v)}" for s, v in sorted(by_status.items())))
+    for s in ("retry", "salvaged", "failed"):
+        if by_status.get(s):
+            print(f"  llm {s}: {' '.join(by_status[s])}")
+    return rows
