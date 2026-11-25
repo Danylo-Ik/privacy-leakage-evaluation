@@ -42,18 +42,27 @@ def main(argv=None):
     ap.add_argument("--no-conditions", action="store_true")
     ap.add_argument("--seeds", type=int, default=1)
     ap.add_argument("--out", type=Path)
+    ap.add_argument("--allow-missing", action="store_true",
+                    help="write the file even if a requested system could not run")
     args = ap.parse_args(argv)
 
     gold = st.read_jsonl(args.data_dir / "gold_docs.jsonl")
     rows = [] if args.no_conditions else list(conditions.masked_rows(gold, args.seeds))
+    failed = []
     for name in [s for s in args.systems.split(",") if s]:
         try:
             rows += run_system(name, gold)
             print(f"{name}: done")
-        except (OSError, ImportError, RuntimeError) as e:
-            print(f"{name}: SKIPPED ({e})")
+        except Exception as e:  # missing model, closed tunnel, bad .env, …
+            print(f"{name}: FAILED ({type(e).__name__}: {e})")
+            failed.append(name)
 
     out = args.out or args.data_dir / "masked_docs.jsonl"
+    if failed and not args.allow_missing:
+        # never replace a complete file with one that silently lacks a system
+        print(f"NOT writing {out}: {', '.join(failed)} failed. Fix it and rerun, or pass "
+              f"--allow-missing to write the other systems anyway.")
+        return False
     with open(out, "w", encoding="utf-8") as f:
         for r in rows:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")

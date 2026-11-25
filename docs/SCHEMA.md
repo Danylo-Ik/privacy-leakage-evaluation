@@ -82,6 +82,7 @@ A name is split into parts (`Ковальчинського` + `Тараса` + 
 - `system_or_condition` names: `gold_full`, `gold_di_only`, `gold_edrsr_policy`, `gold_miss_one_oblique` `gold_drop_p05`… `gold_drop_p40`, `gold_keep_patronymic` (all in the seed, from `model_training/conditions.py`); then `rule`, `spacy`, `llm`.
 - Drop-out leaves whole mentions unmasked, and the dropped sets are nested (p05 ⊂ p10 ⊂ p20 ⊂ p40). Extra random runs are named `gold_drop_p05_s1`…
 - Condition rows also carry `n_unmasked_gold`: how many gold spans were deliberately left open. `0` on anything other than `gold_full` means the condition changed nothing for that doc (e.g. no mention was drawn at 5%), so exclude it from per-condition comparisons if needed.
+- `llm` rows also carry `llm_status`: `ok`, `retry` (the first answer was empty or not valid JSON; a retry without thinking worked), `salvaged` (only complete mentions from a cut-off answer) or `failed`. A `failed` row masks nothing and also has `llm_failed: true`: exclude it from LLM results. Extra fields like these can be ignored by readers that don't need them.
 - Systems don't know entity ids, so they only need start/end/placeholder. Entity-level recall is computed by data understanding against gold.
 
 `apply_masking()` and `gold_conditions()` in `seed_tools.py` show the reference behaviour. Model training can extend them for the drop-out conditions.

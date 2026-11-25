@@ -77,14 +77,20 @@ def test_rule_on_seed_validates():
 
 
 class FakeClient:
+    """Returns `content`, or the items of a list of contents one call at a time."""
+
     def __init__(self, content):
         self.calls = 0
         self.content = content
+        self.requests = []
         self.chat = SimpleNamespace(completions=SimpleNamespace(create=self.create))
 
     def create(self, **kw):
+        self.requests.append(kw)
+        c = self.content[min(self.calls, len(self.content) - 1)] \
+            if isinstance(self.content, list) else self.content
         self.calls += 1
-        msg = SimpleNamespace(content=self.content)
+        msg = SimpleNamespace(content=c)
         return SimpleNamespace(choices=[SimpleNamespace(message=msg)])
 
 
@@ -95,8 +101,9 @@ def fake_answer(entities):
 def llm_row(monkeypatch, tmp_path, text, entities):
     monkeypatch.setattr(llm_masker, "CACHE_DIR", tmp_path)
     client = FakeClient(fake_answer(entities))
-    spans, missing = llm_masker.mask_doc({"doc_id": "X", "text": text}, model="fake",
-                                         client=client)
+    spans, missing, status = llm_masker.mask_doc({"doc_id": "X", "text": text}, model="fake",
+                                                 client=client)
+    assert status == "ok"
     return common.to_row("X", "llm", text, spans), missing, client
 
 
@@ -152,7 +159,50 @@ def test_strip_thoughts():
 
 
 def test_llm_bad_json_gives_no_spans():
-    assert llm_masker.parse_entities("sorry, I cannot") == []
+    assert llm_masker.parse_entities("sorry, I cannot") == ([], "failed")
+    assert llm_masker.parse_entities("") == ([], "failed")
+
+
+def test_llm_trailing_comma_is_ok():
+    ents, how = llm_masker.parse_entities('{"entities": [{"category": "LOC", "mentions": ["Липове",]},]}')
+    assert how == "ok" and ents == [{"category": "LOC", "mentions": ["Липове"]}]
+
+
+def test_llm_salvages_cut_off_loop():
+    # D117-style answer: the model repeats forms until the token limit
+    cut = ('{"entities": [\n {"id": 1, "category": "PERSON", "mentions": ["Остап Ковальський", '
+           '"Ковальським", "Ковальського", "Ковальським", "Ковальського", "Ковальськ')
+    ents, how = llm_masker.parse_entities(cut)
+    assert how == "salvaged"
+    assert ents == [{"category": "PERSON",
+                     "mentions": ["Остап Ковальський", "Ковальським", "Ковальського"]}]
+
+
+def test_llm_empty_answer_retries_without_thinking(tmp_path, monkeypatch):
+    monkeypatch.setattr(llm_masker, "CACHE_DIR", tmp_path)
+    good = fake_answer([{"category": "LOC", "mentions": ["Вербівки"]}])
+    client = FakeClient(["", good])
+    spans, _, status = llm_masker.mask_doc({"doc_id": "X", "text": "з Вербівки"},
+                                           model="fake", client=client)
+    assert status == "retry" and len(spans) == 1 and client.calls == 2
+    extra = client.requests[1]["extra_body"]
+    assert extra["chat_template_kwargs"] == {"enable_thinking": False}
+    assert extra["repetition_penalty"] > 1
+
+
+def test_llm_total_failure_is_flagged(tmp_path, monkeypatch):
+    monkeypatch.setattr(llm_masker, "CACHE_DIR", tmp_path)
+    doc = {"doc_id": "X", "text": "Привітали Оксану Вигаданчук."}
+    rows = llm_masker.run([doc], model="fake", client=FakeClient(""))
+    assert rows[0]["llm_failed"] is True and rows[0]["llm_status"] == "failed"
+    assert rows[0]["masked_text"] == doc["text"]
+
+
+def test_run_all_keeps_old_file_when_a_system_fails(tmp_path):
+    out = tmp_path / "masked.jsonl"
+    out.write_text("previous complete file\n", encoding="utf-8")
+    assert not run_all.main([str(st.SEED_DIR), "--systems", "rule,nosuchsystem", "--out", str(out)])
+    assert out.read_text(encoding="utf-8") == "previous complete file\n"
 
 
 def test_run_all_rule_only(tmp_path):
