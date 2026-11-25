@@ -36,7 +36,7 @@ def prompt_version(task):
     return ATTR_VERSION if task == "attr" else REID_VERSION
 
 
-def _prompt(task):
+def load_task_prompt(task):
     return load_prompt(PROMPT_DIR / f"{prompt_version(task)}.md")
 
 
@@ -49,7 +49,7 @@ def reid_messages(people, document=None, prompt=None):
 
     `people` are population rows in list order; the labels follow that order.
     """
-    prompt = prompt or _prompt("reid")
+    prompt = prompt or load_task_prompt("reid")
     lines = [f"{label}. {cd.profile(p)}" for label, p in zip(cd.labels(len(people)), people)]
     head = fill(prompt["candidates"], candidates="\n".join(lines))
     tail = prompt["no_document"] if document is None else fill(prompt["document"], document=document)
@@ -63,7 +63,7 @@ def closed_lists(population):
 
 
 def attr_messages(document, lists, prompt=None):
-    prompt = prompt or _prompt("attr")
+    prompt = prompt or load_task_prompt("attr")
     system = fill(prompt["system"], oblasts=", ".join(lists["oblast"]),
                   occupations=", ".join(lists["occupation"]))
     return _messages(system, fill(prompt["user"], document=document))

@@ -45,3 +45,25 @@ Prints the exact messages without calling a model. Prompt texts: `docs/prompts/a
 All three prompts say who the main person is: the claimant, the subject of the article, or the author of the post. This holds for every document in `data/full`. They do not give the genre, the document year or the masker. `uniqueness.py` does use the document year, so its k is slightly more favourable to the attacker when only an age is left.
 
 The parser accepts text around the JSON, Cyrillic letters in labels and feminine job titles. An invented label keeps its place in the ranking as a miss, so it never promotes the labels behind it. Any irregularity is returned in `errors`, so that the call can be repeated.
+
+## Running the attacks
+
+The endpoint and model come from `.env` (see the main README). The attacker should be neither the generator (Gemma 4 31B) nor the LLM masker (Qwen3-32B).
+
+```
+python evaluation/run_attacks.py data/sample --task reid --conditions unmasked,gold_full,rule --n 10   # pilot
+python evaluation/run_attacks.py data/full --task nodoc
+python evaluation/run_attacks.py data/full --task reid --n 100
+python evaluation/run_attacks.py data/full --task reid --n 10
+python evaluation/run_attacks.py data/full --task attr
+python evaluation/run_attacks.py data/full --task reid --design random \
+    --conditions gold_full,gold_edrsr_policy,gold_miss_one_oblique,rule    # control
+python evaluation/run_attacks.py data/full --task nodoc --design random
+```
+
+Results go to `data/full/attacks/` (format in `docs/SCHEMA.md`). `--dry-run` counts the calls without making them, `--limit 80` takes a subset spread over the genres. Calls per task on `data/full` with the balanced design: 3,528 for `reid` (12 conditions, two list sizes), 294 for `nodoc`, 1,764 for `attr`. The longest prompt has about 18,000 characters.
+
+- A run can be stopped and continued: finished rows are saved at once and reused as long as their prompt and model are the same. After a change in `masked_docs.jsonl` only the affected documents are attacked again.
+- The first attempt uses temperature 0. A reply with errors is repeated up to twice at 0.7, and the best reply is kept. Without a usable reply the row counts as a miss.
+- Failed calls leave no row. After ten of them the run stops; the same command continues it.
+- `unmasked` attacks the original text. It should be close to 100% for N = 10; if not, the attack itself does not work.
