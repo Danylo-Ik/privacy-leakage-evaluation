@@ -91,3 +91,21 @@ Reads the attack files, the masked and gold documents and the population, prints
 - "unknown" and unusable answers count as wrong. `accuracy_answered` covers the answered ones only.
 - Rows with `llm_failed` and rows of an older prompt version are ignored. Missing rows are reported, not filled in.
 - Recall follows the open-mention rule through `model_training/common.py`, until `data_understanding/recall.py` exists. k comes from `data_understanding/uniqueness.py`.
+
+## Figures
+
+```
+uv sync --group evaluation
+python evaluation/plots.py data/full
+```
+
+Reads `data/full/results/` and writes PNG and PDF figures and `main_table.md` to `data/full/results/figures/`. A figure whose data is missing is skipped.
+
+| figure | question |
+|---|---|
+| `headline_n100`, `headline_n10` | RQ1: masking recall (by mention and by person) against re-identification |
+| `reid` | top-1 per condition with the no-document baseline |
+| `dropout` | RQ2: attack and k = 1 against the share of mentions left open; single leaks |
+| `k_buckets` | RQ5: does k predict the attack when the name is masked |
+| `gender` | gender accuracy per condition, and per genre when everything is masked |
+| `lists` | why lists of random people are not used |
