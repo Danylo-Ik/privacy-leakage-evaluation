@@ -87,6 +87,14 @@ A name is split into parts (`Ковальчинського` + `Тараса` + 
 
 `apply_masking()` and `gold_conditions()` in `seed_tools.py` show the reference behaviour. Model training can extend them for the drop-out conditions.
 
+## 4. `candidates.jsonl` (owner: evaluation)
+
+```json
+{"doc_id": "D101", "design": "balanced", "n": 10, "candidates": ["P0458", "P0013", "..."]}
+```
+
+One row per (document, design, n), with n = 10 and 100, in the order shown to the attacker. Every masker and condition of a document is attacked with the same lists. A list always contains the target and all their look-alikes; target positions are spread evenly over the corpus. `evaluation/README.md` explains the two designs, `balanced` and `random`. Not available for `data/seed/`, which has no `targets.csv`.
+
 ## What each seed document exercises
 
 | doc | genre | target | Ukrainian-specific cases |
