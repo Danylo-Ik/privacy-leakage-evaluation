@@ -88,19 +88,67 @@ class FakeClient:
         return SimpleNamespace(choices=[SimpleNamespace(message=msg)])
 
 
-def test_llm_alignment_and_cache(tmp_path, monkeypatch):
+def fake_answer(entities):
+    return "```json\n" + json.dumps({"entities": entities}, ensure_ascii=False) + "\n```"
+
+
+def llm_row(monkeypatch, tmp_path, text, entities):
     monkeypatch.setattr(llm_masker, "CACHE_DIR", tmp_path)
-    doc = {"doc_id": "X", "text": "Привітали Оксану Вигаданчук. Пані Вигаданчук з Вербівки."}
-    answer = "```json\n" + json.dumps({"entities": [
-        {"category": "PERSON", "mentions": ["Оксану Вигаданчук", "Вигаданчук", "Оксана"]},
-        {"category": "LOC", "mentions": ["Вербівки"]}]}, ensure_ascii=False) + "\n```"
-    client = FakeClient(answer)
-    spans, missing = llm_masker.mask_doc(doc, model="fake", client=client)
-    row = common.to_row("X", "llm", doc["text"], spans)
+    client = FakeClient(fake_answer(entities))
+    spans, missing = llm_masker.mask_doc({"doc_id": "X", "text": text}, model="fake",
+                                         client=client)
+    return common.to_row("X", "llm", text, spans), missing, client
+
+
+def test_llm_alignment_and_cache(tmp_path, monkeypatch):
+    text = "Привітали Оксану Вигаданчук. Пані Вигаданчук з Вербівки."
+    ents = [{"category": "PERSON", "mentions": ["Оксану Вигаданчук", "Петро"]},
+            {"category": "LOC", "mentions": ["Вербівки"]}]
+    row, missing, client = llm_row(monkeypatch, tmp_path, text, ents)
     assert row["masked_text"] == "Привітали ОСОБА_1. Пані ОСОБА_1 з МІСЦЕ_1."
-    assert missing == ["Оксана"]
-    llm_masker.mask_doc(doc, model="fake", client=client)
+    assert missing == ["Петро"]  # invented by the model
+    llm_masker.mask_doc({"doc_id": "X", "text": text}, model="fake", client=client)
     assert client.calls == 1
+
+
+def test_llm_matches_inflected_forms(tmp_path, monkeypatch):
+    text = "разом із чоловіком Ігорем. Фермер із Сосонки. Лист Щербанюку О. І. надіслано."
+    ents = [{"category": "PERSON", "mentions": ["Ігор"]},
+            {"category": "LOC", "mentions": ["Сосонка"]},
+            {"category": "PERSON", "mentions": ["Щербанюк О. І."]}]
+    row, missing, _ = llm_row(monkeypatch, tmp_path, text, ents)
+    assert missing == []
+    assert "Ігорем" not in row["masked_text"] and "Сосонки" not in row["masked_text"]
+    assert "Щербанюку" not in row["masked_text"] and "О. І." not in row["masked_text"]
+
+
+def test_llm_masks_name_parts_and_keeps_people_apart(tmp_path, monkeypatch):
+    text = "Привітали Оксану Вигаданчук. Вигаданчук сама все зробила. Директорка Галина Сидоренко."
+    ents = [{"category": "PERSON", "mentions": ["Оксану Вигаданчук"]},
+            {"category": "PERSON", "mentions": ["Галина Сидоренко"]}]
+    row, _, _ = llm_row(monkeypatch, tmp_path, text, ents)
+    assert row["masked_text"] == "Привітали ОСОБА_1. ОСОБА_1 сама все зробила. Директорка ОСОБА_2."
+
+
+def test_llm_capitalized_mention_skips_common_word(tmp_path, monkeypatch):
+    text = "Роман прочитав роман."
+    row, _, _ = llm_row(monkeypatch, tmp_path, text, [{"category": "PERSON", "mentions": ["Роман"]}])
+    assert row["masked_text"] == "ОСОБА_1 прочитав роман."
+
+
+def test_llm_settings_prefer_mask_vars(monkeypatch):
+    monkeypatch.setattr(llm_masker, "load_env", lambda: {
+        "LLM_MODEL": "gemma", "LLM_BASE_URL": "http://a/v1", "MASK_LLM_MODEL": "qwen"})
+    for k in ("LLM_MODEL", "MASK_LLM_MODEL", "LLM_BASE_URL", "MASK_LLM_BASE_URL"):
+        monkeypatch.delenv(k, raising=False)
+    cfg = llm_masker.settings()
+    assert cfg["model"] == "qwen" and cfg["base_url"] == "http://a/v1"
+    assert cfg["max_tokens"] == 8000 and cfg["no_think"] is False
+
+
+def test_strip_thoughts():
+    assert llm_masker.strip_thoughts("<think>hmm</think>\n{\"entities\": []}") == '{"entities": []}'
+    assert llm_masker.strip_thoughts("<think>never closed") == ""
 
 
 def test_llm_bad_json_gives_no_spans():
